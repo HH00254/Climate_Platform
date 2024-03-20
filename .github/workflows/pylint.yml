@@ -1,0 +1,48 @@
+name: Pylint Checker
+
+on: [push, pull_request]
+
+jobs:
+  pylint:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Ensures history for README is fetched
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install Pylint
+      run: pip install pylint
+
+    - name: Run Pylint
+      run: pylint **/*.py > pylint_result.txt || true
+
+    - name: Check for README.md
+      id: readme-check
+      run: |
+        if grep -q "### Pylint Result" README.md; then
+          echo "::set-output name=exists::true"
+        fi
+
+    - name: Append Pylint Result to README.md
+      if: steps.readme-check.outputs.exists == 'true'
+      run: |
+        # Remove the existing Pylint Result section
+        sed '/### Pylint Result/,$d' README.md > README_temp.md
+        # Append new Pylint results
+        echo "### Pylint Result" >> README_temp.md
+        cat pylint_result.txt >> README_temp.md
+        mv README_temp.md README.md
+
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add README.md
+        git diff --staged --quiet || (git commit -m "Update README with latest Pylint results" && git push)
