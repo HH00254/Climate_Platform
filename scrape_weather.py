@@ -5,12 +5,12 @@ Section Number: FTO01
 Date Created: 03/20/24
 Credit:
 Updates:
-
+Test
 Todo:   1. Create dictionaries for output.. 
                 ex. daily_temps = {“Max”: 12.0, “Min”: 5.6, “Mean”: 7.1}
                     weather = {“2018-06-01”: daily_temps, “2018-06-02”: daily_temps}
         2. Scrape through up to current date and back in time until no data
-
+        3. location
 """
 
 
