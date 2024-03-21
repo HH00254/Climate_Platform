@@ -6,4 +6,3 @@ Date Created: 03/20/24
 Credit:
 Updates:
 """
-from html.parser import HTMLParser
