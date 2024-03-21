@@ -42,11 +42,16 @@ Expand the Project Introduction to include a detailed description of what the pr
 scrape_weather.py:8:0: C0304: Final newline missing (missing-final-newline)
 scrape_weather.py:8:0: C0304: Final newline missing (missing-final-newline)
 ************* Module db_operations
-db_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
-db_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
+db_operations.py:16:0: C0304: Final newline missing (missing-final-newline)
+db_operations.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
+db_operations.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
 ************* Module plot_operations
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 ************* Module weather_processor
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
+
+-----------------------------------
+Your code has been rated at 0.00/10
+
