@@ -38,8 +38,6 @@ Expand the Project Introduction to include a detailed description of what the pr
 
 
 ### Pylint Result
-************* Module scrape_weather
-scrape_weather.py:9:0: W0611: Unused HTMLParser imported from html.parser (unused-import)
 ************* Module plot_operations
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
@@ -48,5 +46,5 @@ weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 8.94/10
+Your code has been rated at 9.13/10
 
