@@ -1,14 +1,13 @@
 """
 Description: Weather Data Table
-Author: Christian Requerme
+Author: Lance Fuentes, Al Hochbaum, Christian Requerme
 Section Number: FTO01
 Date Created: 03/21/24
 Credit:
 Updates:
 """
 
-import sqlite3
-from contextlib import contextmanager
+from dbcm import DBCM
 
 class DBOperations:
     """Class to perform database operations"""
@@ -28,7 +27,7 @@ class DBOperations:
 
         This method creates the necessary table if it doesn't already exist.
         """
-        with self._get_cursor() as cur:
+        with DBCM(self.db_file) as cur:
             cur.execute("""
                         CREATE TABLE IF NOT EXISTS weather_data (
                             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -48,7 +47,7 @@ class DBOperations:
         Args:
             data (tuple): A tuple containing the data to be inserted.
         """
-        with self._get_cursor() as cur:
+        with DBCM(self.db_file) as cur:
             cur.execute("SELECT id FROM weather_data WHERE sample_date = ? AND location = ?;",
                          (data['sample_date'], data['location']))
             existing_data = cur.fetchone()
@@ -64,7 +63,7 @@ class DBOperations:
         """
         Purge all data from the database.
         """
-        with self._get_cursor() as cur:
+        with DBCM(self.db_file) as cur:
             cur.execute("DELETE FROM weather_data;")
 
     def fetch_data(self):
@@ -74,23 +73,6 @@ class DBOperations:
         Returns:
             list: A list of tuples containing the fetched data.
         """
-        with self._get_cursor() as cur:
+        with DBCM(self.db_file) as cur:
             cur.execute("SELECT * FROM weather_data;")
             return cur.fetchall()
-
-    @contextmanager
-    def _get_cursor(self):
-        """
-        Context manager to get a cursor for executing SQL queries.
-
-        Yields:
-            cursor: A cursor object.
-        """
-        conn = sqlite3.connect(self.db_file)
-        try:
-            cur = conn.cursor()
-            yield cur
-        finally:
-            conn.commit()
-            cur.close()
-            conn.close()
