@@ -39,13 +39,11 @@ Expand the Project Introduction to include a detailed description of what the pr
 
 ### Pylint Result
 ************* Module scrape_weather
-scrape_weather.py:57:0: C0301: Line too long (149/100) (line-too-long)
-scrape_weather.py:96:0: C0304: Final newline missing (missing-final-newline)
-scrape_weather.py:96:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:67:0: C0301: Line too long (149/100) (line-too-long)
 scrape_weather.py:20:0: C0115: Missing class docstring (missing-class-docstring)
-scrape_weather.py:57:0: C0103: Constant name "url" doesn't conform to UPPER_CASE naming style (invalid-name)
-scrape_weather.py:59:4: C0103: Constant name "html" doesn't conform to UPPER_CASE naming style (invalid-name)
-scrape_weather.py:64:0: W0105: String statement has no effect (pointless-string-statement)
+scrape_weather.py:20:0: R0902: Too many instance attributes (8/7) (too-many-instance-attributes)
+scrape_weather.py:67:0: C0103: Constant name "url" doesn't conform to UPPER_CASE naming style (invalid-name)
+scrape_weather.py:69:4: C0103: Constant name "html" doesn't conform to UPPER_CASE naming style (invalid-name)
 ************* Module db_operations
 db_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 db_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
@@ -54,5 +52,5 @@ plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 7.03/10
+Your code has been rated at 8.04/10
 
