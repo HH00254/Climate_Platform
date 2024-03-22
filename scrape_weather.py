@@ -22,8 +22,11 @@ class WeatherScraper(HTMLParser):
         super().__init__()
         self.td = False
         self.abbr = False
+        self.p = False
+        self.p_count = 0
         self.stop = False
         self.abbr_title = ""
+        self.location = ""
         self.td_count = 0
 
     def handle_starttag(self, tag, attrs):
@@ -35,10 +38,15 @@ class WeatherScraper(HTMLParser):
             self.abbr = True
         elif tag == 'td' and self.td_count < 3:
             self.td = True
+        elif tag == 'p' and self.p_count < 2:
+            self.p = True
 
     def handle_data(self, data):
         if self.td and self.td_count < 3 and any(char.isdigit() for char in self.abbr_title):
             print(self.abbr_title, data.strip())
+        if self.p and self.p_count < 2:
+            print(data)
+            self.p_count += 1
 
     def handle_endtag(self, tag):
         if tag == 'abbr':
@@ -49,6 +57,8 @@ class WeatherScraper(HTMLParser):
         elif tag == "tr":
             self.td_count = 0
             self.abbr_title = ''
+        elif tag == 'p':
+            self.p = False
 
 # Create an instance of WeatherScraper
 parser = WeatherScraper()
@@ -60,37 +70,3 @@ with urllib.request.urlopen(url) as response:
 
 # Parse the HTML content
 parser.feed(html)
-
-""" <body>
-<main>
-<div>
-<div>
-<table>
-<thead>
-<tr>
-</tr>
-<tbody>
-
-<tr>
-<th>
-<abbr title=""></abbr>
-</th>
-<td>
-</td>
-</tr>
-
-<tr>
-<th>
-<abbr title=""></abbr>
-</th>
-<td>
-</td>
-</tr>
-
-</tbody>
-</thead>
-</table>
-</div>
-</div>
-</main>
-</body> """
