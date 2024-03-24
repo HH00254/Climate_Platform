@@ -59,17 +59,19 @@ def main()-> None:
     """
     request = 'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Day=1&Year=2012&Month=3#'
     response_body = requests.get(request, timeout=60)
-    tree = html.fromstring(response_body.content)
 
-    city_path     = '//main/div/p/text()'
-    province_path = '//main/div/br/text()'
-    location_payload = tree.xpath(f"{city_path} | {province_path}")
+    if response_body.status_code == 200 and response_body.json():
+        tree = html.fromstring(response_body.content)
 
-    date_path      = '//table/tbody/tr[position() < last() - 3]/th/abbr/@title'
-    tempature_path = '//tr[position() < last() - 3]/td[position()<4]/text()'
-    table_load = tree.xpath(f"{date_path} | {tempature_path}")
+        city_path     = '//main/div/p/text()'
+        province_path = '//main/div/br/text()'
+        location_payload = tree.xpath(f"{city_path} | {province_path}")
 
-    insert_values = format_payload_for_insert(table_load, location_payload, 4)
+        date_path      = '//table/tbody/tr[position() < last() - 3]/th/abbr/@title'
+        tempature_path = '//tr[position() < last() - 3]/td[position()<4]/text()'
+        table_load = tree.xpath(f"{date_path} | {tempature_path}")
+
+        insert_values = format_payload_for_insert(table_load, location_payload, 4)
 
     pprint(insert_values)
 
