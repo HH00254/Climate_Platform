@@ -4,69 +4,111 @@ Author: Lance Fuentes, Al Hochbaum, Christian Requerme
 Section Number: FTO01
 Date Created: 03/20/24
 Credit:
-Updates:
-Test
-Todo:   1. Create dictionaries for output.. 
-                ex. daily_temps = {“Max”: 12.0, “Min”: 5.6, “Mean”: 7.1}
-                    weather = {“2018-06-01”: daily_temps, “2018-06-02”: daily_temps}
-        2. Scrape through up to current date and back in time until no data
-        3. location
+Updates: Handling non float temp not working
 """
+import requests
+from lxml import html
+from datetime import datetime
+from pprint import pprint
+#pip install python-dateutil
+from dateutil.relativedelta import relativedelta
+
+def format_payload_for_insert(list_data: list, location_payload: list, step: int) -> list[tuple]:
+    '''
+    Summary: 
+    - Copies a data-structure of type list and converts it into a 
+      dictionary
+
+    ARGS:
+    - A list structure containing key and values from a web-scrap that
+      need to be reformatted into a dictionary data structure
+
+    Return:
+    - Returns a dictionary
+    '''
+    insert_args = []
+
+    for index in range(0, len(list_data), step): 
+        try:
+            date = format_date(list_data[index])
+            location = str(location_payload[0]).split(' ', maxsplit=1)[0]
+            province = str(location_payload[1]).strip()
+            max_temp = try_convert_to_float(list_data[index + 1])
+            min_temp = try_convert_to_float(list_data[index + 2])
+            mean_temp = try_convert_to_float(list_data[index + 3])
+
+            if None in (date, location, province, max_temp, min_temp, mean_temp):
+                continue
+
+            insert_args.append((
+                date,
+                location,
+                province,
+                max_temp,
+                min_temp,
+                mean_temp))
+        except IndexError:
+            # Not enough elements in list_data
+            break
+        except Exception as e:
+            print(f'Error: {e}')
+            continue
+
+    return insert_args
+
+def try_convert_to_float(value: str) -> float:
+    try:
+        return float(value)
+    except (ValueError, TypeError):
+        return None
+
+def format_date(unformatted_date: str) -> str:
+    try:
+        # Attempt to parse the date in various formats
+        formatted_date = datetime.strptime(unformatted_date, '%B %d, %Y').strftime('%Y-%m-%d')
+    except ValueError:
+        try:
+            formatted_date = datetime.strptime(unformatted_date, '%Y-%m-%d').strftime('%Y-%m-%d')
+        except ValueError:
+            formatted_date = ''
+    return formatted_date
 
 
-from html.parser import HTMLParser
-import urllib.request
+def main()-> None:
+    """
+    Summary:
+    - The main executable body for this module
+    """
 
-class WeatherScraper(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.td = False
-        self.abbr = False
-        self.p = False
-        self.p_count = 0
-        self.stop = False
-        self.abbr_title = ""
-        self.location = ""
-        self.td_count = 0
+    current_date = datetime.now()
 
-    def handle_starttag(self, tag, attrs):
-        if tag == 'abbr':
-            for attr in attrs:
-                if attr[0] == 'title':
-                    self.abbr_title = attr[1]
-                    break
-            self.abbr = True
-        elif tag == 'td' and self.td_count < 3:
-            self.td = True
-        elif tag == 'p' and self.p_count < 2:
-            self.p = True
+    while True:
+        month = current_date.month
+        year  = current_date.year
 
-    def handle_data(self, data):
-        if self.td and self.td_count < 3 and any(char.isdigit() for char in self.abbr_title):
-            print(self.abbr_title, data.strip())
-        if self.p and self.p_count < 2:
-            print(data)
-            self.p_count += 1
+        request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Year={year}&Month={month}#'
+        response_body = requests.get(request, timeout=60)
 
-    def handle_endtag(self, tag):
-        if tag == 'abbr':
-            self.abbr = False
-        elif tag == 'td' and self.td:
-            self.td = False
-            self.td_count += 1
-        elif tag == "tr":
-            self.td_count = 0
-            self.abbr_title = ''
-        elif tag == 'p':
-            self.p = False
+        if response_body.status_code == 200 and response_body.__sizeof__() > 0:
+            tree = html.fromstring(response_body.content)
 
-# Create an instance of WeatherScraper
-parser = WeatherScraper()
+            city_path     = '//main/div/p/text()'
+            province_path = '//main/div/br/text()'
+            location_payload = tree.xpath(f"{city_path} | {province_path}")
 
-# Fetch the HTML content from the URL
-url = "https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Day=1&Year=2007&Month=5#"
-with urllib.request.urlopen(url) as response:
-    html = str(response.read())
+            date_path      = '//table/tbody/tr/th/abbr/@title'
+            temperature_path = '//tr/td[position()<4]/text()'
+            table_load = tree.xpath(f"{date_path} | {temperature_path}")
 
-# Parse the HTML content
-parser.feed(html)
+            # pprint(table_load)
+
+            insert_values = format_payload_for_insert(table_load, location_payload, 4)
+
+            pprint(insert_values)
+        else:
+            break
+        current_date -= relativedelta(months=1)
+
+if __name__ == '__main__':
+    main()
+    input('Press Enter to exit program...\n')
