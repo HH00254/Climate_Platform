@@ -35,9 +35,9 @@ def format_payload_for_insert(list_data: list, location_payload: list, step: int
 
         try:
 
-            insert_args.append(
-                (format_date(list_data[index]),
-                str(location_payload[0]).split(' ')[0],
+            insert_args.append((
+                format_date(list_data[index]),
+                str(location_payload[0]).split(' ', maxsplit=1)[0],
                 str(location_payload[1]).strip(),
                 float(list_data[index + 1]),
                 float(list_data[index + 2]),
@@ -57,7 +57,11 @@ def main()-> None:
     Summary:
     - The main executable body for this module
     """
-    request = 'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Day=1&Year=2012&Month=3#'
+    day   = datetime.now().day
+    month = datetime.now().month
+    year  = datetime.now().year
+
+    request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Day=1&Year={year}&Month={month}#'
     response_body = requests.get(request, timeout=60)
 
     if response_body.status_code == 200 and response_body.__sizeof__() > 0:
@@ -67,13 +71,15 @@ def main()-> None:
         province_path = '//main/div/br/text()'
         location_payload = tree.xpath(f"{city_path} | {province_path}")
 
-        date_path      = '//table/tbody/tr[position() < last() - 3]/th/abbr/@title'
-        tempature_path = '//tr[position() < last() - 3]/td[position()<4]/text()'
+        date_path      = f'//table/tbody/tr[position() < {day}]/th/abbr/@title'
+        tempature_path = f'//tr[position() < {day}]/td[position()<4]/text()'
         table_load = tree.xpath(f"{date_path} | {tempature_path}")
+
+        # pprint(table_load)
 
         insert_values = format_payload_for_insert(table_load, location_payload, 4)
 
-    pprint(insert_values)
+        pprint(insert_values)
 
 if __name__ == '__main__':
     main()
