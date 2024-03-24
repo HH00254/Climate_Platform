@@ -39,18 +39,24 @@ Expand the Project Introduction to include a detailed description of what the pr
 
 ### Pylint Result
 ************* Module scrape_weather
-scrape_weather.py:67:0: C0301: Line too long (149/100) (line-too-long)
-scrape_weather.py:20:0: C0115: Missing class docstring (missing-class-docstring)
-scrape_weather.py:20:0: R0902: Too many instance attributes (8/7) (too-many-instance-attributes)
-scrape_weather.py:67:0: C0103: Constant name "url" doesn't conform to UPPER_CASE naming style (invalid-name)
-scrape_weather.py:69:4: C0103: Constant name "html" doesn't conform to UPPER_CASE naming style (invalid-name)
+scrape_weather.py:31:48: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:89:0: C0301: Line too long (164/100) (line-too-long)
+scrape_weather.py:9:0: E0401: Unable to import 'requests' (import-error)
+scrape_weather.py:10:0: E0401: Unable to import 'lxml' (import-error)
+scrape_weather.py:14:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
+scrape_weather.py:53:15: W0718: Catching too general exception Exception (broad-exception-caught)
+scrape_weather.py:59:0: C0116: Missing function or method docstring (missing-function-docstring)
+scrape_weather.py:65:0: C0116: Missing function or method docstring (missing-function-docstring)
+scrape_weather.py:11:0: C0411: standard import "datetime.datetime" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+scrape_weather.py:12:0: C0411: standard import "pprint.pprint" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+************* Module dbcm
+dbcm.py:65:0: C0304: Final newline missing (missing-final-newline)
 ************* Module db_operations
-db_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
-db_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
+db_operations.py:78:0: C0304: Final newline missing (missing-final-newline)
 ************* Module plot_operations
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 8.04/10
+Your code has been rated at 7.32/10
 
