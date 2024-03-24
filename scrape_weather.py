@@ -142,17 +142,11 @@ def main()-> None:
  
 
         city_path     = '//main/div/p/text()'
-
         province_path = '//main/div/br/text()'
-
         location_payload = tree.xpath(f"{city_path} | {province_path}")
 
- 
-
         date_path       = f'//table/tbody/tr[position() < {day}]/th/abbr/@title'
-
         tempature_path  = f'//tr[position() < {day}]/td[position()<4]/text()'
-
         td_tag_varients = f'//tr[position() < {day}]/td[position()<4]/a/text()'
 
        
