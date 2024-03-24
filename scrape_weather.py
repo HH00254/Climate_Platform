@@ -124,14 +124,12 @@ def main()-> None:
     """
 
     day   = datetime.now().day
-
     month = datetime.now().month
-
     year  = datetime.now().year
 
  
 
-    request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Day=1&Year={year}&Month=1#'
+    request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Day=1&Year={year}&Month={month}#'
 
     response_body = requests.get(request, timeout=60)
 
