@@ -55,12 +55,11 @@ scrape_weather.py:130:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:132:0: C0301: Line too long (166/100) (line-too-long)
 scrape_weather.py:136:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:142:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:150:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:158:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:162:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:166:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:170:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:176:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:152:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:156:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:160:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:164:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:170:0: C0304: Final newline missing (missing-final-newline)
 scrape_weather.py:18:0: E0401: Unable to import 'requests' (import-error)
 scrape_weather.py:20:0: E0401: Unable to import 'lxml' (import-error)
 scrape_weather.py:58:40: C0121: Comparison 'location_element[0] == None' should be 'location_element[0] is None' (singleton-comparison)
@@ -79,5 +78,5 @@ weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 0.00/10
+Your code has been rated at 0.23/10
 
