@@ -42,7 +42,7 @@ Expand the Project Introduction to include a detailed description of what the pr
 scrape_weather.py:34:48: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:48:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:60:0: C0301: Line too long (157/100) (line-too-long)
-scrape_weather.py:78:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:80:0: C0304: Final newline missing (missing-final-newline)
 scrape_weather.py:9:0: E0401: Unable to import 'requests' (import-error)
 scrape_weather.py:10:0: E0401: Unable to import 'lxml' (import-error)
 scrape_weather.py:29:40: C0121: Comparison 'location_element[0] == None' should be 'location_element[0] is None' (singleton-comparison)
@@ -62,5 +62,5 @@ weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 2.78/10
+Your code has been rated at 2.97/10
 
