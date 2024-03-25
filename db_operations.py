@@ -33,6 +33,7 @@ class DBOperations:
                             id INTEGER PRIMARY KEY AUTOINCREMENT,
                             sample_date TEXT NOT NULL,
                             location TEXT NOT NULL,
+                            province TEXT NOT NULL,
                             min_temp REAL NOT NULL,
                             max_temp REAL NOT NULL,
                             avg_temp REAL NOT NULL,
