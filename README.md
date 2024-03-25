@@ -39,26 +39,19 @@ Expand the Project Introduction to include a detailed description of what the pr
 
 ### Pylint Result
 ************* Module scrape_weather
-scrape_weather.py:72:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:103:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:104:0: C0301: Line too long (178/100) (line-too-long)
-scrape_weather.py:106:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:119:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:122:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:126:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:140:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:42:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:111:0: C0301: Line too long (164/100) (line-too-long)
+scrape_weather.py:144:0: C0304: Final newline missing (missing-final-newline)
 scrape_weather.py:17:0: E0401: Unable to import 'requests' (import-error)
 scrape_weather.py:18:0: E0401: Unable to import 'lxml' (import-error)
-scrape_weather.py:49:40: C0121: Comparison 'location_element[0] == None' should be 'location_element[0] is None' (singleton-comparison)
-scrape_weather.py:74:0: C0116: Missing function or method docstring (missing-function-docstring)
+scrape_weather.py:22:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
+scrape_weather.py:40:40: C0121: Comparison 'location_element[0] == None' should be 'location_element[0] is None' (singleton-comparison)
 scrape_weather.py:77:0: C0116: Missing function or method docstring (missing-function-docstring)
-scrape_weather.py:83:0: C0116: Missing function or method docstring (missing-function-docstring)
-scrape_weather.py:87:0: R0914: Too many local variables (16/15) (too-many-locals)
-scrape_weather.py:114:20: W0612: Unused variable 'location_payload' (unused-variable)
+scrape_weather.py:80:0: C0116: Missing function or method docstring (missing-function-docstring)
 scrape_weather.py:19:0: C0411: standard import "datetime.datetime" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
 scrape_weather.py:20:0: C0411: standard import "pprint.pprint" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
 scrape_weather.py:21:0: C0411: standard import "calendar" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
-scrape_weather.py:22:0: C0411: standard import "re" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+scrape_weather.py:21:0: W0611: Unused import calendar (unused-import)
 ************* Module db_operations
 db_operations.py:16:0: C0304: Final newline missing (missing-final-newline)
 db_operations.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
@@ -71,5 +64,5 @@ weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 4.26/10
+Your code has been rated at 5.22/10
 
