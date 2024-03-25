@@ -19,28 +19,19 @@ from lxml import html
 from datetime import datetime
 from pprint import pprint
 import calendar
-import re
+from dateutil.relativedelta import relativedelta
 
 def format_payload_for_insert(list_data: list, location_payload: list, step: int) -> list[tuple]:
-
     '''
-
     Summary:
-
     - Copys a data-structure of type list and converts it into a
 
       dictionary
-
- 
-
     ARGS:
-
     - A list stucture containing key and values from a web-scrap that
 
       need to be reformated into a dictionary data structure
-
     Return:
-
     - Returns a dictionary
 
     '''
@@ -48,18 +39,25 @@ def format_payload_for_insert(list_data: list, location_payload: list, step: int
 
         if location_element[0] == '' or location_element[0] == None:
             location_element = 'NULL'
-
+ 
     insert_args = []
+    index = 0
+    while index < len(list_data):
 
-    for index in range(0, len(list_data), step):
         try:
-            insert_args.append((
-                format_date(list_data[index]),
-                str(location_payload[0]).split(' ', maxsplit=1)[0],
-                str(location_payload[1]).strip(),
-                float(sanitize_string(list_data[index + 1])),
-                float(sanitize_string(list_data[index + 2])),
-                float(sanitize_string(list_data[index + 3]))))
+
+            if checking_for_date(list_data, index, step):
+                insert_args.append((
+                    format_date(list_data[index]),
+                    str(location_payload[0]).split(' ', maxsplit=1)[0],
+                    str(location_payload[1]).strip(),
+                    float(list_data[index + 1]),
+                    float(list_data[index + 2]),
+                    float(list_data[index + 3])))
+
+            else:
+                # Not enough elements in list_data
+                index =  index - step + 1
 
         except TypeError as e:
             print(f'Error: {e}')
@@ -67,22 +65,32 @@ def format_payload_for_insert(list_data: list, location_payload: list, step: int
         except ValueError as e:
             print(f'Error: {e}')
 
+        except IndexError as e:
+            print(f'Error: {e}')
+
+        finally:
+            # Continue Incrementation
+            index += step
+
     return insert_args
 
- 
-
 def format_date(unformatted_date: str) -> str:
-    return datetime.strptime(unformatted_date, '%B %d, %Y').strftime('%Y-%d-%m')
+    return datetime.strptime(unformatted_date, '%B %d, %Y').strftime('%Y-%m-%d')
 
-def sanitize_string(input_string):
-    # Use regular expression to find digits in the input string
-    sanitized_string = re.sub(r"[+,-,''][0-9]\.[0-9]", '', input_string).strip()
+def checking_for_date(data_collection, index, step) -> bool:
+    error_flag = False
 
-    return sanitized_string
+    if len(data_collection) == index + step:
+        error_flag = True
 
-def get_days_in_month(year, month) -> int:
-    # Get the number of days in the specified month
-    return calendar.monthrange(year, month)[1]
+    elif index + step < len(data_collection):
+
+        if(str(data_collection[index]).split(' ', maxsplit=1)[0].strip() ==
+           str(data_collection[index + step]).split(' ', maxsplit=1)[0].strip()):
+            error_flag = True
+
+    return error_flag
+
 
 def main()-> None:
     """
@@ -91,50 +99,46 @@ def main()-> None:
     - The main executable body for this module
 
     """
-    month = datetime.now().month
-    year  = datetime.now().year
-    last_year = year + 1
-    decrement_value = 1
-    table_load = []
+    current_date   = datetime.now()
+    previous_data  = None
+    data_flag = True
 
-    for index in range(year):
-        if year != last_year:
-            while month != 0:
-                
-                request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Day=1&Year={year}&Month={month}#'
-                month = month - 1
-                
-                response_body = requests.get(request, timeout=60)
+    while data_flag:
 
-                if response_body.status_code == 200 and response_body.__sizeof__() > 0:
-                    tree = html.fromstring(response_body.content)
+        month = current_date.month
+        year  = current_date.year
 
-                    city_path     = '//main/div/p/text()'
-                    province_path = '//main/div/br/text()'
-                    location_payload = tree.xpath(f"{city_path} | {province_path}")
+        request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Year={year}&Month={month}#'
+        response_body = requests.get(request, timeout=60)
 
-                    number_of_days = get_days_in_month(year, month)
+        if response_body.status_code == 200 and response_body.content:
+            tree = html.fromstring(response_body.content)
 
-                    for inner_index in range(number_of_days):
-                        
-                        date_path       = f'//table/tbody/tr[{inner_index}]/th/abbr/@title'
-                        tempature_path  = f'//tr[{inner_index}]/td[position()<4]/text()'
-                    
-                        table_load.append(tree.xpath(f"{date_path} | {tempature_path}"))
+            city_path     = '//main/div/p/text()'
+            province_path = '//main/div/br/text()'
+            location_payload = tree.xpath(f"{city_path} | {province_path}")
 
-                    # insert_values = format_payload_for_insert(table_load, location_payload, 4)
-                    
-                    pprint(table_load)
+            date_path      = '//table/tbody/tr[position()< last() -3]/th/abbr/@title'
+            temperature_path = '//tr[position()< last() -3]/td[position()<4]/text()'
+            table_load = tree.xpath(f"{date_path} | {temperature_path}")
 
-            month = 12
-            decrement_value = decrement_value + index
-            last_year = year
-            year = year - decrement_value
+            # Check if the current data is not empty and is the same as the previous non-empty data
+            if table_load and table_load == previous_data:
+                data_flag = False
+
+            elif table_load:
+                previous_data = table_load
+                insert_values = format_payload_for_insert(table_load, location_payload, 4)
+
+                pprint(insert_values)
+
+            #insert to databse code here
         else:
-            break
+            data_flag = False
+
+        # Decrementing the time frame.
+        current_date -= relativedelta(months=1)
 
 if __name__ == '__main__':
-
     main()
-
     input('Press Enter to exit program...\n')
