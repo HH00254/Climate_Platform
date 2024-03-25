@@ -39,17 +39,19 @@ Expand the Project Introduction to include a detailed description of what the pr
 
 ### Pylint Result
 ************* Module scrape_weather
+scrape_weather.py:31:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:90:0: C0301: Line too long (164/100) (line-too-long)
-scrape_weather.py:9:0: E0401: Unable to import 'requests' (import-error)
-scrape_weather.py:10:0: E0401: Unable to import 'lxml' (import-error)
-scrape_weather.py:14:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
-scrape_weather.py:16:0: C0116: Missing function or method docstring (missing-function-docstring)
-scrape_weather.py:49:15: W0718: Catching too general exception Exception (broad-exception-caught)
-scrape_weather.py:59:0: C0116: Missing function or method docstring (missing-function-docstring)
-scrape_weather.py:65:0: C0116: Missing function or method docstring (missing-function-docstring)
-scrape_weather.py:106:12: R1723: Unnecessary "elif" after "break", remove the leading "el" from "elif" (no-else-break)
-scrape_weather.py:11:0: C0411: standard import "datetime.datetime" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
-scrape_weather.py:12:0: C0411: standard import "pprint.pprint" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+scrape_weather.py:123:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:10:0: E0401: Unable to import 'requests' (import-error)
+scrape_weather.py:11:0: E0401: Unable to import 'lxml' (import-error)
+scrape_weather.py:15:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
+scrape_weather.py:29:40: C0121: Comparison 'location_element[0] == None' should be 'location_element[0] is None' (singleton-comparison)
+scrape_weather.py:60:0: C0116: Missing function or method docstring (missing-function-docstring)
+scrape_weather.py:63:0: C0116: Missing function or method docstring (missing-function-docstring)
+scrape_weather.py:12:0: C0411: standard import "datetime.datetime" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+scrape_weather.py:13:0: C0411: standard import "pprint.pprint" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+scrape_weather.py:14:0: C0411: standard import "calendar" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+scrape_weather.py:14:0: W0611: Unused import calendar (unused-import)
 ************* Module dbcm
 dbcm.py:65:0: C0304: Final newline missing (missing-final-newline)
 ************* Module db_operations
@@ -59,5 +61,5 @@ plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 7.55/10
+Your code has been rated at 7.10/10
 
