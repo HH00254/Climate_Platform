@@ -4,7 +4,7 @@ Author: Lance Fuentes, Al Hochbaum, Christian Requerme
 Section Number: FTO01
 Date Created: 03/20/24
 Credit:
-Updates: Handling non float temp not working
+Updates:
 """
 import requests
 from lxml import html
@@ -14,21 +14,14 @@ from pprint import pprint
 from dateutil.relativedelta import relativedelta
 
 def format_payload_for_insert(list_data: list, location_payload: list, step: int) -> list[tuple]:
-    '''
-    Summary: 
-    - Copies a data-structure of type list and converts it into a 
-      dictionary
-
-    ARGS:
-    - A list structure containing key and values from a web-scrap that
-      need to be reformatted into a dictionary data structure
-
-    Return:
-    - Returns a dictionary
-    '''
     insert_args = []
 
-    for index in range(0, len(list_data), step): 
+    index = 0
+    while index < len(list_data):
+        if not any(char.isdigit() for char in list_data[index]):
+            index += step  # Skip this date and move to the next one
+            continue
+
         try:
             date = format_date(list_data[index])
             location = str(location_payload[0]).split(' ', maxsplit=1)[0]
@@ -37,7 +30,9 @@ def format_payload_for_insert(list_data: list, location_payload: list, step: int
             min_temp = try_convert_to_float(list_data[index + 2])
             mean_temp = try_convert_to_float(list_data[index + 3])
 
-            if None in (date, location, province, max_temp, min_temp, mean_temp):
+            if None in (max_temp, min_temp, mean_temp):
+                # If any temperature is None, skip this entry and move to the next one
+                index += 1
                 continue
 
             insert_args.append((
@@ -49,12 +44,19 @@ def format_payload_for_insert(list_data: list, location_payload: list, step: int
                 mean_temp))
         except IndexError:
             # Not enough elements in list_data
-            break
+            index += step
+            continue
         except Exception as e:
             print(f'Error: {e}')
+            index += step
             continue
 
+        index += step
+
     return insert_args
+
+
+
 
 def try_convert_to_float(value: str) -> float:
     try:
@@ -89,7 +91,7 @@ def main()-> None:
         request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Year={year}&Month={month}#'
         response_body = requests.get(request, timeout=60)
 
-        if response_body.status_code == 200 and response_body.__sizeof__() > 0:
+        if response_body.status_code == 200 and response_body.content:
             tree = html.fromstring(response_body.content)
 
             city_path     = '//main/div/p/text()'
