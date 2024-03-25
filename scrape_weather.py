@@ -83,6 +83,7 @@ def main()-> None:
     """
 
     current_date = datetime.now()
+    previous_data = None
 
     while True:
         month = current_date.month
@@ -103,6 +104,11 @@ def main()-> None:
             table_load = tree.xpath(f"{date_path} | {temperature_path}")
 
             # pprint(table_load)
+            # Check if the current data is not empty and is the same as the previous non-empty data
+            if table_load and table_load == previous_data:
+                break
+            elif table_load:
+                previous_data = table_load
 
             insert_values = format_payload_for_insert(table_load, location_payload, 4)
 
