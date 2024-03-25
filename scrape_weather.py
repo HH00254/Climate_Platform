@@ -56,8 +56,6 @@ def format_payload_for_insert(list_data: list, location_payload: list, step: int
     return insert_args
 
 
-
-
 def try_convert_to_float(value: str) -> float:
     try:
         return float(value)
@@ -113,6 +111,8 @@ def main()-> None:
             insert_values = format_payload_for_insert(table_load, location_payload, 4)
 
             pprint(insert_values)
+
+            #insert to databse code here
         else:
             break
         current_date -= relativedelta(months=1)
