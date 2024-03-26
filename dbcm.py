@@ -44,9 +44,13 @@ class DBCM(ContextDecorator):
         Returns:
             sqlite3.Cursor: A cursor object for executing SQL queries.
         """
-        self.conn = sqlite3.connect(self.db_name)
-        self.cursor = self.conn.cursor()
-        return self.cursor
+        try:
+            self.conn = sqlite3.connect(self.db_name)
+            self.cursor = self.conn.cursor()
+            return self.cursor
+        except sqlite3.Error as e:
+            print("Error connecting to the database:", e)
+            raise
 
     def __exit__(self, exc_type, exc_value, traceback):
         """
@@ -58,8 +62,14 @@ class DBCM(ContextDecorator):
             traceback (traceback): The traceback object associated with the exception, if any.
         """
         if exc_type is not None:
+            print("Exception occured, rollback changes:", exc_value)
             self.conn.rollback()
         else:
-            self.conn.commit()
+            try:
+                self.conn.commit()
+            except sqlite3.Error as e:
+                print("Error commiting changes to the database:", e)
+                self.conn.rollback()
+                print("Rollback changes.")
         self.cursor.close()
         self.conn.close()
