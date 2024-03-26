@@ -40,7 +40,7 @@ Expand the Project Introduction to include a detailed description of what the pr
 ### Pylint Result
 ************* Module scrape_weather
 scrape_weather.py:93:0: C0301: Line too long (164/100) (line-too-long)
-scrape_weather.py:128:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:127:0: C0304: Final newline missing (missing-final-newline)
 scrape_weather.py:10:0: E0401: Unable to import 'requests' (import-error)
 scrape_weather.py:11:0: E0401: Unable to import 'lxml' (import-error)
 scrape_weather.py:15:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
@@ -68,17 +68,3 @@ weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 -----------------------------------
 Your code has been rated at 7.71/10
 
-<<<<<<< HEAD
-************* Module db_operations
-db_operations.py:80:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-db_operations.py:114:15: W0718: Catching too general exception Exception (broad-exception-caught)
-
-------------------------------------------------------------------
-Your code has been rated at 9.57/10 (previous run: 9.35/10, +0.22)
-
-pylint dbcm.py
-
-------------------------------------
-Your code has been rated at 10.00/10
-=======
->>>>>>> fa12992a5d6af7bfb2cc47af7f29e42f365777b4
