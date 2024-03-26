@@ -50,15 +50,15 @@ class DBOperations:
         """
         with DBCM(self.db_file) as cur:
             cur.execute("SELECT id FROM weather_data WHERE sample_date = ? AND location = ?;",
-                         (data['sample_date'], data['location']))
+                         (data[0], data[1]))
             existing_data = cur.fetchone()
 
             if not existing_data:
                 cur.execute("""
-                            INSERT INTO weather_data (sample_date, location, min_temp, max_temp, avg_temp)
-                            VALUES (?, ?, ?, ?, ?);
-                            """, (data['sample_date'], data['location'], data['min_temp'],
-                                  data['max_temp'], data['avg_temp']))
+                            INSERT INTO weather_data (sample_date, location, province, min_temp, max_temp, avg_temp)
+                            VALUES (?, ?, ?, ?, ?, ?);
+                            """, (data[0], data[1], data[2], data[3],
+                                  data[4], data[5]))
 
     def purge_data(self):
         """
@@ -77,3 +77,12 @@ class DBOperations:
         with DBCM(self.db_file) as cur:
             cur.execute("SELECT * FROM weather_data;")
             return cur.fetchall()
+
+    def insert_sample_data(self):
+        """
+        Insert sample data into the weather_data table.
+        """
+        sample_data = [
+            {'sample_date': '2024-03-25', 'location': 'City A', 'province': 'Province A', 'min_temp': 10.0, 'max_temp': 20.0, 'avg_temp': 15.0},
+            {'sample_date': '2024-03-25', 'location': 'City B', 'province': 'Province B', 'min_temp': 12.0, 'max_temp': 22.0, 'avg_temp': 17.0},
+        ]
