@@ -52,13 +52,21 @@ scrape_weather.py:12:0: C0411: standard import "datetime.datetime" should be pla
 scrape_weather.py:13:0: C0411: standard import "pprint.pprint" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
 scrape_weather.py:14:0: C0411: standard import "calendar" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
 scrape_weather.py:14:0: W0611: Unused import calendar (unused-import)
+************* Module db_operations
+db_operations.py:86:0: C0301: Line too long (144/100) (line-too-long)
+db_operations.py:87:0: C0301: Line too long (144/100) (line-too-long)
+db_operations.py:88:0: C0304: Final newline missing (missing-final-newline)
+db_operations.py:85:8: W0612: Unused variable 'sample_data' (unused-variable)
 ************* Module plot_operations
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
+************* Module test
+test.py:5:0: C0304: Final newline missing (missing-final-newline)
+test.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 ************* Module weather_processor
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 7.21/10
+Your code has been rated at 6.82/10
 
