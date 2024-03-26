@@ -76,3 +76,8 @@ db_operations.py:114:15: W0718: Catching too general exception Exception (broad-
 
 ------------------------------------------------------------------
 Your code has been rated at 9.57/10 (previous run: 9.35/10, +0.22)
+
+pylint dbcm.py
+
+------------------------------------
+Your code has been rated at 10.00/10

@@ -116,7 +116,6 @@ def main()-> None:
 
             for entry in insert_values:
                 db_operations.save_data(entry)
-            #insert to databse code here
         else:
             data_flag = False
 
