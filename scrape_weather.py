@@ -114,7 +114,7 @@ def _system_log(exception: Exception, data_entre=None) -> None:
     print('here!!')
     with open(f'web_scraping_{log_date}.txt', 'a+', encoding="utf-8") as file_stream_output:
 
-        file_stream_output.write(f'Error: {exception}\n')
+        file_stream_output.write(f'\nError: {exception}\n')
         file_stream_output.write(f'Data Row Corruption:\n {data_entre}\n')
 
 
@@ -173,13 +173,13 @@ def web_scrape_call()-> list[tuple]:
     """
     insert_values  = []
     current_date   = datetime.now()
-    previous_data  = html.HtmlElement('<main>Null</main>')
+    previous_data  = html.fromstring('<body><main><td>Null</td></main></body>')
     call_attempt   = 0
     data_flag      = True
 
     while data_flag and call_attempt < 12:
 
-        month = 12
+        month = 10
         year  = 1996
 
         request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Year={year}&Month={month}#'
@@ -188,7 +188,8 @@ def web_scrape_call()-> list[tuple]:
         if response_body.status_code == 200 and response_body.content:
             tree = html.fromstring(response_body.content)
 
-            if tree.body != previous_data.body:
+            if (tree.xpath('//td[position()<4]/text()') !=
+                previous_data.xpath('//td[position()<4]/text()')):
                 previous_data = tree
 
                 city_path     = '//main/div/p/text()'
@@ -219,7 +220,7 @@ if __name__ == '__main__':
     #for testing    
     wheather_data =  web_scrape_call()
     
-    # for weather_element in wheather_data:
-    #     pprint(weather_element)
+    for weather_element in wheather_data:
+        pprint(weather_element)
 
     input('Press Enter to exit program...\n')
