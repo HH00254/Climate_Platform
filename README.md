@@ -62,9 +62,9 @@ scrape_weather.py:90:45: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:137:0: C0301: Line too long (106/100) (line-too-long)
 scrape_weather.py:145:0: C0301: Line too long (115/100) (line-too-long)
 scrape_weather.py:185:0: C0301: Line too long (164/100) (line-too-long)
-scrape_weather.py:219:16: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:221:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:225:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:220:16: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:222:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:226:0: C0304: Final newline missing (missing-final-newline)
 scrape_weather.py:17:0: E0401: Unable to import 'requests' (import-error)
 scrape_weather.py:18:0: E0401: Unable to import 'lxml' (import-error)
 scrape_weather.py:22:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
@@ -93,5 +93,5 @@ weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 3.04/10
+Your code has been rated at 3.19/10
 
