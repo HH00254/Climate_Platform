@@ -40,31 +40,31 @@ Expand the Project Introduction to include a detailed description of what the pr
 ### Pylint Result
 ************* Module scrape_weather
 scrape_weather.py:42:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:63:25: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:63:26: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:65:41: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:66:44: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:67:44: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:68:45: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:69:45: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:72:31: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:73:25: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:73:26: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:75:41: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:76:44: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:77:44: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:78:45: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:79:45: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:84:25: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:84:26: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:86:41: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:87:44: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:88:44: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:89:45: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:90:45: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:115:0: C0301: Line too long (104/100) (line-too-long)
 scrape_weather.py:137:0: C0301: Line too long (106/100) (line-too-long)
 scrape_weather.py:145:0: C0301: Line too long (115/100) (line-too-long)
 scrape_weather.py:185:0: C0301: Line too long (164/100) (line-too-long)
-scrape_weather.py:217:16: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:223:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:219:16: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:221:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:225:0: C0304: Final newline missing (missing-final-newline)
 scrape_weather.py:17:0: E0401: Unable to import 'requests' (import-error)
 scrape_weather.py:18:0: E0401: Unable to import 'lxml' (import-error)
 scrape_weather.py:22:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
@@ -74,6 +74,13 @@ scrape_weather.py:19:0: C0411: standard import "datetime.datetime" should be pla
 scrape_weather.py:20:0: C0411: standard import "pprint.pprint" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
 scrape_weather.py:21:0: C0411: standard import "calendar" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
 scrape_weather.py:21:0: W0611: Unused import calendar (unused-import)
+************* Module main
+main.py:20:0: C0304: Final newline missing (missing-final-newline)
+main.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+main.py:1:0: E0611: No name 'DBOperations' in module 'db_operations' (no-name-in-module)
+main.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+main.py:3:0: C0411: standard import "pprint.pprint" should be placed before first party imports "db_operations.DBOperations", "scrape_weather"  (wrong-import-order)
+main.py:4:0: C0411: standard import "time.time" should be placed before first party imports "db_operations.DBOperations", "scrape_weather"  (wrong-import-order)
 ************* Module db_operations
 db_operations.py:16:0: C0304: Final newline missing (missing-final-newline)
 db_operations.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
@@ -86,5 +93,5 @@ weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 2.99/10
+Your code has been rated at 3.04/10
 
