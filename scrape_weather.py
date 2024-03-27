@@ -22,7 +22,7 @@ import calendar
 from dateutil.relativedelta import relativedelta
 
 
-def format_payload_for_insert(list_data: list, location_payload: list, step: int) -> list[tuple]:
+def _format_payload_for_insert(list_data: list, location_payload: list, step: int) -> list[tuple]:
     '''
     Summary:
     - Formats scraped data from the website
@@ -46,9 +46,9 @@ def format_payload_for_insert(list_data: list, location_payload: list, step: int
 
         try:
 
-            if checking_for_date(list_data, index, step):
+            if _checking_for_date(list_data, index, step):
                 insert_args.append((
-                    format_date(list_data[index]),
+                    _format_date(list_data[index]),
                     str(location_payload[0]).split(' ', maxsplit=1)[0],
                     str(location_payload[1]).strip(),
                     float(list_data[index + 1]),
@@ -60,7 +60,7 @@ def format_payload_for_insert(list_data: list, location_payload: list, step: int
                 index =  index - step + 1
 
         except TypeError as e:
-            system_log(e, 
+            _system_log(e, 
                        (
                         list_data[index], 
                         location_payload[0], 
@@ -70,7 +70,7 @@ def format_payload_for_insert(list_data: list, location_payload: list, step: int
                         list_data[index + 3]))
 
         except ValueError as e:          
-            system_log(e, 
+            _system_log(e, 
                        (
                         list_data[index], 
                         location_payload[0], 
@@ -81,7 +81,7 @@ def format_payload_for_insert(list_data: list, location_payload: list, step: int
 
 
         except IndexError as e:
-            system_log(e, 
+            _system_log(e, 
                        (
                         list_data[index], 
                         location_payload[0], 
@@ -97,7 +97,7 @@ def format_payload_for_insert(list_data: list, location_payload: list, step: int
     return insert_args
 
 
-def system_log(exception: Exception, data_entre=None) -> None:
+def _system_log(exception: Exception, data_entre=None) -> None:
     """
     Summary:
     - Opens and writes error logs to a file
@@ -112,13 +112,13 @@ def system_log(exception: Exception, data_entre=None) -> None:
     """
     log_date = datetime.now().strftime('%Y-%m-%d')
     print('here!!')
-    with open(f'//{__name__}_{__package__}_{log_date}.txt' 'w', encoding='utf-8') as file_stream_output:
+    with open(f'web_scraping_{log_date}.txt', 'a+', encoding="utf-8") as file_stream_output:
 
-        file_stream_output.write(f'Error: {exception.__cause__}\n')
+        file_stream_output.write(f'Error: {exception}\n')
         file_stream_output.write(f'Data Row Corruption:\n {data_entre}\n')
 
 
-def format_date(unformatted_date: str) -> str:
+def _format_date(unformatted_date: str) -> str:
     """
     Summary:
     - Re-formates string date data
@@ -132,7 +132,7 @@ def format_date(unformatted_date: str) -> str:
     return datetime.strptime(unformatted_date, '%B %d, %Y').strftime('%Y-%m-%d')
 
 
-def checking_for_date(data_collection, index, step) -> bool:
+def _checking_for_date(data_collection, index, step) -> bool:
     """
     Check if the date at the current index is the same as the date at index + step in the data collection.
 
@@ -173,14 +173,14 @@ def web_scrape_call()-> list[tuple]:
     """
     insert_values  = []
     current_date   = datetime.now()
-    previous_data  = None
+    previous_data  = html.HtmlElement('<main>Null</main>')
     call_attempt   = 0
     data_flag      = True
 
     while data_flag and call_attempt < 12:
 
-        month = current_date.month
-        year  = current_date.year
+        month = 12
+        year  = 1996
 
         request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Year={year}&Month={month}#'
         response_body = requests.get(request, timeout=120)
@@ -188,7 +188,7 @@ def web_scrape_call()-> list[tuple]:
         if response_body.status_code == 200 and response_body.content:
             tree = html.fromstring(response_body.content)
 
-            if tree != previous_data:
+            if tree.body != previous_data.body:
                 previous_data = tree
 
                 city_path     = '//main/div/p/text()'
@@ -199,8 +199,10 @@ def web_scrape_call()-> list[tuple]:
                 temperature_path = '//tr[position()< last() -3]/td[position()<4]/text()'
                 table_load = tree.xpath(f"{date_path} | {temperature_path}")
 
-                insert_values.append(format_payload_for_insert(table_load, location_payload, 4))
+                insert_values.append(_format_payload_for_insert(table_load, location_payload, 4))
                 call_attempt = 0
+
+                pprint(insert_values)
 
             else:
                 data_flag = False
@@ -216,8 +218,8 @@ def web_scrape_call()-> list[tuple]:
 if __name__ == '__main__':
     #for testing    
     wheather_data =  web_scrape_call()
-
-    for weather_element in wheather_data:
-        pprint(weather_element)
+    
+    # for weather_element in wheather_data:
+    #     pprint(weather_element)
 
     input('Press Enter to exit program...\n')
