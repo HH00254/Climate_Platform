@@ -76,12 +76,13 @@ scrape_weather.py:20:0: C0411: standard import "pprint.pprint" should be placed 
 scrape_weather.py:21:0: C0411: standard import "calendar" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
 scrape_weather.py:21:0: W0611: Unused import calendar (unused-import)
 ************* Module main
-main.py:20:0: C0304: Final newline missing (missing-final-newline)
+main.py:18:0: C0304: Final newline missing (missing-final-newline)
 main.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 main.py:1:0: E0611: No name 'DBOperations' in module 'db_operations' (no-name-in-module)
-main.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
 main.py:3:0: C0411: standard import "pprint.pprint" should be placed before first party imports "db_operations.DBOperations", "scrape_weather"  (wrong-import-order)
 main.py:4:0: C0411: standard import "time.time" should be placed before first party imports "db_operations.DBOperations", "scrape_weather"  (wrong-import-order)
+main.py:3:0: W0611: Unused pprint imported from pprint (unused-import)
+main.py:4:0: W0611: Unused time imported from time (unused-import)
 ************* Module db_operations
 db_operations.py:16:0: C0304: Final newline missing (missing-final-newline)
 db_operations.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
@@ -94,5 +95,5 @@ weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 3.01/10
+Your code has been rated at 2.50/10
 
