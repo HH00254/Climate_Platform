@@ -68,15 +68,3 @@ weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 -----------------------------------
 Your code has been rated at 7.71/10
 
-************* Module db_operations
-db_operations.py:80:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-db_operations.py:114:15: W0718: Catching too general exception Exception (broad-exception-caught)
-
-------------------------------------------------------------------
-Your code has been rated at 9.57/10 (previous run: 9.35/10, +0.22)
-Your code has been rated at 9.57/10 (previous run: 9.35/10, +0.22)
-
-pylint dbcm.py
-
-------------------------------------
-Your code has been rated at 10.00/10
