@@ -111,7 +111,7 @@ def _system_log(exception: Exception, data_entre=None) -> None:
     - None
     """
     log_date = datetime.now().strftime('%Y-%m-%d')
-    print('here!!')
+    
     with open(f'web_scraping_{log_date}.txt', 'a+', encoding="utf-8") as file_stream_output:
 
         file_stream_output.write(f'\nError: {exception}\n')
@@ -179,8 +179,8 @@ def web_scrape_call()-> list[tuple]:
 
     while data_flag and call_attempt < 12:
 
-        month = 10
-        year  = 1996
+        month = current_date.month
+        year  = current_date.year
 
         request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Year={year}&Month={month}#'
         response_body = requests.get(request, timeout=120)
