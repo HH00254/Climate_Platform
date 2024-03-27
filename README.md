@@ -59,6 +59,7 @@ scrape_weather.py:87:44: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:88:44: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:89:45: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:90:45: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:114:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:137:0: C0301: Line too long (106/100) (line-too-long)
 scrape_weather.py:145:0: C0301: Line too long (115/100) (line-too-long)
 scrape_weather.py:185:0: C0301: Line too long (164/100) (line-too-long)
@@ -93,5 +94,5 @@ weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 3.19/10
+Your code has been rated at 3.01/10
 
