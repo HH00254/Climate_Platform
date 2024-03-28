@@ -1,0 +1,12 @@
+
+Error: could not convert string to float: 'May 15, 2018'
+Data Row Corruption:
+ ('May 14, 2018', 'WINNIPEG A CS', ' MANITOBA ', '1.8', 'May 15, 2018', '31.3')
+
+Error: time data '13.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('13.8', 'WINNIPEG A CS', ' MANITOBA ', 'May 30, 2018', 'May 31, 2018', '15.2')
+
+Error: could not convert string to float: 'July 19, 2017'
+Data Row Corruption:
+ ('July 18, 2017', 'WINNIPEG A CS', ' MANITOBA ', '11.1', 'July 19, 2017', '11.1')

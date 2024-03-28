@@ -29,16 +29,18 @@ def main() -> None:
         None
     """
     db_operations = DBOperations('weather_data.sqlite')
+    db_operations.initialize_db()
     now = time()
     insert_values = scrape_weather.web_scrape_call()
     print('then')
     then = time()
     print(f'It took {now - then}')
 
-    pprint(insert_values)
-
     for entry in insert_values:
+        pprint(entry)
         db_operations.save_data(entry)
+
+    pprint(insert_values)
 
 if __name__ == '__main__':
     main()

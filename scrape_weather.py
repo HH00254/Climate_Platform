@@ -15,7 +15,6 @@ import requests
 from lxml import html
 from dateutil.relativedelta import relativedelta
 
-
 def _format_payload_for_insert(list_data: list, location_payload: list, step: int) -> list[tuple]:
     '''
     Summary:
@@ -173,8 +172,8 @@ def web_scrape_call()-> list[tuple]:
 
     while data_flag and call_attempt < 12:
 
-        month = current_date.month
-        year  = current_date.year
+        month = 3
+        year  = 2024
 
         request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Year={year}&Month={month}#'
         response_body = requests.get(request, timeout=120)

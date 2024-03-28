@@ -7,11 +7,10 @@ Date Created: 03/20/24
 Credit:
 Updates:
 """
-import calendar
-import requests
-from lxml import html
 from datetime import datetime
 from pprint import pprint
+import requests
+from lxml import html
 from dateutil.relativedelta import relativedelta
 from db_operations import DBOperations
 
