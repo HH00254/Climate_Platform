@@ -9,10 +9,13 @@ def main() -> None:
     - Main body were we execute our code.
     """
     db_operations = DBOperations('weather_data.sqlite')
+    db_operations.initialize_db()
+    db_operations.purge_data()
     insert_values = scrape_weather.web_scrape_call()
 
-    for entry in insert_values:
-        db_operations.save_data(entry)
+    for month_collection in insert_values:
+        for row in month_collection:
+            db_operations.save_data(row)
 
 if __name__ == '__main__':
     main()

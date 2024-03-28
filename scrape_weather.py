@@ -202,7 +202,6 @@ def web_scrape_call()-> list[tuple]:
 
                 insert_values.append(_format_payload_for_insert(table_load, location_payload, 4))
                 call_attempt = 0
-
                 pprint(insert_values)
 
             else:
