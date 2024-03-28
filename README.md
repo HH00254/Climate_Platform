@@ -62,18 +62,13 @@ _scrape_weather.py:13:0: C0411: standard import "datetime.datetime" should be pl
 _scrape_weather.py:14:0: C0411: standard import "pprint.pprint" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
 _scrape_weather.py:10:0: W0611: Unused import calendar (unused-import)
 ************* Module main
-main.py:29:0: C0304: Final newline missing (missing-final-newline)
-main.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
-main.py:12:0: C0411: standard import "pprint.pprint" should be placed before first party imports "db_operations.DBOperations", "scrape_weather"  (wrong-import-order)
-main.py:13:0: C0411: standard import "time.time" should be placed before first party imports "db_operations.DBOperations", "scrape_weather"  (wrong-import-order)
+main.py:44:0: C0304: Final newline missing (missing-final-newline)
 ************* Module db_operations
 db_operations.py:85:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-db_operations.py:119:15: W0718: Catching too general exception Exception (broad-exception-caught)
 ************* Module plot_operations
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
 ************* Module test
-test.py:5:0: C0304: Final newline missing (missing-final-newline)
 test.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 ************* Module weather_processor
 weather_processor.py:1:0: R0801: Similar lines in 2 files
@@ -129,16 +124,15 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
                     float(list_data[index + 1]),
                     float(list_data[index + 2]),
                     float(list_data[index + 3])))
-
             else:
                 # Not enough elements in list_data
                 index =  index - step + 1
-
         except TypeError as e: (duplicate-code)
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[30:39]
 ==scrape_weather:[31:42]
     for location_element in location_payload:
+
         if location_element[0] == '' or location_element[0] == None:
             location_element = 'NULL'
 
@@ -146,20 +140,20 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
     index = 0
     while index < len(list_data):
 
-        try: (duplicate-code)
+        try:
+ (duplicate-code)
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[98:107]
 ==scrape_weather:[188:196]
-            city_path     = '//main/div/p/text()'
-            province_path = '//main/div/br/text()'
-            location_payload = tree.xpath(f"{city_path} | {province_path}")
+                city_path     = '//main/div/p/text()'
+                province_path = '//main/div/br/text()'
+                location_payload = tree.xpath(f"{city_path} | {province_path}")
 
-            date_path      = '//table/tbody/tr[position()< last() -3]/th/abbr/@title'
-            temperature_path = '//tr[position()< last() -3]/td[position()<4]/text()'
-            table_load = tree.xpath(f"{date_path} | {temperature_path}")
-
-            # Check if the current data is not empty and is the same as the previous non-empty data (duplicate-code)
+                date_path      = '//table/tbody/tr[position()< last() -3]/th/abbr/@title'
+                temperature_path = '//tr[position()< last() -3]/td[position()<4]/text()'
+                table_load = tree.xpath(f"{date_path} | {temperature_path}")
+ (duplicate-code)
 
 -----------------------------------
-Your code has been rated at 7.46/10
+Your code has been rated at 7.67/10
 
