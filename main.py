@@ -36,9 +36,10 @@ def main() -> None:
     then = time()
     print(f'It took {now - then}')
 
-    for entry in insert_values:
-        pprint(entry)
-        db_operations.save_data(entry)
+    for entry in enumerate(insert_values):
+        for index in range(len(insert_values[entry])):
+          print(insert_values[entry][index[0]])
+          db_operations.save_data(entry)
 
     pprint(insert_values)
 
