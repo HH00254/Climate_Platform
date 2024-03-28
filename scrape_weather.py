@@ -212,9 +212,9 @@ def web_scrape_call()-> list[tuple]:
 
 if __name__ == '__main__':
     #for testing
-    wheather_data =  web_scrape_call()
+    weather_data =  web_scrape_call()
 
-    for weather_element in wheather_data:
+    for weather_element in weather_data:
         pprint(weather_element)
 
     input('Press Enter to exit program...\n')

@@ -116,7 +116,7 @@ class DBOperations:
                     data['max_temp'],
                     data['avg_temp']
                 ))
-        except Exception as e:
+        except sqlite3.Error as e:
             print("Error inserting sample data:", e)
 
 # Test DB
