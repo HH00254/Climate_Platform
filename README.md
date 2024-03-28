@@ -43,29 +43,24 @@ scrape_weather.py:131:0: C0301: Line too long (106/100) (line-too-long)
 scrape_weather.py:139:0: C0301: Line too long (115/100) (line-too-long)
 scrape_weather.py:179:0: C0301: Line too long (164/100) (line-too-long)
 scrape_weather.py:220:0: C0304: Final newline missing (missing-final-newline)
-scrape_weather.py:11:0: E0401: Unable to import 'requests' (import-error)
-scrape_weather.py:12:0: E0401: Unable to import 'lxml' (import-error)
+scrape_weather.py:14:0: E0401: Unable to import 'requests' (import-error)
+scrape_weather.py:15:0: E0401: Unable to import 'lxml' (import-error)
 scrape_weather.py:16:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
 scrape_weather.py:34:40: C0121: Comparison 'location_element[0] == None' should be 'location_element[0] is None' (singleton-comparison)
 scrape_weather.py:155:0: R0914: Too many local variables (16/15) (too-many-locals)
-scrape_weather.py:13:0: C0411: standard import "datetime.datetime" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
-scrape_weather.py:14:0: C0411: standard import "pprint.pprint" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
-scrape_weather.py:15:0: C0411: standard import "calendar" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
-scrape_weather.py:15:0: W0611: Unused import calendar (unused-import)
 ************* Module _scrape_weather
 _scrape_weather.py:93:0: C0301: Line too long (164/100) (line-too-long)
 _scrape_weather.py:127:0: C0304: Final newline missing (missing-final-newline)
-_scrape_weather.py:10:0: E0401: Unable to import 'requests' (import-error)
-_scrape_weather.py:11:0: E0401: Unable to import 'lxml' (import-error)
+_scrape_weather.py:11:0: E0401: Unable to import 'requests' (import-error)
+_scrape_weather.py:12:0: E0401: Unable to import 'lxml' (import-error)
 _scrape_weather.py:15:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
 _scrape_weather.py:32:40: C0121: Comparison 'location_element[0] == None' should be 'location_element[0] is None' (singleton-comparison)
 _scrape_weather.py:63:0: C0116: Missing function or method docstring (missing-function-docstring)
 _scrape_weather.py:66:0: C0116: Missing function or method docstring (missing-function-docstring)
 _scrape_weather.py:79:0: R0914: Too many local variables (16/15) (too-many-locals)
-_scrape_weather.py:12:0: C0411: standard import "datetime.datetime" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
-_scrape_weather.py:13:0: C0411: standard import "pprint.pprint" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
-_scrape_weather.py:14:0: C0411: standard import "calendar" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
-_scrape_weather.py:14:0: W0611: Unused import calendar (unused-import)
+_scrape_weather.py:13:0: C0411: standard import "datetime.datetime" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+_scrape_weather.py:14:0: C0411: standard import "pprint.pprint" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+_scrape_weather.py:10:0: W0611: Unused import calendar (unused-import)
 ************* Module main
 main.py:29:0: C0304: Final newline missing (missing-final-newline)
 main.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
@@ -86,12 +81,26 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==scrape_weather:[125:167]
     return datetime.strptime(unformatted_date, '%B %d, %Y').strftime('%Y-%m-%d')
 
-def checking_for_date(data_collection, index, step) -> bool:
+
+def _checking_for_date(data_collection, index, step) -> bool:
+    """
+    Check if the date at the current index is the same as the date at index + step in the data collection.
+
+    Args:
+    - data_collection (list): A list containing the data collection.
+    - index (int): The current index in the data collection.
+    - step (int): The step size to check for the next date.
+
+    Returns:
+    - bool: True if the dates are the same or if the index + step is at the end of the collection, False otherwise.
+    """
     error_flag = False
 
     if len(data_collection) == index + step:
         error_flag = True
+
     elif index + step < len(data_collection):
+
         if(str(data_collection[index]).split(' ', maxsplit=1)[0].strip() ==
            str(data_collection[index + step]).split(' ', maxsplit=1)[0].strip()):
             error_flag = True
@@ -99,10 +108,18 @@ def checking_for_date(data_collection, index, step) -> bool:
     return error_flag
 
 
-def main()-> None:
+def web_scrape_call()-> list[tuple]:
     """
     Summary:
-    - The main executable body for this module
+    - When invoked this method calls climate.weather.gc.ca
+      to begin scraping the website for weather data.
+
+    Args:
+    - None
+
+    Return:
+    - A list object containing tuples, that act as a row to store
+      the scraped data for insertion into a DB.
     """ (duplicate-code)
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[42:51]
@@ -112,15 +129,16 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
                     float(list_data[index + 1]),
                     float(list_data[index + 2]),
                     float(list_data[index + 3])))
+
             else:
                 # Not enough elements in list_data
                 index =  index - step + 1
+
         except TypeError as e: (duplicate-code)
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[30:39]
 ==scrape_weather:[31:42]
     for location_element in location_payload:
-
         if location_element[0] == '' or location_element[0] == None:
             location_element = 'NULL'
 
@@ -128,8 +146,7 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
     index = 0
     while index < len(list_data):
 
-        try:
- (duplicate-code)
+        try: (duplicate-code)
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[98:107]
 ==scrape_weather:[188:196]
@@ -144,5 +161,5 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
             # Check if the current data is not empty and is the same as the previous non-empty data (duplicate-code)
 
 -----------------------------------
-Your code has been rated at 7.25/10
+Your code has been rated at 7.46/10
 
