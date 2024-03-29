@@ -185,7 +185,8 @@ def web_scrape_call()-> list[tuple]:
         request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Year={year}&Month={month}#'
         response_body = requests.get(request, timeout=120)
 
-        if response_body.status_code == 200 and response_body.content:
+        if (response_body.status_code == 200 and
+            html.fromstring(response_body.content).xpath('//table/tbody')):
             tree = html.fromstring(response_body.content)
 
             if (tree.xpath('//td[position()<4]/text()') !=
