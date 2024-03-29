@@ -1,19 +1,26 @@
 
-
 """
+
 Description: Weather Processing App Group 9
-Author: Lance Fuentes, Al Hochbaum, Christian Requerme
-Section Number: FTO01
-Date Created: 03/20/24
-Credit:
-Updates:
-"""
 
-from datetime import datetime
-from pprint import pprint
+Author: Lance Fuentes, Al Hochbaum, Christian Requerme
+
+Section Number: FTO01
+
+Date Created: 03/20/24
+
+Credit:
+
+Updates:
+
+"""
 import requests
 from lxml import html
+from datetime import datetime
+from pprint import pprint
+import calendar
 from dateutil.relativedelta import relativedelta
+
 
 def _format_payload_for_insert(list_data: list, location_payload: list, step: int) -> list[tuple]:
     '''
@@ -32,7 +39,7 @@ def _format_payload_for_insert(list_data: list, location_payload: list, step: in
 
         if location_element[0] == '' or location_element[0] == None:
             location_element = 'NULL'
-
+ 
     insert_args = []
     index = 0
     while index < len(list_data):
@@ -53,34 +60,34 @@ def _format_payload_for_insert(list_data: list, location_payload: list, step: in
                 index =  index - step + 1
 
         except TypeError as e:
-            _system_log(e,
+            _system_log(e, 
                        (
-                        list_data[index],
-                        location_payload[0],
-                        location_payload[1],
-                        list_data[index + 1],
-                        list_data[index + 2],
+                        list_data[index], 
+                        location_payload[0], 
+                        location_payload[1], 
+                        list_data[index + 1], 
+                        list_data[index + 2], 
                         list_data[index + 3]))
 
-        except ValueError as e:
-            _system_log(e,
+        except ValueError as e:          
+            _system_log(e, 
                        (
-                        list_data[index],
-                        location_payload[0],
-                        location_payload[1],
-                        list_data[index + 1],
-                        list_data[index + 2],
+                        list_data[index], 
+                        location_payload[0], 
+                        location_payload[1], 
+                        list_data[index + 1], 
+                        list_data[index + 2], 
                         list_data[index + 3]))
 
 
         except IndexError as e:
-            _system_log(e,
+            _system_log(e, 
                        (
-                        list_data[index],
-                        location_payload[0],
-                        location_payload[1],
-                        list_data[index + 1],
-                        list_data[index + 2],
+                        list_data[index], 
+                        location_payload[0], 
+                        location_payload[1], 
+                        list_data[index + 1], 
+                        list_data[index + 2], 
                         list_data[index + 3]))
 
         finally:
@@ -104,7 +111,7 @@ def _system_log(exception: Exception, data_entre=None) -> None:
     - None
     """
     log_date = datetime.now().strftime('%Y-%m-%d')
-
+    
     with open(f'web_scraping_{log_date}.txt', 'a+', encoding="utf-8") as file_stream_output:
 
         file_stream_output.write(f'\nError: {exception}\n')
@@ -161,7 +168,7 @@ def web_scrape_call()-> list[tuple]:
     - None
 
     Return:
-    - A list object containing tuples, that act as a row to store
+    - A list object containing tuples, that act as a row to store 
       the scraped data for insertion into a DB.
     """
     insert_values  = []
@@ -172,13 +179,14 @@ def web_scrape_call()-> list[tuple]:
 
     while data_flag and call_attempt < 12:
 
-        month = 3
-        year  = 2024
+        month = current_date.month
+        year  = current_date.year
 
         request = f'https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Year={year}&Month={month}#'
         response_body = requests.get(request, timeout=120)
 
-        if response_body.status_code == 200 and response_body.content:
+        if (response_body.status_code == 200 and
+            html.fromstring(response_body.content).xpath('//table/tbody')):
             tree = html.fromstring(response_body.content)
 
             if (tree.xpath('//td[position()<4]/text()') !=
@@ -195,7 +203,6 @@ def web_scrape_call()-> list[tuple]:
 
                 insert_values.append(_format_payload_for_insert(table_load, location_payload, 4))
                 call_attempt = 0
-
                 pprint(insert_values)
 
             else:
@@ -210,10 +217,10 @@ def web_scrape_call()-> list[tuple]:
     return insert_values
 
 if __name__ == '__main__':
-    #for testing
-    weather_data =  web_scrape_call()
-
-    for weather_element in weather_data:
+    #for testing    
+    wheather_data =  web_scrape_call()
+    
+    for weather_element in wheather_data:
         pprint(weather_element)
 
     input('Press Enter to exit program...\n')
