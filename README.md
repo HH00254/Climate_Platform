@@ -39,15 +39,42 @@ Expand the Project Introduction to include a detailed description of what the pr
 
 ### Pylint Result
 ************* Module scrape_weather
-scrape_weather.py:130:0: C0301: Line too long (106/100) (line-too-long)
-scrape_weather.py:138:0: C0301: Line too long (115/100) (line-too-long)
-scrape_weather.py:178:0: C0301: Line too long (164/100) (line-too-long)
-scrape_weather.py:219:0: C0304: Final newline missing (missing-final-newline)
-scrape_weather.py:14:0: E0401: Unable to import 'requests' (import-error)
-scrape_weather.py:15:0: E0401: Unable to import 'lxml' (import-error)
-scrape_weather.py:16:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
-scrape_weather.py:33:40: C0121: Comparison 'location_element[0] == None' should be 'location_element[0] is None' (singleton-comparison)
-scrape_weather.py:154:0: R0914: Too many local variables (16/15) (too-many-locals)
+scrape_weather.py:42:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:63:26: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:65:41: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:66:44: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:67:44: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:68:45: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:69:45: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:72:31: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:73:26: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:75:41: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:76:44: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:77:44: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:78:45: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:79:45: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:84:26: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:86:41: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:87:44: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:88:44: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:89:45: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:90:45: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:114:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:137:0: C0301: Line too long (106/100) (line-too-long)
+scrape_weather.py:145:0: C0301: Line too long (115/100) (line-too-long)
+scrape_weather.py:185:0: C0301: Line too long (164/100) (line-too-long)
+scrape_weather.py:220:16: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:222:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:226:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:17:0: E0401: Unable to import 'requests' (import-error)
+scrape_weather.py:18:0: E0401: Unable to import 'lxml' (import-error)
+scrape_weather.py:22:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
+scrape_weather.py:40:40: C0121: Comparison 'location_element[0] == None' should be 'location_element[0] is None' (singleton-comparison)
+scrape_weather.py:161:0: R0914: Too many local variables (16/15) (too-many-locals)
+scrape_weather.py:19:0: C0411: standard import "datetime.datetime" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+scrape_weather.py:20:0: C0411: standard import "pprint.pprint" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+scrape_weather.py:21:0: C0411: standard import "calendar" should be placed before third party imports "requests", "lxml.html" (wrong-import-order)
+scrape_weather.py:21:0: W0611: Unused import calendar (unused-import)
 ************* Module _scrape_weather
 _scrape_weather.py:92:0: C0301: Line too long (164/100) (line-too-long)
 _scrape_weather.py:126:0: C0304: Final newline missing (missing-final-newline)
@@ -63,17 +90,18 @@ main.py:41:0: W0311: Bad indentation. Found 10 spaces, expected 12 (bad-indentat
 main.py:42:0: W0311: Bad indentation. Found 10 spaces, expected 12 (bad-indentation)
 main.py:47:0: C0304: Final newline missing (missing-final-newline)
 ************* Module db_operations
-db_operations.py:72:0: C0301: Line too long (153/100) (line-too-long)
-db_operations.py:89:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+db_operations.py:85:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 ************* Module plot_operations
-plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
-plot_operations.py:8:0: C0304: Final newline missing (missing-final-newline)
+plot_operations.py:10:0: E0401: Unable to import 'matplotlib.pyplot' (import-error)
+plot_operations.py:12:0: C0115: Missing class docstring (missing-class-docstring)
+plot_operations.py:12:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+plot_operations.py:17:0: C0116: Missing function or method docstring (missing-function-docstring)
 ************* Module test
 test.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 ************* Module weather_processor
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[62:82]
-==scrape_weather:[124:166]
+==scrape_weather:[131:173]
     return datetime.strptime(unformatted_date, '%B %d, %Y').strftime('%Y-%m-%d')
 
 def checking_for_date(data_collection, index, step) -> bool:
@@ -96,19 +124,21 @@ def main()-> None:
     """ (duplicate-code)
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[41:50]
-==scrape_weather:[44:55]
+==scrape_weather:[51:62]
                     str(location_payload[0]).split(' ', maxsplit=1)[0],
                     str(location_payload[1]).strip(),
                     float(list_data[index + 1]),
                     float(list_data[index + 2]),
                     float(list_data[index + 3])))
+
             else:
                 # Not enough elements in list_data
                 index =  index - step + 1
+
         except TypeError as e: (duplicate-code)
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[29:38]
-==scrape_weather:[30:41]
+==scrape_weather:[37:48]
     for location_element in location_payload:
         if location_element[0] == '' or location_element[0] == None:
             location_element = 'NULL'
@@ -120,16 +150,17 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
         try: (duplicate-code)
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[97:106]
-==scrape_weather:[187:195]
-                city_path     = '//main/div/p/text()'
-                province_path = '//main/div/br/text()'
-                location_payload = tree.xpath(f"{city_path} | {province_path}")
+==scrape_weather:[195:203]
+            city_path     = '//main/div/p/text()'
+            province_path = '//main/div/br/text()'
+            location_payload = tree.xpath(f"{city_path} | {province_path}")
 
-                date_path      = '//table/tbody/tr[position()< last() -3]/th/abbr/@title'
-                temperature_path = '//tr[position()< last() -3]/td[position()<4]/text()'
-                table_load = tree.xpath(f"{date_path} | {temperature_path}")
- (duplicate-code)
+            date_path      = '//table/tbody/tr[position()< last() -3]/th/abbr/@title'
+            temperature_path = '//tr[position()< last() -3]/td[position()<4]/text()'
+            table_load = tree.xpath(f"{date_path} | {temperature_path}")
+
+            # Check if the current data is not empty and is the same as the previous non-empty data (duplicate-code)
 
 -----------------------------------
-Your code has been rated at 7.75/10
+Your code has been rated at 6.60/10
 
