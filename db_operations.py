@@ -60,19 +60,15 @@ class DBOperations:
         try:
             with DBCM(self.db_file) as cur:
                 cur.execute("SELECT id FROM weather_data WHERE sample_date = ? AND location = ?;",
-                            (data[0], data[1]))
+                             (data[0], data[1]))
                 existing_data = cur.fetchone()
 
                 if not existing_data:
-                    for data_object in enumerate(data):
-                        for index_row in range(len(index_row)):
-                            cur.execute("""
-                                        INSERT INTO weather_data (sample_date, location, province, min_temp, max_temp, avg_temp)
-                                        VALUES (?, ?, ?, ?, ?, ?);
-                                        """, (data_object[index_row][0], data_object[index_row][1], data_object[index_row][2], data_object[index_row][3],
-                                            data_object[index_row][4], data_object[index_row][5]))
-
-
+                    cur.execute("""
+                                INSERT INTO weather_data (sample_date, location, province, min_temp, max_temp, avg_temp)
+                                VALUES (?, ?, ?, ?, ?, ?);
+                                """, (data[0], data[1], data[2], data[3],
+                                      data[4], data[5]))
         except sqlite3.Error as e:
             print("Error saving data to database:", e)
 
