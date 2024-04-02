@@ -17,10 +17,6 @@ class PlotOperations:
 def create_boxplot(self, year_range):
     mean_temps = []
 
-    for year in range(year_range[0], year_range[1] + 1):
-        if str(year) in self.weather_data:
-            mean_temps.extend(self.weather_Data[str(year)]['Mean'])
-
     plt.boxplot(mean_temps)
     plt.title('Mean Temperatures Boxplot')
     plt.xlabel('Years')
