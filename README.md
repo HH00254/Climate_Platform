@@ -96,6 +96,8 @@ plot_operations.py:10:0: E0401: Unable to import 'matplotlib.pyplot' (import-err
 plot_operations.py:12:0: C0115: Missing class docstring (missing-class-docstring)
 plot_operations.py:12:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 plot_operations.py:17:0: C0116: Missing function or method docstring (missing-function-docstring)
+plot_operations.py:17:19: W0613: Unused argument 'self' (unused-argument)
+plot_operations.py:17:25: W0613: Unused argument 'year_range' (unused-argument)
 ************* Module test
 test.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 ************* Module weather_processor
@@ -130,11 +132,9 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
                     float(list_data[index + 1]),
                     float(list_data[index + 2]),
                     float(list_data[index + 3])))
-
             else:
                 # Not enough elements in list_data
                 index =  index - step + 1
-
         except TypeError as e: (duplicate-code)
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[29:38]
@@ -162,5 +162,5 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
             # Check if the current data is not empty and is the same as the previous non-empty data (duplicate-code)
 
 -----------------------------------
-Your code has been rated at 6.60/10
+Your code has been rated at 6.48/10
 
