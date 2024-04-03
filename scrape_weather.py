@@ -30,7 +30,7 @@ class ScrapeWeather:
         Returns:
         None
         """
-        self.date_instance  = date_instance
+        self.date_instance  = date_instance 
         self.station_id     = station_id
         self.web_address    = """
             https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID={}&timeframe=2&StartYear=1840&EndYear=2018&Year={}&Month={}#"""                                                                 
@@ -157,6 +157,26 @@ class ScrapeWeather:
                 insert_values = self._format_payload_for_insert(table_load, location_payload, insert_values, 4)
 
         return insert_values
+    
+    def _months_between_dates(self, end_date) -> int:
+        """
+        Check if the year and month of two datetime objects are equal.
+
+        Args:
+            datetime_start (datetime): The first datetime object.
+            datetime_end (datetime): The second datetime object.
+
+        Returns:
+            bool: True if the year and month of both datetime objects are equal, False otherwise.
+        """
+        # Calculate the difference in days
+        delta = end_date - self.date_instance
+        days = delta.days
+
+        # Calculate the approximate difference in months
+        months = days / 30.4375
+
+        return int(months)
 
     def web_scrape_call(self, st_year = None, st_month = None, data_end_point = None) -> list:
         """
@@ -182,7 +202,7 @@ class ScrapeWeather:
 
         else:
             working_date = self.date_instance
-            month_range  = working_date.month
+            month_range  = self._months_between_dates(data_end_point)
 
         while call_attempt < 12 and termination_flag and month_counter < month_range:
             month      = working_date.month
@@ -196,8 +216,8 @@ class ScrapeWeather:
                 tree = html.fromstring(response_body.content)
 
                 if (tree.xpath('//td[position()<4]/text()') !=
-                    previous_data.xpath('//td[position()<4]/text()') and
-                    datetime(data_end_point) != working_date):
+                    previous_data.xpath('//td[position()<4]/text()')):
+
                     previous_data = tree
                     tree_pages.append(tree)
 

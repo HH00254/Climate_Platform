@@ -1,175 +1,27 @@
 
+Error: could not convert string to float: 'January 11, 2024'
+Data Row Corruption:
+ ('-13.1', 'WINNIPEG A CS', ' MANITOBA ', '-25.8', '-19.4', 'January 10, 2024')
+
+Error: could not convert string to float: 'January 11, 2024'
+Data Row Corruption:
+ ('-13.1', 'WINNIPEG A CS', ' MANITOBA ', '-25.8', '-19.4', 'January 10, 2024')
+
+Error: could not convert string to float: 'January 11, 2024'
+Data Row Corruption:
+ ('-13.1', 'WINNIPEG A CS', ' MANITOBA ', '-25.8', '-19.4', 'January 10, 2024')
+
+Error: could not convert string to float: 'January 11, 2024'
+Data Row Corruption:
+ ('-13.1', 'WINNIPEG A CS', ' MANITOBA ', '-25.8', '-19.4', 'January 10, 2024')
+
 Error: list index out of range
 Data Row Corruption:
  ('4.5', 'WINNIPEG A CS', ' MANITOBA ', '-5.2', '-0.4', 'November 30, 2023')
 
-Error: could not convert string to float: 'October 5, 2023'
+Error: list index out of range
 Data Row Corruption:
- ('22.5', 'WINNIPEG A CS', ' MANITOBA ', '12.1', '17.3', 'October 4, 2023')
-
-Error: could not convert string to float: 'October 29, 2023'
-Data Row Corruption:
- ('0.7', 'WINNIPEG A CS', ' MANITOBA ', '-4.3', '-1.8', 'October 28, 2023')
-
-Error: could not convert string to float: 'August 29, 2023'
-Data Row Corruption:
- ('28.7', 'WINNIPEG A CS', ' MANITOBA ', '12.9', '20.8', 'August 28, 2023')
-
-Error: could not convert string to float: 'August 31, 2023'
-Data Row Corruption:
- ('21.2', 'WINNIPEG A CS', ' MANITOBA ', '9.2', '15.2', 'August 30, 2023')
-
-Error: could not convert string to float: 'December 30, 2014'
-Data Row Corruption:
- ('-22.3', 'WINNIPEG A CS', ' MANITOBA ', '-30.9', '-26.6', 'December 29, 2014')
-
-Error: time data '-20.8' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('-30.9', 'WINNIPEG A CS', ' MANITOBA ', '-26.6', 'December 29, 2014', '-20.8')
-
-Error: could not convert string to float: 'October 23, 2014'
-Data Row Corruption:
- ('16.6', 'WINNIPEG A CS', ' MANITOBA ', '3.7', '10.2', 'October 22, 2014')
-
-Error: time data '11.5' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('3.7', 'WINNIPEG A CS', ' MANITOBA ', '10.2', 'October 22, 2014', '11.5')
-
-Error: could not convert string to float: 'July 4, 2014'
-Data Row Corruption:
- ('22.1', 'WINNIPEG A CS', ' MANITOBA ', '7.6', '14.9', 'July 3, 2014')
-
-Error: time data '9.0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('7.6', 'WINNIPEG A CS', ' MANITOBA ', '14.9', 'July 3, 2014', '9.0')
-
-Error: could not convert string to float: 'September 28, 2022'
-Data Row Corruption:
- ('15.9', 'WINNIPEG A CS', ' MANITOBA ', '1.2', '8.6', 'September 27, 2022')
-
-Error: could not convert string to float: 'November 30, 2012'
-Data Row Corruption:
- ('-7.3', 'WINNIPEG A CS', ' MANITOBA ', '-20.8', '-14.1', 'November 29, 2012')
-
-Error: time data '-17.8' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('-20.8', 'WINNIPEG A CS', ' MANITOBA ', '-14.1', 'November 29, 2012', '-17.8')
-
-Error: could not convert string to float: 'October 22, 2012'
-Data Row Corruption:
- ('8.4', 'WINNIPEG A CS', ' MANITOBA ', '4.6', '6.5', 'October 21, 2012')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('26.6', 'WINNIPEG A CS', ' MANITOBA ', '16.4', '21.5', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('16.4', 'WINNIPEG A CS', ' MANITOBA ', '21.5', '\xa0', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('21.5', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('31.9', 'WINNIPEG A CS', ' MANITOBA ', '13.5', '22.7', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('13.5', 'WINNIPEG A CS', ' MANITOBA ', '22.7', '\xa0', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('22.7', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('27.8', 'WINNIPEG A CS', ' MANITOBA ', '18.7', '23.3', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('18.7', 'WINNIPEG A CS', ' MANITOBA ', '23.3', '\xa0', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('23.3', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
-
-Error: could not convert string to float: '\xa0'
-Data Row Corruption:
- ('13.9', 'WINNIPEG A CS', ' MANITOBA ', '6.8', '10.4', 'May 8, 2012')
-
-Error: time data '6.9' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('6.8', 'WINNIPEG A CS', ' MANITOBA ', '10.4', 'May 8, 2012', '6.9')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('10.4', 'WINNIPEG A CS', ' MANITOBA ', 'May 8, 2012', '6.9', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('May 8, 2012', 'WINNIPEG A CS', ' MANITOBA ', '6.9', '\xa0', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('6.9', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
-
-Error: could not convert string to float: 'May 18, 2012'
-Data Row Corruption:
- ('19.8', 'WINNIPEG A CS', ' MANITOBA ', '-1.1', '9.4', 'May 17, 2012')
-
-Error: time data '11.5' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('-1.1', 'WINNIPEG A CS', ' MANITOBA ', '9.4', 'May 17, 2012', '11.5')
-
-Error: could not convert string to float: 'May 19, 2012'
-Data Row Corruption:
- ('9.4', 'WINNIPEG A CS', ' MANITOBA ', 'May 17, 2012', '11.5', 'May 18, 2012')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('17.7', 'WINNIPEG A CS', ' MANITOBA ', '5.8', '11.8', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('5.8', 'WINNIPEG A CS', ' MANITOBA ', '11.8', '\xa0', '\xa0')
-
-Error: time data '\xa0' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('11.8', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
-
-Error: could not convert string to float: 'October 18, 2019'
-Data Row Corruption:
- ('4.3', 'WINNIPEG A CS', ' MANITOBA ', '-0.1', '2.1', 'October 17, 2019')
-
-Error: could not convert string to float: 'July 25, 2019'
-Data Row Corruption:
- ('28.8', 'WINNIPEG A CS', ' MANITOBA ', '13.2', '21.0', 'July 24, 2019')
-
-Error: could not convert string to float: 'May 2, 2019'
-Data Row Corruption:
- ('16.7', 'WINNIPEG A CS', ' MANITOBA ', '3.4', '10.1', 'May 1, 2019')
-
-Error: could not convert string to float: 'May 9, 2019'
-Data Row Corruption:
- ('14.3', 'WINNIPEG A CS', ' MANITOBA ', '-5.1', '4.6', 'May 8, 2019')
-
-Error: could not convert string to float: 'March 22, 2019'
-Data Row Corruption:
- ('4.3', 'WINNIPEG A CS', ' MANITOBA ', '-3.9', '0.2', 'March 21, 2019')
+ ('4.5', 'WINNIPEG A CS', ' MANITOBA ', '-5.2', '-0.4', 'November 30, 2023')
 
 Error: could not convert string to float: 'November 2, 2006'
 Data Row Corruption:
@@ -1631,6 +1483,626 @@ Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
  ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 31, 2006', '\xa0', '\xa0')
 
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('-14.4', 'WINNIPEG A CS', ' MANITOBA ', '-28.0', '-21.2', 'March 6, 2008')
+
+Error: time data '-32.1' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-28.0', 'WINNIPEG A CS', ' MANITOBA ', '-21.2', 'March 6, 2008', '-32.1')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-21.2', 'WINNIPEG A CS', ' MANITOBA ', 'March 6, 2008', '-32.1', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('March 6, 2008', 'WINNIPEG A CS', ' MANITOBA ', '-32.1', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-32.1', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'November 30, 2012'
+Data Row Corruption:
+ ('-7.3', 'WINNIPEG A CS', ' MANITOBA ', '-20.8', '-14.1', 'November 29, 2012')
+
+Error: time data '-17.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-20.8', 'WINNIPEG A CS', ' MANITOBA ', '-14.1', 'November 29, 2012', '-17.8')
+
+Error: could not convert string to float: 'October 22, 2012'
+Data Row Corruption:
+ ('8.4', 'WINNIPEG A CS', ' MANITOBA ', '4.6', '6.5', 'October 21, 2012')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('26.6', 'WINNIPEG A CS', ' MANITOBA ', '16.4', '21.5', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('16.4', 'WINNIPEG A CS', ' MANITOBA ', '21.5', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('21.5', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('31.9', 'WINNIPEG A CS', ' MANITOBA ', '13.5', '22.7', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('13.5', 'WINNIPEG A CS', ' MANITOBA ', '22.7', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('22.7', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('27.8', 'WINNIPEG A CS', ' MANITOBA ', '18.7', '23.3', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('18.7', 'WINNIPEG A CS', ' MANITOBA ', '23.3', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('23.3', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('13.9', 'WINNIPEG A CS', ' MANITOBA ', '6.8', '10.4', 'May 8, 2012')
+
+Error: time data '6.9' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('6.8', 'WINNIPEG A CS', ' MANITOBA ', '10.4', 'May 8, 2012', '6.9')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('10.4', 'WINNIPEG A CS', ' MANITOBA ', 'May 8, 2012', '6.9', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('May 8, 2012', 'WINNIPEG A CS', ' MANITOBA ', '6.9', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('6.9', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'May 18, 2012'
+Data Row Corruption:
+ ('19.8', 'WINNIPEG A CS', ' MANITOBA ', '-1.1', '9.4', 'May 17, 2012')
+
+Error: time data '11.5' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-1.1', 'WINNIPEG A CS', ' MANITOBA ', '9.4', 'May 17, 2012', '11.5')
+
+Error: could not convert string to float: 'May 19, 2012'
+Data Row Corruption:
+ ('9.4', 'WINNIPEG A CS', ' MANITOBA ', 'May 17, 2012', '11.5', 'May 18, 2012')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('17.7', 'WINNIPEG A CS', ' MANITOBA ', '5.8', '11.8', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('5.8', 'WINNIPEG A CS', ' MANITOBA ', '11.8', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('11.8', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'October 18, 2019'
+Data Row Corruption:
+ ('4.3', 'WINNIPEG A CS', ' MANITOBA ', '-0.1', '2.1', 'October 17, 2019')
+
+Error: could not convert string to float: 'July 25, 2019'
+Data Row Corruption:
+ ('28.8', 'WINNIPEG A CS', ' MANITOBA ', '13.2', '21.0', 'July 24, 2019')
+
+Error: could not convert string to float: 'May 2, 2019'
+Data Row Corruption:
+ ('16.7', 'WINNIPEG A CS', ' MANITOBA ', '3.4', '10.1', 'May 1, 2019')
+
+Error: could not convert string to float: 'May 9, 2019'
+Data Row Corruption:
+ ('14.3', 'WINNIPEG A CS', ' MANITOBA ', '-5.1', '4.6', 'May 8, 2019')
+
+Error: could not convert string to float: 'March 22, 2019'
+Data Row Corruption:
+ ('4.3', 'WINNIPEG A CS', ' MANITOBA ', '-3.9', '0.2', 'March 21, 2019')
+
+Error: could not convert string to float: 'October 28, 2017'
+Data Row Corruption:
+ ('4.8', 'WINNIPEG A CS', ' MANITOBA ', '-2.2', '1.3', 'October 27, 2017')
+
+Error: time data '-6.4' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-2.2', 'WINNIPEG A CS', ' MANITOBA ', '1.3', 'October 27, 2017', '-6.4')
+
+Error: could not convert string to float: 'August 9, 2017'
+Data Row Corruption:
+ ('28.6', 'WINNIPEG A CS', ' MANITOBA ', '9.4', '19.0', 'August 8, 2017')
+
+Error: time data '13.0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('9.4', 'WINNIPEG A CS', ' MANITOBA ', '19.0', 'August 8, 2017', '13.0')
+
+Error: could not convert string to float: 'August 10, 2017'
+Data Row Corruption:
+ ('19.0', 'WINNIPEG A CS', ' MANITOBA ', 'August 8, 2017', '13.0', 'August 9, 2017')
+
+Error: could not convert string to float: 'July 19, 2017'
+Data Row Corruption:
+ ('25.7', 'WINNIPEG A CS', ' MANITOBA ', '13.0', '19.4', 'July 18, 2017')
+
+Error: time data '11.1' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('13.0', 'WINNIPEG A CS', ' MANITOBA ', '19.4', 'July 18, 2017', '11.1')
+
+Error: could not convert string to float: 'July 20, 2017'
+Data Row Corruption:
+ ('19.4', 'WINNIPEG A CS', ' MANITOBA ', 'July 18, 2017', '11.1', 'July 19, 2017')
+
+Error: time data '11.1' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('July 18, 2017', 'WINNIPEG A CS', ' MANITOBA ', '11.1', 'July 19, 2017', '11.1')
+
+Error: could not convert string to float: 'July 21, 2017'
+Data Row Corruption:
+ ('11.1', 'WINNIPEG A CS', ' MANITOBA ', 'July 19, 2017', '11.1', 'July 20, 2017')
+
+Error: time data '8.0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('July 19, 2017', 'WINNIPEG A CS', ' MANITOBA ', '11.1', 'July 20, 2017', '8.0')
+
+Error: could not convert string to float: 'June 16, 2017'
+Data Row Corruption:
+ ('23.7', 'WINNIPEG A CS', ' MANITOBA ', '14.1', '18.9', 'June 15, 2017')
+
+Error: time data '12.7' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('14.1', 'WINNIPEG A CS', ' MANITOBA ', '18.9', 'June 15, 2017', '12.7')
+
+Error: could not convert string to float: 'January 25, 2017'
+Data Row Corruption:
+ ('-0.1', 'WINNIPEG A CS', ' MANITOBA ', '-3.2', '-1.7', 'January 24, 2017')
+
+Error: time data '-3.7' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-3.2', 'WINNIPEG A CS', ' MANITOBA ', '-1.7', 'January 24, 2017', '-3.7')
+
+Error: list index out of range
+Data Row Corruption:
+ ('4.5', 'WINNIPEG A CS', ' MANITOBA ', '-5.2', '-0.4', 'November 30, 2023')
+
+Error: could not convert string to float: 'October 5, 2023'
+Data Row Corruption:
+ ('22.5', 'WINNIPEG A CS', ' MANITOBA ', '12.1', '17.3', 'October 4, 2023')
+
+Error: could not convert string to float: 'October 29, 2023'
+Data Row Corruption:
+ ('0.7', 'WINNIPEG A CS', ' MANITOBA ', '-4.3', '-1.8', 'October 28, 2023')
+
+Error: could not convert string to float: 'August 29, 2023'
+Data Row Corruption:
+ ('28.7', 'WINNIPEG A CS', ' MANITOBA ', '12.9', '20.8', 'August 28, 2023')
+
+Error: could not convert string to float: 'August 31, 2023'
+Data Row Corruption:
+ ('21.2', 'WINNIPEG A CS', ' MANITOBA ', '9.2', '15.2', 'August 30, 2023')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-18.2', 'WINNIPEG A CS', ' MANITOBA ', '-22.5', '-20.4', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-22.5', 'WINNIPEG A CS', ' MANITOBA ', '-20.4', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-20.4', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'December 18, 2010'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 17, 2010')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('-4.4', 'WINNIPEG A CS', ' MANITOBA ', '-15.5', '-10.0', 'November 26, 2010')
+
+Error: time data '-18.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-15.5', 'WINNIPEG A CS', ' MANITOBA ', '-10.0', 'November 26, 2010', '-18.8')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-10.0', 'WINNIPEG A CS', ' MANITOBA ', 'November 26, 2010', '-18.8', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('November 26, 2010', 'WINNIPEG A CS', ' MANITOBA ', '-18.8', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-18.8', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'September 17, 2010'
+Data Row Corruption:
+ ('16.4', 'WINNIPEG A CS', ' MANITOBA ', '7.4', '11.9', 'September 16, 2010')
+
+Error: time data '8.7' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('7.4', 'WINNIPEG A CS', ' MANITOBA ', '11.9', 'September 16, 2010', '8.7')
+
+Error: could not convert string to float: 'September 18, 2010'
+Data Row Corruption:
+ ('11.9', 'WINNIPEG A CS', ' MANITOBA ', 'September 16, 2010', '8.7', 'September 17, 2010')
+
+Error: time data '4.5' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('September 16, 2010', 'WINNIPEG A CS', ' MANITOBA ', '8.7', 'September 17, 2010', '4.5')
+
+Error: could not convert string to float: 'April 22, 2010'
+Data Row Corruption:
+ ('15.4', 'WINNIPEG A CS', ' MANITOBA ', '0.4', '7.9', 'April 21, 2010')
+
+Error: time data '-4.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('0.4', 'WINNIPEG A CS', ' MANITOBA ', '7.9', 'April 21, 2010', '-4.8')
+
+Error: could not convert string to float: 'November 9, 2018'
+Data Row Corruption:
+ ('-4.6', 'WINNIPEG A CS', ' MANITOBA ', '-7.2', '-5.9', 'November 8, 2018')
+
+Error: could not convert string to float: 'November 10, 2018'
+Data Row Corruption:
+ ('-7.2', 'WINNIPEG A CS', ' MANITOBA ', '-5.9', 'November 8, 2018', 'November 9, 2018')
+
+Error: could not convert string to float: 'May 15, 2018'
+Data Row Corruption:
+ ('28.1', 'WINNIPEG A CS', ' MANITOBA ', '10.7', '19.4', 'May 14, 2018')
+
+Error: time data '1.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('10.7', 'WINNIPEG A CS', ' MANITOBA ', '19.4', 'May 14, 2018', '1.8')
+
+Error: could not convert string to float: 'May 16, 2018'
+Data Row Corruption:
+ ('19.4', 'WINNIPEG A CS', ' MANITOBA ', 'May 14, 2018', '1.8', 'May 15, 2018')
+
+Error: time data '31.3' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('May 14, 2018', 'WINNIPEG A CS', ' MANITOBA ', '1.8', 'May 15, 2018', '31.3')
+
+Error: could not convert string to float: 'May 30, 2018'
+Data Row Corruption:
+ ('27.7', 'WINNIPEG A CS', ' MANITOBA ', '10.6', '19.2', 'May 29, 2018')
+
+Error: time data '13.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('10.6', 'WINNIPEG A CS', ' MANITOBA ', '19.2', 'May 29, 2018', '13.8')
+
+Error: could not convert string to float: 'May 31, 2018'
+Data Row Corruption:
+ ('19.2', 'WINNIPEG A CS', ' MANITOBA ', 'May 29, 2018', '13.8', 'May 30, 2018')
+
+Error: list index out of range
+Data Row Corruption:
+ ('May 29, 2018', 'WINNIPEG A CS', ' MANITOBA ', '13.8', 'May 30, 2018', 'May 31, 2018')
+
+Error: time data '15.2' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('13.8', 'WINNIPEG A CS', ' MANITOBA ', 'May 30, 2018', 'May 31, 2018', '15.2')
+
+Error: could not convert string to float: 'March 7, 2018'
+Data Row Corruption:
+ ('1.9', 'WINNIPEG A CS', ' MANITOBA ', '-6.2', '-2.2', 'March 6, 2018')
+
+Error: time data '-12.7' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-6.2', 'WINNIPEG A CS', ' MANITOBA ', '-2.2', 'March 6, 2018', '-12.7')
+
+Error: could not convert string to float: 'December 2, 2021'
+Data Row Corruption:
+ ('-26.9', 'WINNIPEG A CS', ' MANITOBA ', '-34.8', '-30.9', 'December 1, 2021')
+
+Error: could not convert string to float: 'September 28, 2022'
+Data Row Corruption:
+ ('15.9', 'WINNIPEG A CS', ' MANITOBA ', '1.2', '8.6', 'September 27, 2022')
+
+Error: could not convert string to float: 'December 30, 2014'
+Data Row Corruption:
+ ('-22.3', 'WINNIPEG A CS', ' MANITOBA ', '-30.9', '-26.6', 'December 29, 2014')
+
+Error: time data '-20.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-30.9', 'WINNIPEG A CS', ' MANITOBA ', '-26.6', 'December 29, 2014', '-20.8')
+
+Error: could not convert string to float: 'October 23, 2014'
+Data Row Corruption:
+ ('16.6', 'WINNIPEG A CS', ' MANITOBA ', '3.7', '10.2', 'October 22, 2014')
+
+Error: time data '11.5' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('3.7', 'WINNIPEG A CS', ' MANITOBA ', '10.2', 'October 22, 2014', '11.5')
+
+Error: could not convert string to float: 'July 4, 2014'
+Data Row Corruption:
+ ('22.1', 'WINNIPEG A CS', ' MANITOBA ', '7.6', '14.9', 'July 3, 2014')
+
+Error: time data '9.0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('7.6', 'WINNIPEG A CS', ' MANITOBA ', '14.9', 'July 3, 2014', '9.0')
+
 Error: could not convert string to float: 'November 5, 2015'
 Data Row Corruption:
  ('5.3', 'WINNIPEG A CS', ' MANITOBA ', '3.2', '4.3', 'November 4, 2015')
@@ -1654,6 +2126,82 @@ Data Row Corruption:
 Error: time data '-11.8' does not match format '%B %d, %Y'
 Data Row Corruption:
  ('-11.8', 'WINNIPEG A CS', ' MANITOBA ', '-5.1', 'November 24, 2015', '-11.8')
+
+Error: could not convert string to float: 'November 16, 2013'
+Data Row Corruption:
+ ('1.7', 'WINNIPEG A CS', ' MANITOBA ', '-5.3', '-1.8', 'November 15, 2013')
+
+Error: time data '-2.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-5.3', 'WINNIPEG A CS', ' MANITOBA ', '-1.8', 'November 15, 2013', '-2.8')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('21.2', 'WINNIPEG A CS', ' MANITOBA ', '2.5', '11.9', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('2.5', 'WINNIPEG A CS', ' MANITOBA ', '11.9', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('11.9', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('12.8', 'WINNIPEG A CS', ' MANITOBA ', '1.5', '7.2', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('1.5', 'WINNIPEG A CS', ' MANITOBA ', '7.2', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('7.2', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-6.4', 'WINNIPEG A CS', ' MANITOBA ', '-19.4', '-12.9', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-19.4', 'WINNIPEG A CS', ' MANITOBA ', '-12.9', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-12.9', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'July 19, 2016'
+Data Row Corruption:
+ ('23.4', 'WINNIPEG A CS', ' MANITOBA ', '12.2', '17.8', 'July 18, 2016')
+
+Error: time data '9.7' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('12.2', 'WINNIPEG A CS', ' MANITOBA ', '17.8', 'July 18, 2016', '9.7')
+
+Error: could not convert string to float: 'June 3, 2016'
+Data Row Corruption:
+ ('12.8', 'WINNIPEG A CS', ' MANITOBA ', '6.4', '9.6', 'June 2, 2016')
+
+Error: time data '3.9' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('6.4', 'WINNIPEG A CS', ' MANITOBA ', '9.6', 'June 2, 2016', '3.9')
+
+Error: could not convert string to float: 'November 6, 2020'
+Data Row Corruption:
+ ('18.5', 'WINNIPEG A CS', ' MANITOBA ', '-3.2', '7.7', 'November 5, 2020')
+
+Error: could not convert string to float: 'November 11, 2020'
+Data Row Corruption:
+ ('2.6', 'WINNIPEG A CS', ' MANITOBA ', '-8.8', '-3.1', 'November 10, 2020')
+
+Error: could not convert string to float: 'September 3, 2020'
+Data Row Corruption:
+ ('21.7', 'WINNIPEG A CS', ' MANITOBA ', '6.1', '13.9', 'September 2, 2020')
+
+Error: could not convert string to float: 'August 7, 2020'
+Data Row Corruption:
+ ('28.8', 'WINNIPEG A CS', ' MANITOBA ', '13.6', '21.2', 'August 6, 2020')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
@@ -1975,6 +2523,1086 @@ Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
  ('1.3', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
 
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 31, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 1, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 1, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 1, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 1, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 2, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 2, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 2, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 2, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 3, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 3, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 3, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 3, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 4, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 4, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 4, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 4, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 5, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 5, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 5, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 5, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 6, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 6, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 6, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 6, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 7, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 7, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 7, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 7, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 8, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 8, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 8, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 8, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 9, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 9, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 9, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 9, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 10, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 10, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 10, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 10, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 11, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 11, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 11, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 11, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 12, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 12, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 12, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 12, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 13, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 13, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 13, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 13, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 14, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 14, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 14, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 14, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 15, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 15, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 15, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 15, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 16, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 16, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 16, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 16, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 17, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 17, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 17, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 17, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 18, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 18, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 18, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 18, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 19, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 19, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 19, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 19, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 20, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 20, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 20, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 20, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 21, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 21, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 21, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 21, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 22, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 22, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 22, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 22, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 23, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 23, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 23, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 23, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 24, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 24, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 24, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 24, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 25, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 25, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 25, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 25, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 26, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 26, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 26, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 26, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 27, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 27, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 27, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 27, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 28, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 28, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 28, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 28, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 29, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 29, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 29, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 29, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 30, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 30, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 30, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('December 30, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'December 31, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'December 31, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'December 31, 2004', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'October 2, 2004'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'October 1, 2004')
+
+Error: could not convert string to float: 'October 3, 2004'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'October 1, 2004', 'October 2, 2004')
+
+Error: could not convert string to float: 'October 4, 2004'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'October 1, 2004', 'October 2, 2004', 'October 3, 2004')
+
+Error: could not convert string to float: 'October 5, 2004'
+Data Row Corruption:
+ ('October 1, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 2, 2004', 'October 3, 2004', 'October 4, 2004')
+
+Error: could not convert string to float: 'October 6, 2004'
+Data Row Corruption:
+ ('October 2, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 3, 2004', 'October 4, 2004', 'October 5, 2004')
+
+Error: could not convert string to float: 'October 7, 2004'
+Data Row Corruption:
+ ('October 3, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 4, 2004', 'October 5, 2004', 'October 6, 2004')
+
+Error: could not convert string to float: 'October 8, 2004'
+Data Row Corruption:
+ ('October 4, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 5, 2004', 'October 6, 2004', 'October 7, 2004')
+
+Error: could not convert string to float: 'October 9, 2004'
+Data Row Corruption:
+ ('October 5, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 6, 2004', 'October 7, 2004', 'October 8, 2004')
+
+Error: could not convert string to float: 'October 10, 2004'
+Data Row Corruption:
+ ('October 6, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 7, 2004', 'October 8, 2004', 'October 9, 2004')
+
+Error: could not convert string to float: 'October 11, 2004'
+Data Row Corruption:
+ ('October 7, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 8, 2004', 'October 9, 2004', 'October 10, 2004')
+
+Error: could not convert string to float: 'October 12, 2004'
+Data Row Corruption:
+ ('October 8, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 9, 2004', 'October 10, 2004', 'October 11, 2004')
+
+Error: could not convert string to float: 'October 13, 2004'
+Data Row Corruption:
+ ('October 9, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 10, 2004', 'October 11, 2004', 'October 12, 2004')
+
+Error: could not convert string to float: 'October 14, 2004'
+Data Row Corruption:
+ ('October 10, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 11, 2004', 'October 12, 2004', 'October 13, 2004')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('October 11, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 12, 2004', 'October 13, 2004', 'October 14, 2004')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('October 12, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 13, 2004', 'October 14, 2004', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('October 13, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'October 14, 2004', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('October 14, 2004', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'August 2, 2004'
+Data Row Corruption:
+ ('August 29, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 30, 2004', 'August 31, 2004', 'August 1, 2004')
+
+Error: could not convert string to float: 'August 3, 2004'
+Data Row Corruption:
+ ('August 30, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 31, 2004', 'August 1, 2004', 'August 2, 2004')
+
+Error: could not convert string to float: 'August 4, 2004'
+Data Row Corruption:
+ ('August 31, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 1, 2004', 'August 2, 2004', 'August 3, 2004')
+
+Error: could not convert string to float: 'August 5, 2004'
+Data Row Corruption:
+ ('August 1, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 2, 2004', 'August 3, 2004', 'August 4, 2004')
+
+Error: could not convert string to float: 'August 6, 2004'
+Data Row Corruption:
+ ('August 2, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 3, 2004', 'August 4, 2004', 'August 5, 2004')
+
+Error: could not convert string to float: 'August 7, 2004'
+Data Row Corruption:
+ ('August 3, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 4, 2004', 'August 5, 2004', 'August 6, 2004')
+
+Error: could not convert string to float: 'August 8, 2004'
+Data Row Corruption:
+ ('August 4, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 5, 2004', 'August 6, 2004', 'August 7, 2004')
+
+Error: could not convert string to float: 'August 9, 2004'
+Data Row Corruption:
+ ('August 5, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 6, 2004', 'August 7, 2004', 'August 8, 2004')
+
+Error: could not convert string to float: 'August 10, 2004'
+Data Row Corruption:
+ ('August 6, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 7, 2004', 'August 8, 2004', 'August 9, 2004')
+
+Error: could not convert string to float: 'August 11, 2004'
+Data Row Corruption:
+ ('August 7, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 8, 2004', 'August 9, 2004', 'August 10, 2004')
+
+Error: could not convert string to float: 'August 12, 2004'
+Data Row Corruption:
+ ('August 8, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 9, 2004', 'August 10, 2004', 'August 11, 2004')
+
+Error: could not convert string to float: 'August 13, 2004'
+Data Row Corruption:
+ ('August 9, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 10, 2004', 'August 11, 2004', 'August 12, 2004')
+
+Error: could not convert string to float: 'August 14, 2004'
+Data Row Corruption:
+ ('August 10, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 11, 2004', 'August 12, 2004', 'August 13, 2004')
+
+Error: could not convert string to float: 'August 15, 2004'
+Data Row Corruption:
+ ('August 11, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 12, 2004', 'August 13, 2004', 'August 14, 2004')
+
+Error: could not convert string to float: 'August 16, 2004'
+Data Row Corruption:
+ ('August 12, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 13, 2004', 'August 14, 2004', 'August 15, 2004')
+
+Error: could not convert string to float: 'August 17, 2004'
+Data Row Corruption:
+ ('August 13, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 14, 2004', 'August 15, 2004', 'August 16, 2004')
+
+Error: could not convert string to float: 'August 18, 2004'
+Data Row Corruption:
+ ('August 14, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 15, 2004', 'August 16, 2004', 'August 17, 2004')
+
+Error: could not convert string to float: 'August 19, 2004'
+Data Row Corruption:
+ ('August 15, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 16, 2004', 'August 17, 2004', 'August 18, 2004')
+
+Error: could not convert string to float: 'August 20, 2004'
+Data Row Corruption:
+ ('August 16, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 17, 2004', 'August 18, 2004', 'August 19, 2004')
+
+Error: could not convert string to float: 'August 21, 2004'
+Data Row Corruption:
+ ('August 17, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 18, 2004', 'August 19, 2004', 'August 20, 2004')
+
+Error: could not convert string to float: 'August 22, 2004'
+Data Row Corruption:
+ ('August 18, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 19, 2004', 'August 20, 2004', 'August 21, 2004')
+
+Error: could not convert string to float: 'August 23, 2004'
+Data Row Corruption:
+ ('August 19, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 20, 2004', 'August 21, 2004', 'August 22, 2004')
+
+Error: could not convert string to float: 'August 24, 2004'
+Data Row Corruption:
+ ('August 20, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 21, 2004', 'August 22, 2004', 'August 23, 2004')
+
+Error: could not convert string to float: 'August 25, 2004'
+Data Row Corruption:
+ ('August 21, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 22, 2004', 'August 23, 2004', 'August 24, 2004')
+
+Error: could not convert string to float: 'August 26, 2004'
+Data Row Corruption:
+ ('August 22, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 23, 2004', 'August 24, 2004', 'August 25, 2004')
+
+Error: could not convert string to float: 'August 27, 2004'
+Data Row Corruption:
+ ('August 23, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 24, 2004', 'August 25, 2004', 'August 26, 2004')
+
+Error: could not convert string to float: 'August 28, 2004'
+Data Row Corruption:
+ ('August 24, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 25, 2004', 'August 26, 2004', 'August 27, 2004')
+
+Error: could not convert string to float: 'August 29, 2004'
+Data Row Corruption:
+ ('August 25, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 26, 2004', 'August 27, 2004', 'August 28, 2004')
+
+Error: could not convert string to float: 'August 30, 2004'
+Data Row Corruption:
+ ('August 26, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 27, 2004', 'August 28, 2004', 'August 29, 2004')
+
+Error: could not convert string to float: 'August 31, 2004'
+Data Row Corruption:
+ ('August 27, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 28, 2004', 'August 29, 2004', 'August 30, 2004')
+
+Error: list index out of range
+Data Row Corruption:
+ ('August 28, 2004', 'WINNIPEG A CS', ' MANITOBA ', 'August 29, 2004', 'August 30, 2004', 'August 31, 2004')
+
+Error: could not convert string to float: 'November 7, 1998'
+Data Row Corruption:
+ ('-2.2', 'WINNIPEG A CS', ' MANITOBA ', '-5.6', '-3.9', 'November 6, 1998')
+
+Error: time data '-5.6' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-5.6', 'WINNIPEG A CS', ' MANITOBA ', '-3.9', 'November 6, 1998', '-5.6')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('6.9', 'WINNIPEG A CS', ' MANITOBA ', '-5.4', '0.8', 'November 24, 1998')
+
+Error: time data '-7.4' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-5.4', 'WINNIPEG A CS', ' MANITOBA ', '0.8', 'November 24, 1998', '-7.4')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('0.8', 'WINNIPEG A CS', ' MANITOBA ', 'November 24, 1998', '-7.4', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('November 24, 1998', 'WINNIPEG A CS', ' MANITOBA ', '-7.4', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-7.4', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('-12.3', 'WINNIPEG A CS', ' MANITOBA ', '-22.4', '-17.4', 'February 4, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-22.4', 'WINNIPEG A CS', ' MANITOBA ', '-17.4', 'February 4, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('-17.4', 'WINNIPEG A CS', ' MANITOBA ', 'February 4, 1998', '\xa0', 'February 5, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 4, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 5, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 5, 1998', '\xa0', 'February 6, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 5, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 6, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 6, 1998', '\xa0', 'February 7, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 6, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 7, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 7, 1998', '\xa0', 'February 8, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 7, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 8, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 8, 1998', '\xa0', 'February 9, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 8, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 9, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 9, 1998', '\xa0', 'February 10, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 9, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 10, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 10, 1998', '\xa0', 'February 11, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 10, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 11, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 11, 1998', '\xa0', 'February 12, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 11, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 12, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 12, 1998', '\xa0', 'February 13, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 12, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 13, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 13, 1998', '\xa0', 'February 14, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 13, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 14, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 14, 1998', '\xa0', 'February 15, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 14, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 15, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 15, 1998', '\xa0', 'February 16, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 15, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 16, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 16, 1998', '\xa0', 'February 17, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 16, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 17, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 17, 1998', '\xa0', 'February 18, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 17, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 18, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 18, 1998', '\xa0', 'February 19, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 18, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 19, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 19, 1998', '\xa0', 'February 20, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 19, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 20, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 20, 1998', '\xa0', 'February 21, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 20, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 21, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 21, 1998', '\xa0', 'February 22, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 21, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 22, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 22, 1998', '\xa0', 'February 23, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 22, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 23, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 23, 1998', '\xa0', 'February 24, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 23, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 24, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 24, 1998', '\xa0', 'February 25, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('February 24, 1998', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 25, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('1.0', 'WINNIPEG A CS', ' MANITOBA ', '-0.2', '0.4', 'February 28, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-0.2', 'WINNIPEG A CS', ' MANITOBA ', '0.4', 'February 28, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('-3.7', 'WINNIPEG A CS', ' MANITOBA ', '-7.9', '-5.8', 'January 31, 1998')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-7.9', 'WINNIPEG A CS', ' MANITOBA ', '-5.8', 'January 31, 1998', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('-9.1', 'WINNIPEG A CS', ' MANITOBA ', '-25.2', '-17.2', 'December 31, 1997')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-25.2', 'WINNIPEG A CS', ' MANITOBA ', '-17.2', 'December 31, 1997', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('5.4', 'WINNIPEG A CS', ' MANITOBA ', '-4.9', '0.3', 'November 30, 1997')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-4.9', 'WINNIPEG A CS', ' MANITOBA ', '0.3', 'November 30, 1997', '\xa0')
+
+Error: could not convert string to float: 'January 11, 2024'
+Data Row Corruption:
+ ('-13.1', 'WINNIPEG A CS', ' MANITOBA ', '-25.8', '-19.4', 'January 10, 2024')
+
+Error: could not convert string to float: 'November 5, 2015'
+Data Row Corruption:
+ ('5.3', 'WINNIPEG A CS', ' MANITOBA ', '3.2', '4.3', 'November 4, 2015')
+
+Error: time data '4.2' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('3.2', 'WINNIPEG A CS', ' MANITOBA ', '4.3', 'November 4, 2015', '4.2')
+
+Error: could not convert string to float: 'November 11, 2015'
+Data Row Corruption:
+ ('12.1', 'WINNIPEG A CS', ' MANITOBA ', '-1.5', '5.3', 'November 10, 2015')
+
+Error: time data '1.9' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-1.5', 'WINNIPEG A CS', ' MANITOBA ', '5.3', 'November 10, 2015', '1.9')
+
+Error: could not convert string to float: 'November 25, 2015'
+Data Row Corruption:
+ ('1.7', 'WINNIPEG A CS', ' MANITOBA ', '-11.8', '-5.1', 'November 24, 2015')
+
+Error: time data '-11.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-11.8', 'WINNIPEG A CS', ' MANITOBA ', '-5.1', 'November 24, 2015', '-11.8')
+
 Error: could not convert string to float: 'November 6, 2020'
 Data Row Corruption:
  ('18.5', 'WINNIPEG A CS', ' MANITOBA ', '-3.2', '7.7', 'November 5, 2020')
@@ -1991,105 +3619,1485 @@ Error: could not convert string to float: 'August 7, 2020'
 Data Row Corruption:
  ('28.8', 'WINNIPEG A CS', ' MANITOBA ', '13.6', '21.2', 'August 6, 2020')
 
-Error: could not convert string to float: 'November 16, 2013'
+Error: list index out of range
 Data Row Corruption:
- ('1.7', 'WINNIPEG A CS', ' MANITOBA ', '-5.3', '-1.8', 'November 15, 2013')
+ ('4.5', 'WINNIPEG A CS', ' MANITOBA ', '-5.2', '-0.4', 'November 30, 2023')
 
-Error: time data '-2.8' does not match format '%B %d, %Y'
+Error: could not convert string to float: 'October 5, 2023'
 Data Row Corruption:
- ('-5.3', 'WINNIPEG A CS', ' MANITOBA ', '-1.8', 'November 15, 2013', '-2.8')
+ ('22.5', 'WINNIPEG A CS', ' MANITOBA ', '12.1', '17.3', 'October 4, 2023')
 
-Error: time data '\xa0' does not match format '%B %d, %Y'
+Error: could not convert string to float: 'October 29, 2023'
 Data Row Corruption:
- ('21.2', 'WINNIPEG A CS', ' MANITOBA ', '2.5', '11.9', '\xa0')
+ ('0.7', 'WINNIPEG A CS', ' MANITOBA ', '-4.3', '-1.8', 'October 28, 2023')
 
-Error: time data '\xa0' does not match format '%B %d, %Y'
+Error: could not convert string to float: 'August 29, 2023'
 Data Row Corruption:
- ('2.5', 'WINNIPEG A CS', ' MANITOBA ', '11.9', '\xa0', '\xa0')
+ ('28.7', 'WINNIPEG A CS', ' MANITOBA ', '12.9', '20.8', 'August 28, 2023')
 
-Error: time data '\xa0' does not match format '%B %d, %Y'
+Error: could not convert string to float: 'August 31, 2023'
 Data Row Corruption:
- ('11.9', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('21.2', 'WINNIPEG A CS', ' MANITOBA ', '9.2', '15.2', 'August 30, 2023')
 
-Error: time data '\xa0' does not match format '%B %d, %Y'
+Error: could not convert string to float: 'November 2, 2006'
 Data Row Corruption:
- ('12.8', 'WINNIPEG A CS', ' MANITOBA ', '1.5', '7.2', '\xa0')
+ ('-12.3', 'WINNIPEG A CS', ' MANITOBA ', '-23.4', '-17.9', 'November 1, 2006')
 
-Error: time data '\xa0' does not match format '%B %d, %Y'
+Error: could not convert string to float: 'November 3, 2006'
 Data Row Corruption:
- ('1.5', 'WINNIPEG A CS', ' MANITOBA ', '7.2', '\xa0', '\xa0')
+ ('-23.4', 'WINNIPEG A CS', ' MANITOBA ', '-17.9', 'November 1, 2006', 'November 2, 2006')
 
-Error: time data '\xa0' does not match format '%B %d, %Y'
+Error: could not convert string to float: 'November 4, 2006'
 Data Row Corruption:
- ('7.2', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('-17.9', 'WINNIPEG A CS', ' MANITOBA ', 'November 1, 2006', 'November 2, 2006', 'November 3, 2006')
 
-Error: time data '\xa0' does not match format '%B %d, %Y'
+Error: could not convert string to float: 'November 5, 2006'
 Data Row Corruption:
- ('-6.4', 'WINNIPEG A CS', ' MANITOBA ', '-19.4', '-12.9', '\xa0')
+ ('November 1, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 2, 2006', 'November 3, 2006', 'November 4, 2006')
 
-Error: time data '\xa0' does not match format '%B %d, %Y'
+Error: could not convert string to float: 'November 6, 2006'
 Data Row Corruption:
- ('-19.4', 'WINNIPEG A CS', ' MANITOBA ', '-12.9', '\xa0', '\xa0')
+ ('November 2, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 3, 2006', 'November 4, 2006', 'November 5, 2006')
 
-Error: time data '\xa0' does not match format '%B %d, %Y'
+Error: could not convert string to float: 'November 7, 2006'
 Data Row Corruption:
- ('-12.9', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('November 3, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 4, 2006', 'November 5, 2006', 'November 6, 2006')
+
+Error: could not convert string to float: 'November 8, 2006'
+Data Row Corruption:
+ ('November 4, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 5, 2006', 'November 6, 2006', 'November 7, 2006')
+
+Error: could not convert string to float: 'November 9, 2006'
+Data Row Corruption:
+ ('November 5, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 6, 2006', 'November 7, 2006', 'November 8, 2006')
+
+Error: could not convert string to float: 'November 10, 2006'
+Data Row Corruption:
+ ('November 6, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 7, 2006', 'November 8, 2006', 'November 9, 2006')
+
+Error: could not convert string to float: 'November 11, 2006'
+Data Row Corruption:
+ ('November 7, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 8, 2006', 'November 9, 2006', 'November 10, 2006')
+
+Error: could not convert string to float: 'November 12, 2006'
+Data Row Corruption:
+ ('November 8, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 9, 2006', 'November 10, 2006', 'November 11, 2006')
+
+Error: could not convert string to float: 'November 13, 2006'
+Data Row Corruption:
+ ('November 9, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 10, 2006', 'November 11, 2006', 'November 12, 2006')
+
+Error: could not convert string to float: 'November 14, 2006'
+Data Row Corruption:
+ ('November 10, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 11, 2006', 'November 12, 2006', 'November 13, 2006')
+
+Error: could not convert string to float: 'November 15, 2006'
+Data Row Corruption:
+ ('November 11, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 12, 2006', 'November 13, 2006', 'November 14, 2006')
+
+Error: could not convert string to float: 'November 16, 2006'
+Data Row Corruption:
+ ('November 12, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 13, 2006', 'November 14, 2006', 'November 15, 2006')
+
+Error: could not convert string to float: 'November 17, 2006'
+Data Row Corruption:
+ ('November 13, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'November 14, 2006', 'November 15, 2006', 'November 16, 2006')
+
+Error: could not convert string to float: 'October 2, 2006'
+Data Row Corruption:
+ ('2.9', 'WINNIPEG A CS', ' MANITOBA ', '-4.6', '-0.9', 'October 1, 2006')
+
+Error: time data '28.5' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-4.6', 'WINNIPEG A CS', ' MANITOBA ', '-0.9', 'October 1, 2006', '28.5')
+
+Error: could not convert string to float: 'October 3, 2006'
+Data Row Corruption:
+ ('-0.9', 'WINNIPEG A CS', ' MANITOBA ', 'October 1, 2006', '28.5', 'October 2, 2006')
+
+Error: time data '14.9' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('October 1, 2006', 'WINNIPEG A CS', ' MANITOBA ', '28.5', 'October 2, 2006', '14.9')
+
+Error: could not convert string to float: 'October 4, 2006'
+Data Row Corruption:
+ ('28.5', 'WINNIPEG A CS', ' MANITOBA ', 'October 2, 2006', '14.9', 'October 3, 2006')
+
+Error: time data '14.4' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('October 2, 2006', 'WINNIPEG A CS', ' MANITOBA ', '14.9', 'October 3, 2006', '14.4')
+
+Error: could not convert string to float: 'October 5, 2006'
+Data Row Corruption:
+ ('14.9', 'WINNIPEG A CS', ' MANITOBA ', 'October 3, 2006', '14.4', 'October 4, 2006')
+
+Error: time data '9.5' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('October 3, 2006', 'WINNIPEG A CS', ' MANITOBA ', '14.4', 'October 4, 2006', '9.5')
+
+Error: could not convert string to float: 'October 6, 2006'
+Data Row Corruption:
+ ('14.4', 'WINNIPEG A CS', ' MANITOBA ', 'October 4, 2006', '9.5', 'October 5, 2006')
+
+Error: time data '20.3' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('October 4, 2006', 'WINNIPEG A CS', ' MANITOBA ', '9.5', 'October 5, 2006', '20.3')
+
+Error: could not convert string to float: 'October 7, 2006'
+Data Row Corruption:
+ ('9.5', 'WINNIPEG A CS', ' MANITOBA ', 'October 5, 2006', '20.3', 'October 6, 2006')
+
+Error: time data '23.0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('October 5, 2006', 'WINNIPEG A CS', ' MANITOBA ', '20.3', 'October 6, 2006', '23.0')
+
+Error: could not convert string to float: 'October 8, 2006'
+Data Row Corruption:
+ ('20.3', 'WINNIPEG A CS', ' MANITOBA ', 'October 6, 2006', '23.0', 'October 7, 2006')
+
+Error: could not convert string to float: 'October 9, 2006'
+Data Row Corruption:
+ ('October 6, 2006', 'WINNIPEG A CS', ' MANITOBA ', '23.0', 'October 7, 2006', 'October 8, 2006')
+
+Error: could not convert string to float: 'October 10, 2006'
+Data Row Corruption:
+ ('23.0', 'WINNIPEG A CS', ' MANITOBA ', 'October 7, 2006', 'October 8, 2006', 'October 9, 2006')
+
+Error: time data '15.3' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('October 7, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'October 8, 2006', 'October 9, 2006', '15.3')
+
+Error: could not convert string to float: 'October 11, 2006'
+Data Row Corruption:
+ ('October 8, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'October 9, 2006', '15.3', 'October 10, 2006')
+
+Error: could not convert string to float: 'October 12, 2006'
+Data Row Corruption:
+ ('October 9, 2006', 'WINNIPEG A CS', ' MANITOBA ', '15.3', 'October 10, 2006', 'October 11, 2006')
+
+Error: could not convert string to float: 'October 13, 2006'
+Data Row Corruption:
+ ('15.3', 'WINNIPEG A CS', ' MANITOBA ', 'October 10, 2006', 'October 11, 2006', 'October 12, 2006')
+
+Error: could not convert string to float: 'October 14, 2006'
+Data Row Corruption:
+ ('October 10, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'October 11, 2006', 'October 12, 2006', 'October 13, 2006')
+
+Error: could not convert string to float: 'October 15, 2006'
+Data Row Corruption:
+ ('October 11, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'October 12, 2006', 'October 13, 2006', 'October 14, 2006')
+
+Error: could not convert string to float: 'October 16, 2006'
+Data Row Corruption:
+ ('October 12, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'October 13, 2006', 'October 14, 2006', 'October 15, 2006')
+
+Error: could not convert string to float: 'October 17, 2006'
+Data Row Corruption:
+ ('October 13, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'October 14, 2006', 'October 15, 2006', 'October 16, 2006')
+
+Error: could not convert string to float: 'September 9, 2006'
+Data Row Corruption:
+ ('23.1', 'WINNIPEG A CS', ' MANITOBA ', '6.7', '14.9', 'September 8, 2006')
+
+Error: could not convert string to float: 'September 10, 2006'
+Data Row Corruption:
+ ('6.7', 'WINNIPEG A CS', ' MANITOBA ', '14.9', 'September 8, 2006', 'September 9, 2006')
+
+Error: could not convert string to float: 'September 11, 2006'
+Data Row Corruption:
+ ('14.9', 'WINNIPEG A CS', ' MANITOBA ', 'September 8, 2006', 'September 9, 2006', 'September 10, 2006')
+
+Error: could not convert string to float: 'September 12, 2006'
+Data Row Corruption:
+ ('September 8, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 9, 2006', 'September 10, 2006', 'September 11, 2006')
+
+Error: could not convert string to float: 'September 13, 2006'
+Data Row Corruption:
+ ('September 9, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 10, 2006', 'September 11, 2006', 'September 12, 2006')
+
+Error: could not convert string to float: 'September 14, 2006'
+Data Row Corruption:
+ ('September 10, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 11, 2006', 'September 12, 2006', 'September 13, 2006')
+
+Error: could not convert string to float: 'September 15, 2006'
+Data Row Corruption:
+ ('September 11, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 12, 2006', 'September 13, 2006', 'September 14, 2006')
+
+Error: could not convert string to float: 'September 16, 2006'
+Data Row Corruption:
+ ('September 12, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 13, 2006', 'September 14, 2006', 'September 15, 2006')
+
+Error: could not convert string to float: 'September 17, 2006'
+Data Row Corruption:
+ ('September 13, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 14, 2006', 'September 15, 2006', 'September 16, 2006')
+
+Error: could not convert string to float: 'September 18, 2006'
+Data Row Corruption:
+ ('September 14, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 15, 2006', 'September 16, 2006', 'September 17, 2006')
+
+Error: could not convert string to float: 'September 19, 2006'
+Data Row Corruption:
+ ('September 15, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 16, 2006', 'September 17, 2006', 'September 18, 2006')
+
+Error: could not convert string to float: 'September 20, 2006'
+Data Row Corruption:
+ ('September 16, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 17, 2006', 'September 18, 2006', 'September 19, 2006')
+
+Error: time data '8.7' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('September 17, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 18, 2006', 'September 19, 2006', '8.7')
+
+Error: could not convert string to float: 'September 21, 2006'
+Data Row Corruption:
+ ('September 18, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 19, 2006', '8.7', 'September 20, 2006')
+
+Error: could not convert string to float: 'September 22, 2006'
+Data Row Corruption:
+ ('September 19, 2006', 'WINNIPEG A CS', ' MANITOBA ', '8.7', 'September 20, 2006', 'September 21, 2006')
+
+Error: could not convert string to float: 'September 23, 2006'
+Data Row Corruption:
+ ('8.7', 'WINNIPEG A CS', ' MANITOBA ', 'September 20, 2006', 'September 21, 2006', 'September 22, 2006')
+
+Error: time data '20.4' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('September 20, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 21, 2006', 'September 22, 2006', '20.4')
+
+Error: could not convert string to float: 'September 24, 2006'
+Data Row Corruption:
+ ('September 21, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 22, 2006', '20.4', 'September 23, 2006')
+
+Error: time data '17.0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('September 22, 2006', 'WINNIPEG A CS', ' MANITOBA ', '20.4', 'September 23, 2006', '17.0')
+
+Error: could not convert string to float: 'September 25, 2006'
+Data Row Corruption:
+ ('20.4', 'WINNIPEG A CS', ' MANITOBA ', 'September 23, 2006', '17.0', 'September 24, 2006')
+
+Error: time data '22.0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('September 23, 2006', 'WINNIPEG A CS', ' MANITOBA ', '17.0', 'September 24, 2006', '22.0')
+
+Error: could not convert string to float: 'September 26, 2006'
+Data Row Corruption:
+ ('17.0', 'WINNIPEG A CS', ' MANITOBA ', 'September 24, 2006', '22.0', 'September 25, 2006')
+
+Error: time data '20.0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('September 24, 2006', 'WINNIPEG A CS', ' MANITOBA ', '22.0', 'September 25, 2006', '20.0')
+
+Error: could not convert string to float: 'September 27, 2006'
+Data Row Corruption:
+ ('22.0', 'WINNIPEG A CS', ' MANITOBA ', 'September 25, 2006', '20.0', 'September 26, 2006')
+
+Error: could not convert string to float: 'September 28, 2006'
+Data Row Corruption:
+ ('September 25, 2006', 'WINNIPEG A CS', ' MANITOBA ', '20.0', 'September 26, 2006', 'September 27, 2006')
+
+Error: could not convert string to float: 'September 29, 2006'
+Data Row Corruption:
+ ('20.0', 'WINNIPEG A CS', ' MANITOBA ', 'September 26, 2006', 'September 27, 2006', 'September 28, 2006')
+
+Error: could not convert string to float: 'September 30, 2006'
+Data Row Corruption:
+ ('September 26, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 27, 2006', 'September 28, 2006', 'September 29, 2006')
+
+Error: list index out of range
+Data Row Corruption:
+ ('September 27, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'September 28, 2006', 'September 29, 2006', 'September 30, 2006')
+
+Error: could not convert string to float: 'May 2, 2006'
+Data Row Corruption:
+ ('May 29, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 30, 2006', 'May 31, 2006', 'May 1, 2006')
+
+Error: could not convert string to float: 'May 3, 2006'
+Data Row Corruption:
+ ('May 30, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 31, 2006', 'May 1, 2006', 'May 2, 2006')
+
+Error: could not convert string to float: 'May 4, 2006'
+Data Row Corruption:
+ ('May 31, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 1, 2006', 'May 2, 2006', 'May 3, 2006')
+
+Error: could not convert string to float: 'May 5, 2006'
+Data Row Corruption:
+ ('May 1, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 2, 2006', 'May 3, 2006', 'May 4, 2006')
+
+Error: could not convert string to float: 'May 6, 2006'
+Data Row Corruption:
+ ('May 2, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 3, 2006', 'May 4, 2006', 'May 5, 2006')
+
+Error: could not convert string to float: 'May 7, 2006'
+Data Row Corruption:
+ ('May 3, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 4, 2006', 'May 5, 2006', 'May 6, 2006')
+
+Error: could not convert string to float: 'May 8, 2006'
+Data Row Corruption:
+ ('May 4, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 5, 2006', 'May 6, 2006', 'May 7, 2006')
+
+Error: could not convert string to float: 'May 9, 2006'
+Data Row Corruption:
+ ('May 5, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 6, 2006', 'May 7, 2006', 'May 8, 2006')
+
+Error: could not convert string to float: 'May 10, 2006'
+Data Row Corruption:
+ ('May 6, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 7, 2006', 'May 8, 2006', 'May 9, 2006')
+
+Error: could not convert string to float: 'May 11, 2006'
+Data Row Corruption:
+ ('May 7, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 8, 2006', 'May 9, 2006', 'May 10, 2006')
+
+Error: could not convert string to float: 'May 12, 2006'
+Data Row Corruption:
+ ('May 8, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 9, 2006', 'May 10, 2006', 'May 11, 2006')
+
+Error: could not convert string to float: 'May 13, 2006'
+Data Row Corruption:
+ ('May 9, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 10, 2006', 'May 11, 2006', 'May 12, 2006')
+
+Error: could not convert string to float: 'May 14, 2006'
+Data Row Corruption:
+ ('May 10, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 11, 2006', 'May 12, 2006', 'May 13, 2006')
+
+Error: could not convert string to float: 'May 15, 2006'
+Data Row Corruption:
+ ('May 11, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 12, 2006', 'May 13, 2006', 'May 14, 2006')
+
+Error: could not convert string to float: 'May 16, 2006'
+Data Row Corruption:
+ ('May 12, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 13, 2006', 'May 14, 2006', 'May 15, 2006')
+
+Error: could not convert string to float: 'May 17, 2006'
+Data Row Corruption:
+ ('May 13, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 14, 2006', 'May 15, 2006', 'May 16, 2006')
+
+Error: could not convert string to float: 'May 18, 2006'
+Data Row Corruption:
+ ('May 14, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 15, 2006', 'May 16, 2006', 'May 17, 2006')
+
+Error: could not convert string to float: 'May 19, 2006'
+Data Row Corruption:
+ ('May 15, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 16, 2006', 'May 17, 2006', 'May 18, 2006')
+
+Error: could not convert string to float: 'May 20, 2006'
+Data Row Corruption:
+ ('May 16, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 17, 2006', 'May 18, 2006', 'May 19, 2006')
+
+Error: could not convert string to float: 'May 21, 2006'
+Data Row Corruption:
+ ('May 17, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 18, 2006', 'May 19, 2006', 'May 20, 2006')
+
+Error: could not convert string to float: 'May 22, 2006'
+Data Row Corruption:
+ ('May 18, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 19, 2006', 'May 20, 2006', 'May 21, 2006')
+
+Error: could not convert string to float: 'May 23, 2006'
+Data Row Corruption:
+ ('May 19, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 20, 2006', 'May 21, 2006', 'May 22, 2006')
+
+Error: could not convert string to float: 'May 24, 2006'
+Data Row Corruption:
+ ('May 20, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 21, 2006', 'May 22, 2006', 'May 23, 2006')
+
+Error: could not convert string to float: 'May 25, 2006'
+Data Row Corruption:
+ ('May 21, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 22, 2006', 'May 23, 2006', 'May 24, 2006')
+
+Error: could not convert string to float: 'May 26, 2006'
+Data Row Corruption:
+ ('May 22, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 23, 2006', 'May 24, 2006', 'May 25, 2006')
+
+Error: could not convert string to float: 'May 27, 2006'
+Data Row Corruption:
+ ('May 23, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 24, 2006', 'May 25, 2006', 'May 26, 2006')
+
+Error: could not convert string to float: 'May 28, 2006'
+Data Row Corruption:
+ ('May 24, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 25, 2006', 'May 26, 2006', 'May 27, 2006')
+
+Error: could not convert string to float: 'May 29, 2006'
+Data Row Corruption:
+ ('May 25, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 26, 2006', 'May 27, 2006', 'May 28, 2006')
+
+Error: could not convert string to float: 'May 30, 2006'
+Data Row Corruption:
+ ('May 26, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 27, 2006', 'May 28, 2006', 'May 29, 2006')
+
+Error: could not convert string to float: 'May 31, 2006'
+Data Row Corruption:
+ ('May 27, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 28, 2006', 'May 29, 2006', 'May 30, 2006')
+
+Error: list index out of range
+Data Row Corruption:
+ ('May 28, 2006', 'WINNIPEG A CS', ' MANITOBA ', 'May 29, 2006', 'May 30, 2006', 'May 31, 2006')
 
 Error: could not convert string to float: '\xa0'
 Data Row Corruption:
- ('-14.4', 'WINNIPEG A CS', ' MANITOBA ', '-28.0', '-21.2', 'March 6, 2008')
-
-Error: time data '-32.1' does not match format '%B %d, %Y'
-Data Row Corruption:
- ('-28.0', 'WINNIPEG A CS', ' MANITOBA ', '-21.2', 'March 6, 2008', '-32.1')
+ ('April 30, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 1, 2006')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('-21.2', 'WINNIPEG A CS', ' MANITOBA ', 'March 6, 2008', '-32.1', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 1, 2006', '\xa0')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('March 6, 2008', 'WINNIPEG A CS', ' MANITOBA ', '-32.1', '\xa0', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 1, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 1, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 2, 2006')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('-32.1', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 2, 2006', '\xa0')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 2, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 2, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 3, 2006')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 3, 2006', '\xa0')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 3, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 3, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 4, 2006')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 4, 2006', '\xa0')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 4, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 4, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 5, 2006')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 5, 2006', '\xa0')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 5, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 5, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 6, 2006')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 6, 2006', '\xa0')
 
 Error: time data '\xa0' does not match format '%B %d, %Y'
 Data Row Corruption:
- ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 6, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 6, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 7, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 7, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 7, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 7, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 8, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 8, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 8, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 8, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 9, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 9, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 9, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 9, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 10, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 10, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 10, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 10, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 11, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 11, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 11, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 11, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 12, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 12, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 12, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 12, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 13, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 13, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 13, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 13, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 14, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 14, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 14, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 14, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 15, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 15, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 15, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 15, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 16, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 16, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 16, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 16, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 17, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 17, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 17, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 17, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 18, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 18, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 18, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 18, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 19, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 19, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 19, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 19, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 20, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 20, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 20, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 20, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 21, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 21, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 21, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 21, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 22, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 22, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 22, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 22, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 23, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 23, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 23, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 23, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 24, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 24, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 24, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 24, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 25, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 25, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 25, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 25, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 26, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 26, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 26, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 26, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 27, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 27, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 27, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 27, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 28, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 28, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 28, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 28, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 29, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 29, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 29, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('April 29, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'April 30, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'April 30, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'April 30, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 28, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 1, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 1, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 1, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 1, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 2, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 2, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 2, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 2, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 3, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 3, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 3, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 3, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 4, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 4, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 4, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 4, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 5, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 5, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 5, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 5, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 6, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 6, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 6, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 6, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 7, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 7, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 7, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 7, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 8, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 8, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 8, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 8, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 9, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 9, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 9, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 9, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 10, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 10, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 10, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 10, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 11, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 11, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 11, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 11, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 12, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 12, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 12, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 12, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 13, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 13, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 13, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 13, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 14, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 14, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 14, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 14, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 15, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 15, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 15, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 15, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 16, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 16, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 16, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 16, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 17, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 17, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 17, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 17, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 18, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 18, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 18, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 18, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 19, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 19, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 19, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 19, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 20, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 20, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 20, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 20, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 21, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 21, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 21, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 21, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 22, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 22, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 22, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 22, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 23, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 23, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 23, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 23, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 24, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 24, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 24, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 24, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 25, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 25, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 25, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 25, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 26, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 26, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 26, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 26, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 27, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 27, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 27, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('February 27, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'February 28, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'February 28, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'February 28, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 31, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 1, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 1, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 1, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 1, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 2, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 2, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 2, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 2, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 3, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 3, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 3, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 3, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 4, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 4, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 4, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 4, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 5, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 5, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 5, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 5, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 6, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 6, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 6, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 6, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 7, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 7, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 7, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 7, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 8, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 8, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 8, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 8, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 9, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 9, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 9, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 9, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 10, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 10, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 10, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 10, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 11, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 11, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 11, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 11, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 12, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 12, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 12, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 12, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 13, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 13, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 13, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 13, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 14, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 14, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 14, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 14, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 15, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 15, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 15, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 15, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 16, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 16, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 16, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 16, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 17, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 17, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 17, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 17, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 18, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 18, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 18, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 18, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 19, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 19, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 19, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 19, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 20, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 20, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 20, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 20, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 21, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 21, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 21, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 21, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 22, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 22, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 22, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 22, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 23, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 23, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 23, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 23, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 24, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 24, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 24, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 24, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 25, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 25, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 25, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 25, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 26, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 26, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 26, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 26, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 27, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 27, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 27, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 27, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 28, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 28, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 28, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 28, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 29, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 29, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 29, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 29, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 30, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 30, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 30, 2006', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('January 30, 2006', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'January 31, 2006')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', 'January 31, 2006', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', 'January 31, 2006', '\xa0', '\xa0')
 
 Error: could not convert string to float: 'November 9, 2018'
 Data Row Corruption:
@@ -2423,6 +5431,394 @@ Error: could not convert string to float: 'December 2, 2021'
 Data Row Corruption:
  ('-26.9', 'WINNIPEG A CS', ' MANITOBA ', '-34.8', '-30.9', 'December 1, 2021')
 
+Error: could not convert string to float: 'October 18, 2019'
+Data Row Corruption:
+ ('4.3', 'WINNIPEG A CS', ' MANITOBA ', '-0.1', '2.1', 'October 17, 2019')
+
+Error: could not convert string to float: 'July 25, 2019'
+Data Row Corruption:
+ ('28.8', 'WINNIPEG A CS', ' MANITOBA ', '13.2', '21.0', 'July 24, 2019')
+
+Error: could not convert string to float: 'May 2, 2019'
+Data Row Corruption:
+ ('16.7', 'WINNIPEG A CS', ' MANITOBA ', '3.4', '10.1', 'May 1, 2019')
+
+Error: could not convert string to float: 'May 9, 2019'
+Data Row Corruption:
+ ('14.3', 'WINNIPEG A CS', ' MANITOBA ', '-5.1', '4.6', 'May 8, 2019')
+
+Error: could not convert string to float: 'March 22, 2019'
+Data Row Corruption:
+ ('4.3', 'WINNIPEG A CS', ' MANITOBA ', '-3.9', '0.2', 'March 21, 2019')
+
+Error: could not convert string to float: 'September 28, 2022'
+Data Row Corruption:
+ ('15.9', 'WINNIPEG A CS', ' MANITOBA ', '1.2', '8.6', 'September 27, 2022')
+
+Error: could not convert string to float: 'November 16, 2013'
+Data Row Corruption:
+ ('1.7', 'WINNIPEG A CS', ' MANITOBA ', '-5.3', '-1.8', 'November 15, 2013')
+
+Error: time data '-2.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-5.3', 'WINNIPEG A CS', ' MANITOBA ', '-1.8', 'November 15, 2013', '-2.8')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('21.2', 'WINNIPEG A CS', ' MANITOBA ', '2.5', '11.9', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('2.5', 'WINNIPEG A CS', ' MANITOBA ', '11.9', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('11.9', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('12.8', 'WINNIPEG A CS', ' MANITOBA ', '1.5', '7.2', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('1.5', 'WINNIPEG A CS', ' MANITOBA ', '7.2', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('7.2', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-6.4', 'WINNIPEG A CS', ' MANITOBA ', '-19.4', '-12.9', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-19.4', 'WINNIPEG A CS', ' MANITOBA ', '-12.9', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-12.9', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('12.3', 'WINNIPEG A CS', ' MANITOBA ', '-3.3', '4.5', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-3.3', 'WINNIPEG A CS', ' MANITOBA ', '4.5', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('4.5', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('22.0', 'WINNIPEG A CS', ' MANITOBA ', '6.3', '14.2', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('6.3', 'WINNIPEG A CS', ' MANITOBA ', '14.2', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('14.2', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'October 11, 2011'
+Data Row Corruption:
+ ('15.9', 'WINNIPEG A CS', ' MANITOBA ', '0.1', '8.0', 'October 10, 2011')
+
+Error: time data '8.9' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('0.1', 'WINNIPEG A CS', ' MANITOBA ', '8.0', 'October 10, 2011', '8.9')
+
+Error: could not convert string to float: 'October 12, 2011'
+Data Row Corruption:
+ ('8.0', 'WINNIPEG A CS', ' MANITOBA ', 'October 10, 2011', '8.9', 'October 11, 2011')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('19.9', 'WINNIPEG A CS', ' MANITOBA ', '5.9', '12.9', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('5.9', 'WINNIPEG A CS', ' MANITOBA ', '12.9', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('12.9', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'September 20, 2011'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', 'September 19, 2011')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('12.7', 'WINNIPEG A CS', ' MANITOBA ', '9.3', '11.0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('9.3', 'WINNIPEG A CS', ' MANITOBA ', '11.0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('11.0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('13.5', 'WINNIPEG A CS', ' MANITOBA ', '-1.3', '6.1', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-1.3', 'WINNIPEG A CS', ' MANITOBA ', '6.1', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('6.1', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('22.0', 'WINNIPEG A CS', ' MANITOBA ', '9.7', '15.9', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('9.7', 'WINNIPEG A CS', ' MANITOBA ', '15.9', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('15.9', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('23.7', 'WINNIPEG A CS', ' MANITOBA ', '9.8', '16.8', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('9.8', 'WINNIPEG A CS', ' MANITOBA ', '16.8', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('16.8', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('31.3', 'WINNIPEG A CS', ' MANITOBA ', '17.7', '24.5', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('17.7', 'WINNIPEG A CS', ' MANITOBA ', '24.5', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('24.5', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'May 13, 2011'
+Data Row Corruption:
+ ('12.7', 'WINNIPEG A CS', ' MANITOBA ', '5.4', '9.1', 'May 12, 2011')
+
+Error: time data '3.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('5.4', 'WINNIPEG A CS', ' MANITOBA ', '9.1', 'May 12, 2011', '3.8')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('9.3', 'WINNIPEG A CS', ' MANITOBA ', '1.2', '5.3', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('1.2', 'WINNIPEG A CS', ' MANITOBA ', '5.3', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('5.3', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'April 6, 2011'
+Data Row Corruption:
+ ('5.1', 'WINNIPEG A CS', ' MANITOBA ', '-2.5', '1.3', 'April 5, 2011')
+
+Error: time data '-4.1' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-2.5', 'WINNIPEG A CS', ' MANITOBA ', '1.3', 'April 5, 2011', '-4.1')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('6.4', 'WINNIPEG A CS', ' MANITOBA ', '-1.4', '2.5', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-1.4', 'WINNIPEG A CS', ' MANITOBA ', '2.5', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('2.5', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('10.6', 'WINNIPEG A CS', ' MANITOBA ', '1.7', '6.2', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('1.7', 'WINNIPEG A CS', ' MANITOBA ', '6.2', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('6.2', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('9.9', 'WINNIPEG A CS', ' MANITOBA ', '-2.6', '3.7', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-2.6', 'WINNIPEG A CS', ' MANITOBA ', '3.7', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('3.7', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('14.1', 'WINNIPEG A CS', ' MANITOBA ', '-2.8', '5.7', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-2.8', 'WINNIPEG A CS', ' MANITOBA ', '5.7', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('5.7', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('2.4', 'WINNIPEG A CS', ' MANITOBA ', '0.2', '1.3', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('0.2', 'WINNIPEG A CS', ' MANITOBA ', '1.3', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('1.3', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
 Error: could not convert string to float: 'July 19, 2016'
 Data Row Corruption:
  ('23.4', 'WINNIPEG A CS', ' MANITOBA ', '12.2', '17.8', 'July 18, 2016')
@@ -2498,6 +5894,190 @@ Data Row Corruption:
 Error: time data '-3.7' does not match format '%B %d, %Y'
 Data Row Corruption:
  ('-3.2', 'WINNIPEG A CS', ' MANITOBA ', '-1.7', 'January 24, 2017', '-3.7')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('-14.4', 'WINNIPEG A CS', ' MANITOBA ', '-28.0', '-21.2', 'March 6, 2008')
+
+Error: time data '-32.1' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-28.0', 'WINNIPEG A CS', ' MANITOBA ', '-21.2', 'March 6, 2008', '-32.1')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-21.2', 'WINNIPEG A CS', ' MANITOBA ', 'March 6, 2008', '-32.1', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('March 6, 2008', 'WINNIPEG A CS', ' MANITOBA ', '-32.1', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-32.1', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'November 30, 2012'
+Data Row Corruption:
+ ('-7.3', 'WINNIPEG A CS', ' MANITOBA ', '-20.8', '-14.1', 'November 29, 2012')
+
+Error: time data '-17.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-20.8', 'WINNIPEG A CS', ' MANITOBA ', '-14.1', 'November 29, 2012', '-17.8')
+
+Error: could not convert string to float: 'October 22, 2012'
+Data Row Corruption:
+ ('8.4', 'WINNIPEG A CS', ' MANITOBA ', '4.6', '6.5', 'October 21, 2012')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('26.6', 'WINNIPEG A CS', ' MANITOBA ', '16.4', '21.5', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('16.4', 'WINNIPEG A CS', ' MANITOBA ', '21.5', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('21.5', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('31.9', 'WINNIPEG A CS', ' MANITOBA ', '13.5', '22.7', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('13.5', 'WINNIPEG A CS', ' MANITOBA ', '22.7', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('22.7', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('27.8', 'WINNIPEG A CS', ' MANITOBA ', '18.7', '23.3', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('18.7', 'WINNIPEG A CS', ' MANITOBA ', '23.3', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('23.3', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: '\xa0'
+Data Row Corruption:
+ ('13.9', 'WINNIPEG A CS', ' MANITOBA ', '6.8', '10.4', 'May 8, 2012')
+
+Error: time data '6.9' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('6.8', 'WINNIPEG A CS', ' MANITOBA ', '10.4', 'May 8, 2012', '6.9')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('10.4', 'WINNIPEG A CS', ' MANITOBA ', 'May 8, 2012', '6.9', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('May 8, 2012', 'WINNIPEG A CS', ' MANITOBA ', '6.9', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('6.9', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('\xa0', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'May 18, 2012'
+Data Row Corruption:
+ ('19.8', 'WINNIPEG A CS', ' MANITOBA ', '-1.1', '9.4', 'May 17, 2012')
+
+Error: time data '11.5' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-1.1', 'WINNIPEG A CS', ' MANITOBA ', '9.4', 'May 17, 2012', '11.5')
+
+Error: could not convert string to float: 'May 19, 2012'
+Data Row Corruption:
+ ('9.4', 'WINNIPEG A CS', ' MANITOBA ', 'May 17, 2012', '11.5', 'May 18, 2012')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('17.7', 'WINNIPEG A CS', ' MANITOBA ', '5.8', '11.8', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('5.8', 'WINNIPEG A CS', ' MANITOBA ', '11.8', '\xa0', '\xa0')
+
+Error: time data '\xa0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('11.8', 'WINNIPEG A CS', ' MANITOBA ', '\xa0', '\xa0', '\xa0')
+
+Error: could not convert string to float: 'December 30, 2014'
+Data Row Corruption:
+ ('-22.3', 'WINNIPEG A CS', ' MANITOBA ', '-30.9', '-26.6', 'December 29, 2014')
+
+Error: time data '-20.8' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('-30.9', 'WINNIPEG A CS', ' MANITOBA ', '-26.6', 'December 29, 2014', '-20.8')
+
+Error: could not convert string to float: 'October 23, 2014'
+Data Row Corruption:
+ ('16.6', 'WINNIPEG A CS', ' MANITOBA ', '3.7', '10.2', 'October 22, 2014')
+
+Error: time data '11.5' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('3.7', 'WINNIPEG A CS', ' MANITOBA ', '10.2', 'October 22, 2014', '11.5')
+
+Error: could not convert string to float: 'July 4, 2014'
+Data Row Corruption:
+ ('22.1', 'WINNIPEG A CS', ' MANITOBA ', '7.6', '14.9', 'July 3, 2014')
+
+Error: time data '9.0' does not match format '%B %d, %Y'
+Data Row Corruption:
+ ('7.6', 'WINNIPEG A CS', ' MANITOBA ', '14.9', 'July 3, 2014', '9.0')
 
 Error: could not convert string to float: '\xa0'
 Data Row Corruption:
