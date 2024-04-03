@@ -50,19 +50,22 @@ scrape_weather.py:72:0: C0301: Line too long (140/100) (line-too-long)
 scrape_weather.py:134:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:157:0: C0301: Line too long (111/100) (line-too-long)
 scrape_weather.py:190:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:205:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:215:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:206:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:216:0: C0304: Final newline missing (missing-final-newline)
 scrape_weather.py:11:0: E0401: Unable to import 'lxml' (import-error)
 scrape_weather.py:12:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
 scrape_weather.py:13:0: E0401: Unable to import 'requests' (import-error)
 scrape_weather.py:54:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+scrape_weather.py:161:4: R0914: Too many local variables (16/15) (too-many-locals)
 ************* Module dbcm
 dbcm.py:75:0: C0304: Final newline missing (missing-final-newline)
 ************* Module main
-main.py:24:0: C0301: Line too long (113/100) (line-too-long)
-main.py:25:0: C0301: Line too long (124/100) (line-too-long)
-main.py:35:0: C0303: Trailing whitespace (trailing-whitespace)
-main.py:44:0: C0304: Final newline missing (missing-final-newline)
+main.py:23:109: C0303: Trailing whitespace (trailing-whitespace)
+main.py:23:0: C0301: Line too long (109/100) (line-too-long)
+main.py:25:0: C0301: Line too long (113/100) (line-too-long)
+main.py:26:0: C0301: Line too long (124/100) (line-too-long)
+main.py:36:0: C0303: Trailing whitespace (trailing-whitespace)
+main.py:45:0: C0304: Final newline missing (missing-final-newline)
 main.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 ************* Module db_operations
 db_operations.py:127:0: C0304: Final newline missing (missing-final-newline)
@@ -79,5 +82,5 @@ weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 7.73/10
+Your code has been rated at 7.58/10
 
