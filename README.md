@@ -38,8 +38,16 @@ Expand the Project Introduction to include a detailed description of what the pr
 
 
 ### Pylint Result
+************* Module db_operations
+db_operations.py:127:0: C0304: Final newline missing (missing-final-newline)
+db_operations.py:84:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+db_operations.py:118:15: W0718: Catching too general exception Exception (broad-exception-caught)
+************* Module weather_processor
+weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
+weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 ************* Module scrape_weather
 scrape_weather.py:27:0: C0301: Line too long (123/100) (line-too-long)
+scrape_weather.py:33:43: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:36:146: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:51:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:53:0: C0303: Trailing whitespace (trailing-whitespace)
@@ -49,38 +57,34 @@ scrape_weather.py:71:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:72:0: C0301: Line too long (140/100) (line-too-long)
 scrape_weather.py:134:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:157:0: C0301: Line too long (111/100) (line-too-long)
-scrape_weather.py:190:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:206:0: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:216:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:160:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:210:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:226:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:236:0: C0304: Final newline missing (missing-final-newline)
 scrape_weather.py:11:0: E0401: Unable to import 'lxml' (import-error)
 scrape_weather.py:12:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
 scrape_weather.py:13:0: E0401: Unable to import 'requests' (import-error)
 scrape_weather.py:54:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-scrape_weather.py:161:4: R0914: Too many local variables (16/15) (too-many-locals)
+scrape_weather.py:181:4: R0914: Too many local variables (16/15) (too-many-locals)
 ************* Module dbcm
 dbcm.py:75:0: C0304: Final newline missing (missing-final-newline)
 ************* Module main
 main.py:23:109: C0303: Trailing whitespace (trailing-whitespace)
 main.py:23:0: C0301: Line too long (109/100) (line-too-long)
 main.py:25:0: C0301: Line too long (113/100) (line-too-long)
-main.py:26:0: C0301: Line too long (124/100) (line-too-long)
+main.py:26:0: C0301: Line too long (123/100) (line-too-long)
 main.py:36:0: C0303: Trailing whitespace (trailing-whitespace)
-main.py:45:0: C0304: Final newline missing (missing-final-newline)
+main.py:59:0: C0303: Trailing whitespace (trailing-whitespace)
+main.py:67:0: C0304: Final newline missing (missing-final-newline)
 main.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-************* Module db_operations
-db_operations.py:127:0: C0304: Final newline missing (missing-final-newline)
-db_operations.py:84:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-db_operations.py:118:15: W0718: Catching too general exception Exception (broad-exception-caught)
+main.py:44:0: C0116: Missing function or method docstring (missing-function-docstring)
 ************* Module plot_operations
 plot_operations.py:11:0: C0304: Final newline missing (missing-final-newline)
 plot_operations.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
 ************* Module prod_util
 prod_util.py:37:0: C0303: Trailing whitespace (trailing-whitespace)
 prod_util.py:56:0: C0305: Trailing newlines (trailing-newlines)
-************* Module weather_processor
-weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
-weather_processor.py:8:0: C0304: Final newline missing (missing-final-newline)
 
 -----------------------------------
-Your code has been rated at 7.58/10
+Your code has been rated at 7.61/10
 
