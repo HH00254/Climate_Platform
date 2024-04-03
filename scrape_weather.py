@@ -158,7 +158,7 @@ class ScrapeWeather:
 
         return insert_values
 
-    def web_scrape_call(self, st_year: int, st_month = None) -> list:
+    def web_scrape_call(self, st_year = None, st_month = None) -> list:
         """
         Perform the web scraping call to retrieve weather data.
 
