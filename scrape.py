@@ -1,17 +1,8 @@
-"""
-Description: Weather Processing App Group 9
-Author: Lance Fuentes, Al Hochbaum, Christian Requerme
-Section Number: FTO01
-Date Created: 03/20/24
-Credit:
-Updates:
-
-"""
 from datetime import datetime
 from lxml import html
 from dateutil.relativedelta import relativedelta
 import requests
-from prod_util import ProdUtil
+from prod_util import PdUtil
 
 class ScrapeWeather:
     """ 
@@ -67,7 +58,7 @@ class ScrapeWeather:
             return int(year)
         
         except TypeError as e:
-            ProdUtil.system_log(e, (e.__cause__, ))
+            PdUtil.system_log(e, (e.__cause__, ))
     
     def _format_payload_for_insert(self, list_data: list, location_payload: list, insert_collection: list[tuple], step: int) -> list[tuple]:
         """
@@ -92,7 +83,7 @@ class ScrapeWeather:
 
             try:
                 insert_collection.append(((
-                    ProdUtil.format_date(str(list_data[index])),
+                    PdUtil.format_date(str(list_data[index])),
                     str(location_payload[0]).split(' ', maxsplit=1)[0],
                     str(location_payload[1]).strip(),
                     float(list_data[index + 1]),
@@ -101,30 +92,30 @@ class ScrapeWeather:
 
             except TypeError as e:
                 index =  index - step + 1
-                ProdUtil.system_log(e, (list_data[index],
-                                        location_payload[0],
-                                        location_payload[1],
-                                        list_data[index + 1],
-                                        list_data[index + 2],
-                                        list_data[index + 3]))
+                PdUtil.system_log(e, (list_data[index],
+                                      location_payload[0],
+                                      location_payload[1],
+                                      list_data[index + 1],
+                                      list_data[index + 2],
+                                      list_data[index + 3]))
 
             except ValueError as e:
                 index =  index - step + 1
-                ProdUtil.system_log(e, (list_data[index],
-                                        location_payload[0],
-                                        location_payload[1],
-                                        list_data[index + 1],
-                                        list_data[index + 2],
-                                        list_data[index + 3]))
+                PdUtil.system_log(e, (list_data[index],
+                                      location_payload[0],
+                                      location_payload[1],
+                                      list_data[index + 1],
+                                      list_data[index + 2],
+                                      list_data[index + 3]))
 
             except IndexError as e:
                 index =  index - step + 1
-                ProdUtil.system_log(e, (list_data[index],
-                                        location_payload[0],
-                                        location_payload[1],
-                                        list_data[index + 1],
-                                        list_data[index + 2],
-                                        list_data[index + 3]))
+                PdUtil.system_log(e, (list_data[index],
+                                      location_payload[0],
+                                      location_payload[1],
+                                      list_data[index + 1],
+                                      list_data[index + 2],
+                                      list_data[index + 3]))
 
             finally:
                 # Continue Incrementation
@@ -199,7 +190,6 @@ class ScrapeWeather:
                     previous_data.xpath('//td[position()<4]/text()')):
                     previous_data = tree
                     tree_pages.append(tree)
-
                     call_attempt     = 0
                     month_counter += 1
                     
@@ -213,3 +203,4 @@ class ScrapeWeather:
             working_date -= relativedelta(months=1)
 
         return tree_pages
+    
