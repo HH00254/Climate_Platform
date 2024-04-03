@@ -20,6 +20,7 @@ def main() -> None:
     for subtraction_value in range(range_leng + 1):
         year_range.append(selected_time.year - subtraction_value)
 
+    # See if I can chuck the requests down and then check last finish item to then send more threads or STOP!    
     with concurrent.futures.ThreadPoolExecutor() as executor:
         results            = executor.submit(new_scrape.web_scrape_call, selected_time.year, selected_time.month)
         results_collection = [executor.submit(new_scrape.web_scrape_call, current_year, 12) for current_year in year_range ]

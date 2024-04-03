@@ -158,7 +158,7 @@ class ScrapeWeather:
 
         return insert_values
 
-    def web_scrape_call(self, st_year = None, st_month = None) -> list:
+    def web_scrape_call(self, st_year = None, st_month = None, data_end_point = None) -> list:
         """
         Perform the web scraping call to retrieve weather data.
 
@@ -196,7 +196,8 @@ class ScrapeWeather:
                 tree = html.fromstring(response_body.content)
 
                 if (tree.xpath('//td[position()<4]/text()') !=
-                    previous_data.xpath('//td[position()<4]/text()')):
+                    previous_data.xpath('//td[position()<4]/text()') and
+                    datetime(data_end_point) != working_date):
                     previous_data = tree
                     tree_pages.append(tree)
 
