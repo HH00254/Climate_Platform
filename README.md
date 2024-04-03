@@ -86,9 +86,12 @@ _scrape_weather.py:62:0: C0116: Missing function or method docstring (missing-fu
 _scrape_weather.py:65:0: C0116: Missing function or method docstring (missing-function-docstring)
 _scrape_weather.py:78:0: R0914: Too many local variables (16/15) (too-many-locals)
 ************* Module main
-main.py:41:0: W0311: Bad indentation. Found 10 spaces, expected 12 (bad-indentation)
-main.py:42:0: W0311: Bad indentation. Found 10 spaces, expected 12 (bad-indentation)
-main.py:47:0: C0304: Final newline missing (missing-final-newline)
+main.py:21:0: C0304: Final newline missing (missing-final-newline)
+main.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+main.py:3:0: C0411: standard import "pprint.pprint" should be placed before first party imports "db_operations.DBOperations", "scrape_weather"  (wrong-import-order)
+main.py:4:0: C0411: standard import "time.time" should be placed before first party imports "db_operations.DBOperations", "scrape_weather"  (wrong-import-order)
+main.py:3:0: W0611: Unused pprint imported from pprint (unused-import)
+main.py:4:0: W0611: Unused time imported from time (unused-import)
 ************* Module db_operations
 db_operations.py:85:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 ************* Module plot_operations
@@ -132,9 +135,11 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
                     float(list_data[index + 1]),
                     float(list_data[index + 2]),
                     float(list_data[index + 3])))
+
             else:
                 # Not enough elements in list_data
                 index =  index - step + 1
+
         except TypeError as e: (duplicate-code)
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[29:38]
@@ -151,16 +156,15 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
 weather_processor.py:1:0: R0801: Similar lines in 2 files
 ==_scrape_weather:[97:106]
 ==scrape_weather:[195:203]
-            city_path     = '//main/div/p/text()'
-            province_path = '//main/div/br/text()'
-            location_payload = tree.xpath(f"{city_path} | {province_path}")
+                city_path     = '//main/div/p/text()'
+                province_path = '//main/div/br/text()'
+                location_payload = tree.xpath(f"{city_path} | {province_path}")
 
-            date_path      = '//table/tbody/tr[position()< last() -3]/th/abbr/@title'
-            temperature_path = '//tr[position()< last() -3]/td[position()<4]/text()'
-            table_load = tree.xpath(f"{date_path} | {temperature_path}")
-
-            # Check if the current data is not empty and is the same as the previous non-empty data (duplicate-code)
+                date_path      = '//table/tbody/tr[position()< last() -3]/th/abbr/@title'
+                temperature_path = '//tr[position()< last() -3]/td[position()<4]/text()'
+                table_load = tree.xpath(f"{date_path} | {temperature_path}")
+ (duplicate-code)
 
 -----------------------------------
-Your code has been rated at 6.48/10
+Your code has been rated at 6.29/10
 
