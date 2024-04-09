@@ -106,7 +106,7 @@ class WeatherProcessor:
         """
 
         # db_operations.delete_data_for_year(2024)
-        # self.db_operations.initialize_db()
+        self.db_operations.initialize_db()
         latest_date_str =  self.db_operations.get_latest_date()
         latest_date =   datetime.strptime(latest_date_str, '%Y-%m-%d')
 

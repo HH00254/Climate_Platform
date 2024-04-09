@@ -203,7 +203,7 @@ class ScrapeWeather:
             bool: True if the year and month of both datetime objects are equal, False otherwise.
         """
         # Calculate the difference in days
-        delta = end_date - self.date_instance
+        delta = self.date_instance - end_date  
         days = delta.days
 
         try:

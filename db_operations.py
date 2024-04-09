@@ -83,6 +83,7 @@ class DBOperations:
         try:
             with DBCM(self.db_file) as cur:
                 cur.execute("DELETE FROM weather_data;")
+                
         except sqlite3.Error as e:
             ProdUtil.system_log(e, e.args)
             print("Error purging data from database:", e)
