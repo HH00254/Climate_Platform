@@ -12,6 +12,9 @@ Credit:
 Updates:
 """
 from datetime import datetime
+import traceback
+import logging
+import os
 
 class ProdUtil():
     """
@@ -34,11 +37,21 @@ class ProdUtil():
         - None
         """
         log_date = datetime.now().strftime('%Y-%m-%d')
-        
-        with open(f'web_scraping_{log_date}.txt', 'a+', encoding="utf-8") as file_stream_output:
+        log_name_path = f'web_scraping_{log_date}.log'
 
-            file_stream_output.write(f'\nError: {exception}\n')
-            file_stream_output.write(f'Data Row Corruption:\n {data_entre}\n')
+        if not os.path.exists(log_name_path):
+            logging.basicConfig(filename=log_name_path, level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s  - %(funcName)s - %(message)s')
+
+        trace_body = traceback.extract_tb(exception.__traceback__)
+        method_name = 'Unknown'
+
+        if trace_body:
+            _, _, method_name, _ = trace_body[-1]
+        
+        logger = logging.getLogger(__name__)
+
+        # Log the exception and data_entre
+        logger.error('\nError: %s\nFunction Name: %s\nData Corruption:\n%s\n\n', exception, method_name,data_entre)
 
     @staticmethod
     def format_date(unformatted_date: str) -> str:

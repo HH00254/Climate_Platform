@@ -6,10 +6,9 @@ Date Created: 03/21/24
 Credit:
 Updates:
 """
-
-
-import sqlite3
 from contextlib import ContextDecorator
+import sqlite3
+from prod_util import ProdUtil
 
 class DBCM(ContextDecorator):
     """
@@ -48,8 +47,11 @@ class DBCM(ContextDecorator):
             self.conn = sqlite3.connect(self.db_name)
             self.cursor = self.conn.cursor()
             return self.cursor
+
         except sqlite3.Error as e:
+            ProdUtil.system_log(e, e.args)
             print("Error connecting to the database:", e)
+
             raise
 
     def __exit__(self, exc_type, exc_value, traceback):
@@ -64,12 +66,16 @@ class DBCM(ContextDecorator):
         if exc_type is not None:
             print("Exception occured, rollback changes:", exc_value)
             self.conn.rollback()
+
         else:
             try:
                 self.conn.commit()
             except sqlite3.Error as e:
+                ProdUtil.system_log(e, e.args)
                 print("Error commiting changes to the database:", e)
+
                 self.conn.rollback()
                 print("Rollback changes.")
+
         self.cursor.close()
         self.conn.close()

@@ -12,6 +12,7 @@ from lxml import html
 from dateutil.relativedelta import relativedelta
 import requests
 from prod_util import ProdUtil
+import math
 
 class ScrapeWeather:
     """ 
@@ -24,7 +25,8 @@ class ScrapeWeather:
         Initialize the ScrapeWeather class.
 
         Args:
-        - date_instance (datetime): The date instance for which weather data is scraped. Defaults to current date and time.
+        - date_instance (datetime): The date instance for which weather data is scraped.
+          Defaults to current date and time.
         - station_id (int): The ID of the weather station. Defaults to 27174.
 
         Returns:
@@ -46,9 +48,22 @@ class ScrapeWeather:
         Returns:
         - int: The end year for data retrieval.
         """
-        request = self.web_address.format(self.station_id, page_year, self.date_instance.month)
-        response_body = requests.get(request, timeout=120)
+        try:
+            request = self.web_address.format(self.station_id, page_year, self.date_instance.month)
+            response_body = requests.get(request, timeout=120)
         
+        except requests.exceptions.HTTPError as e:
+            ProdUtil.system_log(e, e.args)
+
+        except requests.exceptions.ConnectionError as e:
+            ProdUtil.system_log(e, e.args)
+
+        except requests.exceptions.Timeout as e:
+            ProdUtil.system_log(e, e.args)
+
+        except requests.exceptions.RequestException as e:
+            ProdUtil.system_log(e, e.args)
+      
         return self.get_xpath_year(html.fromstring(response_body.content))
     
     def get_xpath_year(self, tree_doc) -> int:
@@ -61,15 +76,23 @@ class ScrapeWeather:
         Returns:
         - int: The year extracted from the webpage.
         """
+        year = -1
+
         try:
             year = (str(tree_doc.xpath('//*[@id="climateNav"]/div[3]/section/div[1]/form/fieldset/legend/text()'))
                                 .split('(')[1].split(')')[0])
-            return int(year)
         
         except TypeError as e:
-            ProdUtil.system_log(e, (e.__cause__, ))
-    
-    def _format_payload_for_insert(self, list_data: list, location_payload: list, insert_collection: list[tuple], step: int) -> list[tuple]:
+            ProdUtil.system_log(e, e.args)
+
+        return year
+
+    def _format_payload_for_insert(
+            self,
+            list_data: list,
+            location_payload: list,
+            insert_collection: list[tuple],
+            step: int) -> list[tuple]:
         """
         Format scraped data for insertion into the database.
 
@@ -145,16 +168,26 @@ class ScrapeWeather:
         insert_values = []
 
         for tree in trees:
-            if tree.xpath('//td[position()<4]/text()'):
-                city_path     = '//main/div/p/text()'
-                province_path = '//main/div/br/text()'
-                location_payload = tree.xpath(f"{city_path} | {province_path}")
 
-                date_path        = '//table/tbody/tr[position()< last() -3]/th/abbr/@title'
-                temperature_path = '//tr[position()< last() -3]/td[position()<4]/text()'
-                table_load = tree.xpath(f"{date_path} | {temperature_path}")
+            try:
 
-                insert_values = self._format_payload_for_insert(table_load, location_payload, insert_values, 4)
+                if tree.xpath('//td[position()<4]/text()'):
+                    city_path     = '//main/div/p/text()'
+                    province_path = '//main/div/br/text()'
+                    location_payload = tree.xpath(f"{city_path} | {province_path}")
+
+                    date_path        = '//table/tbody/tr[position()< last() -3]/th/abbr/@title'
+                    temperature_path = '//tr[position()< last() -3]/td[position()<4]/text()'
+                    table_load = tree.xpath(f"{date_path} | {temperature_path}")
+
+                    insert_values = self._format_payload_for_insert(
+                        table_load, 
+                        location_payload,
+                        insert_values,
+                        4)
+
+            except IndexError as e:
+                ProdUtil.system_log(e, e.args)
 
         return insert_values
     
@@ -173,10 +206,14 @@ class ScrapeWeather:
         delta = end_date - self.date_instance
         days = delta.days
 
-        # Calculate the approximate difference in months
-        months = days / 30.4375
+        try:
+            # Calculate the approximate difference in months
+            months = days / 30.4375
+        
+        except ZeroDivisionError as e:
+            ProdUtil.system_log(e, e.args)
 
-        return int(months)
+        return int(months) + 1
 
     def web_scrape_call(self, st_year = None, st_month = None, data_end_point = None) -> list:
         """
@@ -193,8 +230,7 @@ class ScrapeWeather:
         month            = 0
         previous_data    = html.fromstring('<body><main><td>Null</td></main></body>')
         termination_flag = True
-        call_attempt     = 0
-        tree_pages = []
+        tree_pages       = []
 
         if st_year is not None and st_month is not None:
             working_date = datetime(st_year, st_month, 1)
@@ -204,31 +240,42 @@ class ScrapeWeather:
             working_date = self.date_instance
             month_range  = self._months_between_dates(data_end_point)
 
-        while call_attempt < 12 and termination_flag and month_counter < month_range:
+        while termination_flag and month_counter < month_range:
             month      = working_date.month
             year       = working_date.year
             
-            request = self.web_address.format(self.station_id, year, month)
-            response_body = requests.get(request, timeout=120)
+            try:
+                request = self.web_address.format(self.station_id, year, month)
+                response_body = requests.get(request, timeout=120)
+            
+                if (response_body.status_code == 200 and
+                    html.fromstring(response_body.content).xpath('//table/tbody')):
+                    tree = html.fromstring(response_body.content)
 
-            if (response_body.status_code == 200 and
-                html.fromstring(response_body.content).xpath('//table/tbody')):
-                tree = html.fromstring(response_body.content)
+                    if (tree.xpath('//td[position()<4]/text()') !=
+                        previous_data.xpath('//td[position()<4]/text()')):
 
-                if (tree.xpath('//td[position()<4]/text()') !=
-                    previous_data.xpath('//td[position()<4]/text()')):
+                        previous_data = tree
+                        tree_pages.append(tree)
+                        month_counter += 1
+                        
+                    else:
+                        termination_flag = False
 
-                    previous_data = tree
-                    tree_pages.append(tree)
+            except IndexError as e:
+                ProdUtil.system_log(e, e.args)
 
-                    call_attempt     = 0
-                    month_counter += 1
-                    
-                else:
-                    termination_flag = False
+            except requests.exceptions.HTTPError as e:
+                ProdUtil.system_log(e, e.args)
 
-            else:
-                call_attempt +=  1
+            except requests.exceptions.ConnectionError as e:
+                ProdUtil.system_log(e, e.args)
+
+            except requests.exceptions.Timeout as e:
+                ProdUtil.system_log(e, e.args)
+
+            except requests.exceptions.RequestException as e:
+                ProdUtil.system_log(e, e.args)
 
             # Decrementing the time frame.
             working_date -= relativedelta(months=1)
