@@ -39,11 +39,12 @@ Expand the Project Introduction to include a detailed description of what the pr
 
 ### Pylint Result
 ************* Module db_operations
-db_operations.py:134:0: C0301: Line too long (107/100) (line-too-long)
-db_operations.py:177:0: C0301: Line too long (198/100) (line-too-long)
-db_operations.py:198:0: C0301: Line too long (196/100) (line-too-long)
-db_operations.py:211:0: C0303: Trailing whitespace (trailing-whitespace)
-db_operations.py:215:0: C0304: Final newline missing (missing-final-newline)
+db_operations.py:86:0: C0303: Trailing whitespace (trailing-whitespace)
+db_operations.py:135:0: C0301: Line too long (107/100) (line-too-long)
+db_operations.py:178:0: C0301: Line too long (198/100) (line-too-long)
+db_operations.py:199:0: C0301: Line too long (196/100) (line-too-long)
+db_operations.py:212:0: C0303: Trailing whitespace (trailing-whitespace)
+db_operations.py:216:0: C0304: Final newline missing (missing-final-newline)
 ************* Module weather_processor
 weather_processor.py:31:0: C0303: Trailing whitespace (trailing-whitespace)
 weather_processor.py:82:113: C0303: Trailing whitespace (trailing-whitespace)
@@ -74,6 +75,7 @@ scrape_weather.py:84:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:157:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:184:35: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:193:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:206:45: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:212:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:246:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:250:0: C0303: Trailing whitespace (trailing-whitespace)
@@ -87,20 +89,6 @@ scrape_weather.py:15:0: C0411: standard import "math" should be placed before th
 scrape_weather.py:15:0: W0611: Unused import math (unused-import)
 ************* Module dbcm
 dbcm.py:81:0: C0304: Final newline missing (missing-final-newline)
-************* Module main
-main.py:23:111: C0303: Trailing whitespace (trailing-whitespace)
-main.py:23:0: C0301: Line too long (111/100) (line-too-long)
-main.py:25:0: C0301: Line too long (115/100) (line-too-long)
-main.py:26:0: C0301: Line too long (125/100) (line-too-long)
-main.py:36:0: C0303: Trailing whitespace (trailing-whitespace)
-main.py:59:0: C0303: Trailing whitespace (trailing-whitespace)
-main.py:68:0: C0304: Final newline missing (missing-final-newline)
-main.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-main.py:1:0: W0611: Unused import concurrent.futures (unused-import)
-main.py:2:0: W0611: Unused datetime imported from datetime (unused-import)
-main.py:3:0: W0611: Unused time imported from time (unused-import)
-main.py:4:0: W0611: Unused DBOperations imported from db_operations (unused-import)
-main.py:5:0: W0611: Unused ScrapeWeather imported from scrape_weather (unused-import)
 ************* Module plot_operations
 plot_operations.py:36:0: C0301: Line too long (101/100) (line-too-long)
 plot_operations.py:38:0: C0301: Line too long (115/100) (line-too-long)
@@ -120,5 +108,5 @@ prod_util.py:54:0: C0301: Line too long (115/100) (line-too-long)
 prod_util.py:69:0: C0305: Trailing newlines (trailing-newlines)
 
 -----------------------------------
-Your code has been rated at 7.88/10
+Your code has been rated at 8.09/10
 
