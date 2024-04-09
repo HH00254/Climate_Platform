@@ -10,14 +10,8 @@ Updates:
 import concurrent.futures
 from datetime import datetime
 from time import time
-import pprint
 from db_operations import DBOperations
 from scrape_weather import ScrapeWeather
-import asyncio
-
-
-import _scrape_weather
-
 from plot_operations import PlotOperations
 
 class WeatherProcessor:
@@ -104,8 +98,6 @@ class WeatherProcessor:
         """
         Update weather data using the _scrape_weather module.
         """
-
-        # db_operations.delete_data_for_year(2024)
         self.db_operations.initialize_db()
         latest_date_str =  self.db_operations.get_latest_date()
         latest_date =   datetime.strptime(latest_date_str, '%Y-%m-%d')
@@ -119,11 +111,8 @@ class WeatherProcessor:
         for month in year_items:
             insert_items.append(new_scrape.get_xpath_page_values(month))
 
-        pprint.pprint(insert_items)
         for row in insert_items[0]:
             self.db_operations.save_data(row)
-        
-        # _scrape_weather.update_weather_data()
 
     def generate_box_plot(self):
         """
