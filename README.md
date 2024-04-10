@@ -46,24 +46,14 @@ db_operations.py:199:0: C0301: Line too long (196/100) (line-too-long)
 db_operations.py:212:0: C0303: Trailing whitespace (trailing-whitespace)
 db_operations.py:216:0: C0304: Final newline missing (missing-final-newline)
 ************* Module weather_processor
-weather_processor.py:31:0: C0303: Trailing whitespace (trailing-whitespace)
-weather_processor.py:82:113: C0303: Trailing whitespace (trailing-whitespace)
-weather_processor.py:82:0: C0301: Line too long (113/100) (line-too-long)
-weather_processor.py:84:0: C0301: Line too long (117/100) (line-too-long)
-weather_processor.py:85:0: C0301: Line too long (127/100) (line-too-long)
-weather_processor.py:92:0: C0303: Trailing whitespace (trailing-whitespace)
-weather_processor.py:95:0: C0303: Trailing whitespace (trailing-whitespace)
-weather_processor.py:125:0: C0303: Trailing whitespace (trailing-whitespace)
-weather_processor.py:164:0: C0304: Final newline missing (missing-final-newline)
-weather_processor.py:16:0: C0411: standard import "asyncio" should be placed before first party imports "db_operations.DBOperations", "scrape_weather.ScrapeWeather"  (wrong-import-order)
-weather_processor.py:16:0: W0611: Unused import asyncio (unused-import)
-weather_processor.py:19:0: W0611: Unused import _scrape_weather (unused-import)
-************* Module _scrape_weather
-_scrape_weather.py:186:0: C0304: Final newline missing (missing-final-newline)
-_scrape_weather.py:11:0: E0401: Unable to import 'requests' (import-error)
-_scrape_weather.py:12:0: E0401: Unable to import 'lxml' (import-error)
-_scrape_weather.py:13:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
-_scrape_weather.py:94:0: R0914: Too many local variables (16/15) (too-many-locals)
+weather_processor.py:25:0: C0303: Trailing whitespace (trailing-whitespace)
+weather_processor.py:76:113: C0303: Trailing whitespace (trailing-whitespace)
+weather_processor.py:76:0: C0301: Line too long (113/100) (line-too-long)
+weather_processor.py:78:0: C0301: Line too long (117/100) (line-too-long)
+weather_processor.py:79:0: C0301: Line too long (127/100) (line-too-long)
+weather_processor.py:86:0: C0303: Trailing whitespace (trailing-whitespace)
+weather_processor.py:89:0: C0303: Trailing whitespace (trailing-whitespace)
+weather_processor.py:153:0: C0304: Final newline missing (missing-final-newline)
 ************* Module scrape_weather
 scrape_weather.py:35:43: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:38:146: C0303: Trailing whitespace (trailing-whitespace)
@@ -108,5 +98,5 @@ prod_util.py:54:0: C0301: Line too long (115/100) (line-too-long)
 prod_util.py:69:0: C0305: Trailing newlines (trailing-newlines)
 
 -----------------------------------
-Your code has been rated at 8.09/10
+Your code has been rated at 8.19/10
 
