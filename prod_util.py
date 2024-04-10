@@ -40,7 +40,10 @@ class ProdUtil():
         log_name_path = f'web_scraping_{log_date}.log'
 
         if not os.path.exists(log_name_path):
-            logging.basicConfig(filename=log_name_path, level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s  - %(funcName)s - %(message)s')
+            logging.basicConfig(
+                filename=log_name_path,
+                level=logging.DEBUG,
+                format='%(asctime)s - %(name)s - %(levelname)s  - %(funcName)s - %(message)s')
 
         trace_body = traceback.extract_tb(exception.__traceback__)
         method_name = 'Unknown'

@@ -220,8 +220,9 @@ class ScrapeWeather:
         Perform the web scraping call to retrieve weather data.
 
         Args:
-        - st_year (int): The starting year for scraping.
+        - st_year (int): The starting year for scraping.   Defaults to None.
         - st_month (int): The starting month for scraping. Defaults to None.
+        - data_end_point (datetime): Used to update missing data. Defaults to None.
 
         Returns:
         - list: List of parsed HTML trees containing weather data.

@@ -27,29 +27,23 @@ class PlotOperations:
         """
         Generates a box plot for mean temperatures for each month of each year in the weather data.
         """
-        # Dictionary to store mean temperatures for each year and month
-        yearly_monthly_temps = {}
+        # Dictionary to store mean temperatures for each month
+        monthly_means = [[] for _ in range(12)]
 
-        #needs to be more general
+        # Calculate mean temperatures for each month across all years
         for year_data in self.weather_data:
-            year = year_data[0][:4]  # Extract year from sample date (2023-12-12  returns '2023')
-            month = int(year_data[0][5:7])  # Extract month from sample date (2023-12-12  returns 12)
-            if year in yearly_monthly_temps:
-                yearly_monthly_temps[year][month - 1].append(year_data[5])  # Append mean temperature for the month
-            else:
-                yearly_monthly_temps[year] = [[] for _ in range(12)]  # Initialize list with mean temperature for each month
-                yearly_monthly_temps[year][month - 1].append(year_data[5])  # Append mean temperature for the month
+            month = int(year_data[0][5:7])  # Extract month from sample date
+            monthly_means[month - 1].append(year_data[5])  # Append mean temperature for the month (if january is 1, subtract 1 and put it on index 0)
 
-        # Create a separate boxplot for each year
-        #need to refactor so no need for loop
-        for year, monthly_temps in yearly_monthly_temps.items():
-            plt.figure()
-            plt.boxplot(monthly_temps)
-            plt.title(f'Mean Temperatures Boxplot - {year}')
-            plt.xlabel('Months')
-            plt.ylabel('Mean Temperature (°C)')
-            plt.xticks(range(1, 13), [str(i) for i in range(1, 13)])  # Set x-axis labels to the months
-            plt.show()
+        # Create a single boxplot for all the months
+        plt.figure()
+        plt.boxplot(monthly_means)
+        years = [year_data[0][:4] for year_data in self.weather_data]  # Extract years from the weather data
+        plt.title(f'Monthly Temperature Distribution for: {min(years)} to {max(years)}')
+        plt.xlabel('Month')
+        plt.ylabel('Mean Temperature (°C)')
+        plt.xticks(range(1, 13))  # Set x-axis ticks to be from 1 to 12
+        plt.show()
 
     def create_lineplot(self, month, year):
         """

@@ -1,0 +1,14 @@
+2024-04-09 17:54:34,323 - prod_util - ERROR  - system_log - 
+Error: could not convert string to float: 'January 11, 2024'
+Function Name: _format_payload_for_insert
+Data Corruption:
+('-13.1', 'WINNIPEG A CS', ' MANITOBA ', '-25.8', '-19.4', 'January 10, 2024')
+
+
+2024-04-09 17:54:34,324 - prod_util - ERROR  - system_log - 
+Error: could not convert string to float: 'January 11, 2024'
+Function Name: _format_payload_for_insert
+Data Corruption:
+('-13.1', 'WINNIPEG A CS', ' MANITOBA ', '-25.8', '-19.4', 'January 10, 2024')
+
+
