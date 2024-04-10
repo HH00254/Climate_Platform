@@ -38,9 +38,15 @@ class WeatherProcessor:
             elif choice == '4':
                 self.generate_line_plot()
             elif choice == '5':
+                self.delete_year()
+            elif choice == '6':
                 break
             else:
                 print("Invalid choice. Please try again.")
+
+    def delete_year(self):
+        year = int(input("Enter the year to delete: "))
+        self.db_operations.delete_data_for_year(year)
 
     def display_menu(self):
         """
@@ -54,7 +60,8 @@ class WeatherProcessor:
         print("2. Update weather data")
         print("3. Generate box plot for year range")
         print("4. Generate line plot for month and year")
-        print("5. Exit")
+        print("5. Delete data from a year")
+        print("6. Exit")
         return input("Enter your choice: ")
 
     def download_weather_data(self):

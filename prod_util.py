@@ -36,6 +36,8 @@ class ProdUtil():
         Return:
         - None
         """
+        #  base field something click -.> object 
+        # Windows event viewer
         log_date = datetime.now().strftime('%Y-%m-%d')
         log_name_path = f'web_scraping_{log_date}.log'
 

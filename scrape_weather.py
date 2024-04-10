@@ -63,7 +63,7 @@ class ScrapeWeather:
         except requests.exceptions.RequestException as e:
             ProdUtil.system_log(e, e.args)
 
-        return self.get_xpath_year(html.fromstring(response_body.content))
+        return int(self.get_xpath_year(html.fromstring(response_body.content)))
 
     def get_xpath_year(self, tree_doc) -> int:
         """
