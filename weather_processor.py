@@ -66,7 +66,7 @@ class WeatherProcessor:
         insert_items = []
         year_range   = []
 
-        range_leng = selected_time.year - new_scrape.end_year
+        range_leng = selected_time.year - int(new_scrape.end_year)
 
         for subtraction_value in range(range_leng + 1):
             year_range.append(selected_time.year - subtraction_value)
