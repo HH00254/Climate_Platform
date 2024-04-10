@@ -6,10 +6,16 @@ Date Created: 03/21/24
 Credit:
 Updates:
 """
+<<<<<<< HEAD
 
 
 import sqlite3
 from contextlib import ContextDecorator
+=======
+from contextlib import ContextDecorator
+import sqlite3
+from prod_util import ProdUtil
+>>>>>>> 1a34288dbee26ff68c9996da2b45bad0589e4f24
 
 class DBCM(ContextDecorator):
     """
@@ -48,8 +54,16 @@ class DBCM(ContextDecorator):
             self.conn = sqlite3.connect(self.db_name)
             self.cursor = self.conn.cursor()
             return self.cursor
+<<<<<<< HEAD
         except sqlite3.Error as e:
             print("Error connecting to the database:", e)
+=======
+
+        except sqlite3.Error as e:
+            ProdUtil.system_log(e, e.args)
+            print("Error connecting to the database:", e)
+
+>>>>>>> 1a34288dbee26ff68c9996da2b45bad0589e4f24
             raise
 
     def __exit__(self, exc_type, exc_value, traceback):
@@ -64,12 +78,27 @@ class DBCM(ContextDecorator):
         if exc_type is not None:
             print("Exception occured, rollback changes:", exc_value)
             self.conn.rollback()
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1a34288dbee26ff68c9996da2b45bad0589e4f24
         else:
             try:
                 self.conn.commit()
             except sqlite3.Error as e:
+<<<<<<< HEAD
                 print("Error commiting changes to the database:", e)
                 self.conn.rollback()
                 print("Rollback changes.")
         self.cursor.close()
         self.conn.close()
+=======
+                ProdUtil.system_log(e, e.args)
+                print("Error commiting changes to the database:", e)
+
+                self.conn.rollback()
+                print("Rollback changes.")
+
+        self.cursor.close()
+        self.conn.close()
+>>>>>>> 1a34288dbee26ff68c9996da2b45bad0589e4f24

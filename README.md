@@ -38,6 +38,7 @@ Expand the Project Introduction to include a detailed description of what the pr
 
 
 ### Pylint Result
+<<<<<<< HEAD
 ************* Module scrape_weather
 scrape_weather.py:42:0: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:63:26: C0303: Trailing whitespace (trailing-whitespace)
@@ -163,4 +164,67 @@ weather_processor.py:1:0: R0801: Similar lines in 2 files
 
 -----------------------------------
 Your code has been rated at 6.48/10
+=======
+************* Module db_operations
+db_operations.py:86:0: C0303: Trailing whitespace (trailing-whitespace)
+db_operations.py:135:0: C0301: Line too long (107/100) (line-too-long)
+db_operations.py:178:0: C0301: Line too long (198/100) (line-too-long)
+db_operations.py:199:0: C0301: Line too long (196/100) (line-too-long)
+db_operations.py:212:0: C0303: Trailing whitespace (trailing-whitespace)
+db_operations.py:216:0: C0304: Final newline missing (missing-final-newline)
+************* Module weather_processor
+weather_processor.py:25:0: C0303: Trailing whitespace (trailing-whitespace)
+weather_processor.py:76:113: C0303: Trailing whitespace (trailing-whitespace)
+weather_processor.py:76:0: C0301: Line too long (113/100) (line-too-long)
+weather_processor.py:78:0: C0301: Line too long (117/100) (line-too-long)
+weather_processor.py:79:0: C0301: Line too long (127/100) (line-too-long)
+weather_processor.py:86:0: C0303: Trailing whitespace (trailing-whitespace)
+weather_processor.py:89:0: C0303: Trailing whitespace (trailing-whitespace)
+weather_processor.py:153:0: C0304: Final newline missing (missing-final-newline)
+************* Module scrape_weather
+scrape_weather.py:35:43: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:38:146: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:54:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:66:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:68:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:82:0: C0301: Line too long (114/100) (line-too-long)
+scrape_weather.py:84:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:157:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:184:35: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:193:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:206:45: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:212:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:246:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:250:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:261:0: C0303: Trailing whitespace (trailing-whitespace)
+scrape_weather.py:283:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:11:0: E0401: Unable to import 'lxml' (import-error)
+scrape_weather.py:12:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
+scrape_weather.py:13:0: E0401: Unable to import 'requests' (import-error)
+scrape_weather.py:218:4: R0914: Too many local variables (16/15) (too-many-locals)
+scrape_weather.py:15:0: C0411: standard import "math" should be placed before third party imports "lxml.html", "dateutil.relativedelta.relativedelta", "requests" and first party import "prod_util.ProdUtil"  (wrong-import-order)
+scrape_weather.py:15:0: W0611: Unused import math (unused-import)
+************* Module dbcm
+dbcm.py:81:0: C0304: Final newline missing (missing-final-newline)
+************* Module plot_operations
+plot_operations.py:36:0: C0301: Line too long (101/100) (line-too-long)
+plot_operations.py:38:0: C0301: Line too long (115/100) (line-too-long)
+plot_operations.py:40:0: C0301: Line too long (124/100) (line-too-long)
+plot_operations.py:41:0: C0301: Line too long (115/100) (line-too-long)
+plot_operations.py:51:0: C0301: Line too long (103/100) (line-too-long)
+plot_operations.py:62:0: C0301: Line too long (116/100) (line-too-long)
+plot_operations.py:73:0: C0301: Line too long (120/100) (line-too-long)
+plot_operations.py:82:0: C0301: Line too long (109/100) (line-too-long)
+plot_operations.py:91:0: C0301: Line too long (101/100) (line-too-long)
+plot_operations.py:93:0: C0304: Final newline missing (missing-final-newline)
+plot_operations.py:11:0: E0401: Unable to import 'matplotlib.pyplot' (import-error)
+************* Module prod_util
+prod_util.py:43:0: C0301: Line too long (155/100) (line-too-long)
+prod_util.py:50:0: C0303: Trailing whitespace (trailing-whitespace)
+prod_util.py:54:0: C0301: Line too long (115/100) (line-too-long)
+prod_util.py:69:0: C0305: Trailing newlines (trailing-newlines)
+
+-----------------------------------
+Your code has been rated at 8.19/10
+>>>>>>> 1a34288dbee26ff68c9996da2b45bad0589e4f24
 
