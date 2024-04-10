@@ -50,7 +50,7 @@ class ProdUtil():
 
         if trace_body:
             _, _, method_name, _ = trace_body[-1]
-        
+
         logger = logging.getLogger(__name__)
 
         # Log the exception and data_entre
@@ -69,4 +69,3 @@ class ProdUtil():
         - A formated date
         """
         return datetime.strptime(unformatted_date, '%B %d, %Y').strftime('%Y-%m-%d')
-

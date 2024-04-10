@@ -83,7 +83,7 @@ class DBOperations:
         try:
             with DBCM(self.db_file) as cur:
                 cur.execute("DELETE FROM weather_data;")
-                
+
         except sqlite3.Error as e:
             ProdUtil.system_log(e, e.args)
             print("Error purging data from database:", e)
@@ -98,10 +98,13 @@ class DBOperations:
         try:
             with DBCM(self.db_file) as cur:
                 cur.execute("SELECT * FROM weather_data ORDER BY sample_date;")
+
                 return cur.fetchall()
+
         except sqlite3.Error as e:
             ProdUtil.system_log(e, e.args)
             print("Error fetching data from database:", e)
+
             return None
 
     def insert_sample_data(self):
@@ -125,6 +128,7 @@ class DBOperations:
                     data['avg_temp']
                 ))
         except sqlite3.Error as e:
+            ProdUtil.system_log(e, e.args)
             print("Error inserting sample data:", e)
 
     def get_latest_date(self) -> str:
@@ -134,12 +138,13 @@ class DBOperations:
         Returns:
             str or None: The latest date as a string in 'YYYY-MM-DD' format, or None if the table is empty.
         """
-
         try:
             with DBCM(self.db_file) as cur:
                 cur.execute("SELECT MAX(sample_date) FROM weather_data;")
                 latest_date = cur.fetchone()[0]
+
                 return latest_date
+
         except sqlite3.Error as e:
             ProdUtil.system_log(e, e.args)
             print("Error fetching latest date from database:", e)
@@ -154,7 +159,12 @@ class DBOperations:
         """
         try:
             with DBCM(self.db_file) as cur:
-                cur.execute("DELETE FROM weather_data WHERE sample_date LIKE ?", (f"{year}-%",))
+                cur.execute("""
+                            DELETE FROM weather_data 
+                            WHERE sample_date LIKE ?
+                            """, 
+                            (f"{year}-%",))
+
         except sqlite3.Error as e:
             ProdUtil.system_log(e, e.args)
             print("Error deleting data from database:", e)
@@ -174,9 +184,17 @@ class DBOperations:
             with DBCM(self.db_file) as cur:
                 start_date = f"{start_year}-01-01"
                 end_date = f"{end_year}-12-31"
+
                 #ensures sample_date is returned as formatted
-                cur.execute("SELECT strftime('%Y-%m-%d', sample_date), location, province, min_temp, max_temp, avg_temp FROM weather_data WHERE sample_date BETWEEN ? AND ?;", (start_date, end_date))
+                cur.execute("""
+                            SELECT strftime('%Y-%m-%d', sample_date), location, province, min_temp, max_temp, avg_temp 
+                            FROM weather_data 
+                            WHERE sample_date BETWEEN ? AND ?;
+                            """,
+                            (start_date, end_date))
+
                 return cur.fetchall()
+
         except sqlite3.Error as e:
             ProdUtil.system_log(e, e.args)
             print("Error fetching data for year range from database:", e)
@@ -196,8 +214,15 @@ class DBOperations:
         try:
             with DBCM(self.db_file) as cur:
                 year_month = f"{year}-{month:02}"
-                cur.execute("SELECT strftime('%Y-%m-%d', sample_date), location, province, min_temp, max_temp, avg_temp FROM weather_data WHERE strftime('%Y-%m', sample_date) = ?;", (year_month,))
+                cur.execute("""
+                            SELECT strftime('%Y-%m-%d', sample_date), location, province, min_temp, max_temp, avg_temp 
+                            FROM weather_data 
+                            WHERE strftime('%Y-%m', sample_date) = ?;
+                            """,
+                            (year_month,))
+
                 return cur.fetchall()
+
         except sqlite3.Error as e:
             ProdUtil.system_log(e, e.args)
             print("Error fetching data for year and month from database:", e)
@@ -209,7 +234,7 @@ if __name__ == "__main__":
     #db_operations.insert_sample_data()
     #fetched_data = db_operations.fetch_data()
     #print("Test DB data results:", fetched_data)
-   
+
     # ?/Test delete and update
     db_operations = DBOperations("weather_data.sqlite")
     db_operations.initialize_db()

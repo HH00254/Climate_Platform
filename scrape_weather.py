@@ -12,7 +12,6 @@ from lxml import html
 from dateutil.relativedelta import relativedelta
 import requests
 from prod_util import ProdUtil
-import math
 
 class ScrapeWeather:
     """ 
@@ -51,7 +50,7 @@ class ScrapeWeather:
         try:
             request = self.web_address.format(self.station_id, page_year, self.date_instance.month)
             response_body = requests.get(request, timeout=120)
-        
+
         except requests.exceptions.HTTPError as e:
             ProdUtil.system_log(e, e.args)
 
@@ -63,9 +62,9 @@ class ScrapeWeather:
 
         except requests.exceptions.RequestException as e:
             ProdUtil.system_log(e, e.args)
-      
+
         return self.get_xpath_year(html.fromstring(response_body.content))
-    
+
     def get_xpath_year(self, tree_doc) -> int:
         """
         Extract the year from the webpage content.
@@ -81,7 +80,7 @@ class ScrapeWeather:
         try:
             year = (str(tree_doc.xpath('//*[@id="climateNav"]/div[3]/section/div[1]/form/fieldset/legend/text()'))
                                 .split('(')[1].split(')')[0])
-        
+
         except TypeError as e:
             ProdUtil.system_log(e, e.args)
 
@@ -154,7 +153,7 @@ class ScrapeWeather:
                 index += step
 
         return insert_collection
-  
+
     def get_xpath_page_values(self, trees) -> list:
         """
         Extract values from the parsed HTML trees.
@@ -190,7 +189,7 @@ class ScrapeWeather:
                 ProdUtil.system_log(e, e.args)
 
         return insert_values
-    
+
     def _months_between_dates(self, end_date) -> int:
         """
         Check if the year and month of two datetime objects are equal.
@@ -209,7 +208,7 @@ class ScrapeWeather:
         try:
             # Calculate the approximate difference in months
             months = days / 30.4375
-        
+
         except ZeroDivisionError as e:
             ProdUtil.system_log(e, e.args)
 
@@ -244,11 +243,11 @@ class ScrapeWeather:
         while termination_flag and month_counter < month_range:
             month      = working_date.month
             year       = working_date.year
-            
+
             try:
                 request = self.web_address.format(self.station_id, year, month)
                 response_body = requests.get(request, timeout=120)
-            
+
                 if (response_body.status_code == 200 and
                     html.fromstring(response_body.content).xpath('//table/tbody')):
                     tree = html.fromstring(response_body.content)
@@ -259,7 +258,7 @@ class ScrapeWeather:
                         previous_data = tree
                         tree_pages.append(tree)
                         month_counter += 1
-                        
+
                     else:
                         termination_flag = False
 

@@ -9,10 +9,10 @@ Updates:
 """
 import concurrent.futures
 from datetime import datetime
-from time import time
 from db_operations import DBOperations
 from scrape_weather import ScrapeWeather
 from plot_operations import PlotOperations
+from prod_util import ProdUtil
 
 class WeatherProcessor:
     """
@@ -22,7 +22,6 @@ class WeatherProcessor:
     def __init__(self, db_file):
         self.db_operations = DBOperations(db_file)
         self.db_operations.initialize_db()
-        
 
     def start(self):
         """
@@ -60,9 +59,8 @@ class WeatherProcessor:
 
     def download_weather_data(self):
         """
-        Download weather data using the main module.
+        Download weather data using the scrape_weather module.
         """
-        start = time()
         selected_time = datetime.now()
         new_scrape = ScrapeWeather(selected_time)
         insert_items = []
@@ -73,53 +71,65 @@ class WeatherProcessor:
         for subtraction_value in range(range_leng + 1):
             year_range.append(selected_time.year - subtraction_value)
 
-        # See if I can chuck the requests down and then check last finish item to then send more threads or STOP!    
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            results            = executor.submit(new_scrape.web_scrape_call, selected_time.year, selected_time.month)
-            results_collection = [executor.submit(new_scrape.web_scrape_call, current_year, 12) for current_year in year_range]
+        # See if I can chuck the requests down
+        # and then check last finish item to then send more threads or STOP!
+        try:
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                results = executor.submit(
+                    new_scrape.web_scrape_call, selected_time.year, selected_time.month)
 
-            for f in concurrent.futures.as_completed(results_collection):
-                insert_items.append(new_scrape.get_xpath_page_values(f.result()))
+                results_collection = (
+                    [executor.submit(new_scrape.web_scrape_call, current_year, 12)
+                    for current_year in year_range])
 
-            insert_items.append(new_scrape.get_xpath_page_values(results.result()))
+                for f in concurrent.futures.as_completed(results_collection):
+                    insert_items.append(new_scrape.get_xpath_page_values(f.result()))
 
-        
-        self.db_operations.initialize_db()
-        self.db_operations.purge_data()
-        
-        for year in (insert_items):
-            for month in year:
-                self.db_operations.save_data(month)
+                insert_items.append(new_scrape.get_xpath_page_values(results.result()))
 
-        end = time()
-        print(f'\nCompleted in {end - start}\n')
+            self.db_operations.initialize_db()
+            self.db_operations.purge_data()
+
+            for year in (insert_items):
+                for month in year:
+                    self.db_operations.save_data(month)
+
+        except concurrent.futures.TimeoutError as e:
+            ProdUtil.system_log(e, e.args)
+
+        except IndexError as e:
+            ProdUtil.system_log(e, e.args)
+
+        print('\nCompleted\n')
 
     def update_weather_data(self):
         """
-        Update weather data using the _scrape_weather module.
+        Update weather data using the scrape_weather module.
         """
-        self.db_operations.initialize_db()
-        latest_date_str =  self.db_operations.get_latest_date()
-        latest_date =   datetime.strptime(latest_date_str, '%Y-%m-%d')
+        try:
+            self.db_operations.initialize_db()
+            latest_date_str =  self.db_operations.get_latest_date()
+            latest_date =   datetime.strptime(latest_date_str, '%Y-%m-%d')
 
-        current_date = datetime.now()
+            new_scrape = ScrapeWeather()
+            year_items =  new_scrape.web_scrape_call(data_end_point=latest_date)
 
-        new_scrape = ScrapeWeather(current_date)
-        year_items =  new_scrape.web_scrape_call(data_end_point=latest_date)
+            insert_items = []
+            for month in year_items:
+                insert_items.append(new_scrape.get_xpath_page_values(month))
 
-        insert_items = []
-        for month in year_items:
-            insert_items.append(new_scrape.get_xpath_page_values(month))
+            for row in insert_items[0]:
+                self.db_operations.save_data(row)
 
-        for row in insert_items[0]:
-            self.db_operations.save_data(row)
+        except IndexError as e:
+            ProdUtil.system_log(e, e.args)
 
     def generate_box_plot(self):
         """
         Generate a box plot for a specified year range.
         """
         start_year = int(input("Enter the start year: "))
-        end_year = int(input("Enter the end year: "))
+        end_year   = int(input("Enter the end year: "))
 
         if end_year < start_year:
             print("Error: End year cannot be before start year.")
