@@ -43,7 +43,8 @@ db_operations.py:139:0: C0301: Line too long (107/100) (line-too-long)
 db_operations.py:165:32: C0303: Trailing whitespace (trailing-whitespace)
 db_operations.py:241:0: C0304: Final newline missing (missing-final-newline)
 ************* Module weather_processor
-weather_processor.py:170:0: C0304: Final newline missing (missing-final-newline)
+weather_processor.py:93:0: C0301: Line too long (111/100) (line-too-long)
+weather_processor.py:171:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:47:4: C0116: Missing function or method docstring (missing-function-docstring)
 ************* Module scrape_weather
 scrape_weather.py:34:43: C0303: Trailing whitespace (trailing-whitespace)
@@ -71,7 +72,7 @@ plot_operations.py:11:0: C0411: third party import "matplotlib.pyplot" should be
 ************* Module prod_util
 prod_util.py:39:48: C0303: Trailing whitespace (trailing-whitespace)
 prod_util.py:59:0: C0301: Line too long (115/100) (line-too-long)
-************* Module dist.weather_processor._internal.IPython.extensions.storemagic
+************* Module extensions.storemagic
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:236:0: C0305: Trailing newlines (trailing-newlines)
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:16:0: C0410: Multiple imports on one line (inspect, os, sys, textwrap) (multiple-imports)
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:18:0: E0401: Unable to import 'IPython.core.error' (import-error)
@@ -99,7 +100,7 @@ dist/weather_processor/_internal/IPython/extensions/storemagic.py:230:26: C0209:
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:80:4: R0912: Too many branches (29/12) (too-many-branches)
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:80:4: R0915: Too many statements (77/50) (too-many-statements)
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:61:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-************* Module dist.weather_processor._internal.IPython.extensions.autoreload
+************* Module extensions.autoreload
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:103:0: C0301: Line too long (138/100) (line-too-long)
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:105:0: C0301: Line too long (128/100) (line-too-long)
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:679:0: C0301: Line too long (102/100) (line-too-long)
@@ -145,7 +146,7 @@ dist/weather_processor/_internal/IPython/extensions/autoreload.py:134:0: C0411: 
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:135:0: C0411: standard import "logging" should be placed before third party imports "IPython.core.magic_arguments", "IPython.core.magic.Magics" (wrong-import-order)
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:136:0: C0411: standard import "importlib.import_module" should be placed before third party imports "IPython.core.magic_arguments", "IPython.core.magic.Magics" (wrong-import-order)
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:137:0: C0411: standard import "importlib.util.source_from_cache" should be placed before third party imports "IPython.core.magic_arguments", "IPython.core.magic.Magics" (wrong-import-order)
-************* Module dist.weather_processor._internal.IPython.extensions.tests.test_storemagic
+************* Module extensions.tests.test_storemagic
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:1:0: C0410: Multiple imports on one line (tempfile, os) (multiple-imports)
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:4:0: E0401: Unable to import 'traitlets.config.loader' (import-error)
@@ -192,7 +193,7 @@ dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:61:
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:63:8: E0602: Undefined variable 'ip' (undefined-variable)
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:64:15: E0602: Undefined variable 'ip' (undefined-variable)
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:66:8: E0602: Undefined variable 'ip' (undefined-variable)
-************* Module dist.weather_processor._internal.IPython.extensions.tests.test_autoreload
+************* Module extensions.tests.test_autoreload
 dist/weather_processor/_internal/IPython/extensions/tests/test_autoreload.py:17:0: E0401: Unable to import 'pytest' (import-error)
 dist/weather_processor/_internal/IPython/extensions/tests/test_autoreload.py:28:0: E0401: Unable to import 'IPython.testing.tools' (import-error)
 dist/weather_processor/_internal/IPython/extensions/tests/test_autoreload.py:32:0: E0401: Unable to import 'IPython.extensions.autoreload' (import-error)
