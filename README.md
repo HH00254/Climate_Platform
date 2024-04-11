@@ -42,35 +42,14 @@ Expand the Project Introduction to include a detailed description of what the pr
 db_operations.py:139:0: C0301: Line too long (107/100) (line-too-long)
 db_operations.py:165:32: C0303: Trailing whitespace (trailing-whitespace)
 db_operations.py:241:0: C0304: Final newline missing (missing-final-newline)
-************* Module weather_processor
-weather_processor.py:190:0: C0304: Final newline missing (missing-final-newline)
 ************* Module scrape_weather
-scrape_weather.py:34:43: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:37:146: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:81:0: C0301: Line too long (114/100) (line-too-long)
-scrape_weather.py:183:35: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:205:45: C0303: Trailing whitespace (trailing-whitespace)
-scrape_weather.py:283:0: C0304: Final newline missing (missing-final-newline)
 scrape_weather.py:11:0: E0401: Unable to import 'lxml' (import-error)
 scrape_weather.py:12:0: E0401: Unable to import 'dateutil.relativedelta' (import-error)
 scrape_weather.py:13:0: E0401: Unable to import 'requests' (import-error)
-scrape_weather.py:217:4: R0914: Too many local variables (16/15) (too-many-locals)
-************* Module dbcm
-dbcm.py:81:0: C0304: Final newline missing (missing-final-newline)
+scrape_weather.py:218:4: R0914: Too many local variables (16/15) (too-many-locals)
 ************* Module plot_operations
-plot_operations.py:38:0: C0301: Line too long (154/100) (line-too-long)
-plot_operations.py:43:0: C0301: Line too long (112/100) (line-too-long)
-plot_operations.py:69:0: C0301: Line too long (102/100) (line-too-long)
-plot_operations.py:81:0: C0301: Line too long (118/100) (line-too-long)
-plot_operations.py:90:0: C0301: Line too long (113/100) (line-too-long)
-plot_operations.py:99:0: C0301: Line too long (105/100) (line-too-long)
-plot_operations.py:110:0: C0304: Final newline missing (missing-final-newline)
-plot_operations.py:11:0: E0401: Unable to import 'matplotlib.pyplot' (import-error)
-plot_operations.py:11:0: C0411: third party import "matplotlib.pyplot" should be placed before first party import "prod_util.ProdUtil"  (wrong-import-order)
-************* Module prod_util
-prod_util.py:39:48: C0303: Trailing whitespace (trailing-whitespace)
-prod_util.py:59:0: C0301: Line too long (115/100) (line-too-long)
-************* Module extensions.storemagic
+plot_operations.py:10:0: E0401: Unable to import 'matplotlib.pyplot' (import-error)
+************* Module dist.weather_processor._internal.IPython.extensions.storemagic
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:236:0: C0305: Trailing newlines (trailing-newlines)
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:16:0: C0410: Multiple imports on one line (inspect, os, sys, textwrap) (multiple-imports)
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:18:0: E0401: Unable to import 'IPython.core.error' (import-error)
@@ -98,7 +77,7 @@ dist/weather_processor/_internal/IPython/extensions/storemagic.py:230:26: C0209:
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:80:4: R0912: Too many branches (29/12) (too-many-branches)
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:80:4: R0915: Too many statements (77/50) (too-many-statements)
 dist/weather_processor/_internal/IPython/extensions/storemagic.py:61:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-************* Module extensions.autoreload
+************* Module dist.weather_processor._internal.IPython.extensions.autoreload
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:103:0: C0301: Line too long (138/100) (line-too-long)
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:105:0: C0301: Line too long (128/100) (line-too-long)
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:679:0: C0301: Line too long (102/100) (line-too-long)
@@ -144,7 +123,7 @@ dist/weather_processor/_internal/IPython/extensions/autoreload.py:134:0: C0411: 
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:135:0: C0411: standard import "logging" should be placed before third party imports "IPython.core.magic_arguments", "IPython.core.magic.Magics" (wrong-import-order)
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:136:0: C0411: standard import "importlib.import_module" should be placed before third party imports "IPython.core.magic_arguments", "IPython.core.magic.Magics" (wrong-import-order)
 dist/weather_processor/_internal/IPython/extensions/autoreload.py:137:0: C0411: standard import "importlib.util.source_from_cache" should be placed before third party imports "IPython.core.magic_arguments", "IPython.core.magic.Magics" (wrong-import-order)
-************* Module extensions.tests.test_storemagic
+************* Module dist.weather_processor._internal.IPython.extensions.tests.test_storemagic
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:1:0: C0410: Multiple imports on one line (tempfile, os) (multiple-imports)
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:4:0: E0401: Unable to import 'traitlets.config.loader' (import-error)
@@ -191,7 +170,7 @@ dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:61:
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:63:8: E0602: Undefined variable 'ip' (undefined-variable)
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:64:15: E0602: Undefined variable 'ip' (undefined-variable)
 dist/weather_processor/_internal/IPython/extensions/tests/test_storemagic.py:66:8: E0602: Undefined variable 'ip' (undefined-variable)
-************* Module extensions.tests.test_autoreload
+************* Module dist.weather_processor._internal.IPython.extensions.tests.test_autoreload
 dist/weather_processor/_internal/IPython/extensions/tests/test_autoreload.py:17:0: E0401: Unable to import 'pytest' (import-error)
 dist/weather_processor/_internal/IPython/extensions/tests/test_autoreload.py:28:0: E0401: Unable to import 'IPython.testing.tools' (import-error)
 dist/weather_processor/_internal/IPython/extensions/tests/test_autoreload.py:32:0: E0401: Unable to import 'IPython.extensions.autoreload' (import-error)
@@ -486,7 +465,7 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
 
 
 def infer_pattern_match(node: nodes.Call, ctx: context.InferenceContext | None = None):
-    """Infer regex.Pattern and regex.Match as classes.
+    """Infer re.Pattern and re.Match as classes.
 
     For PY39+ add `__class_getitem__`.
     """
@@ -556,12 +535,12 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
 ==dist.weather_processor._internal.astroid.brain.brain_builtin_inference:[246:252]
 ==dist.weather_processor._internal.astroid.brain.brain_regex:[79:85]
-        lineno=node.lineno,
-        col_offset=node.col_offset,
-        parent=node.parent,
-        end_lineno=node.end_lineno,
-        end_col_offset=node.end_col_offset,
-    ) (duplicate-code)
+            lineno=node.lineno,
+            col_offset=node.col_offset,
+            parent=node.parent,
+            end_lineno=node.end_lineno,
+            end_col_offset=node.end_col_offset,
+        ) (duplicate-code)
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
 ==dist.weather_processor._internal.astroid.brain.brain_builtin_inference:[177:183]
 ==dist.weather_processor._internal.astroid.brain.brain_regex:[63:69]
@@ -573,5 +552,5 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
         and node.parent.targets[0].name in {"Pattern", "Match"} (duplicate-code)
 
 -----------------------------------
-Your code has been rated at 8.27/10
+Your code has been rated at 8.32/10
 
