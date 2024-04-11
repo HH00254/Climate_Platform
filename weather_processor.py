@@ -90,7 +90,8 @@ class WeatherProcessor:
                     if current_year == new_scrape.date_instance.year:
                         month = new_scrape.date_instance.month
 
-                    results_collection.append(executor.submit(new_scrape.web_scrape_call, current_year, month))
+                    results_collection.append(
+                        executor.submit(new_scrape.web_scrape_call, current_year, month))
 
                 for f in concurrent.futures.as_completed(results_collection):
                     insert_items.append(new_scrape.get_xpath_page_values(f.result()))
