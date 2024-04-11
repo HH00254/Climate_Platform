@@ -31,10 +31,10 @@ class ScrapeWeather:
         Returns:
         None
         """
-        self.date_instance  = date_instance 
+        self.date_instance  = date_instance
         self.station_id     = station_id
         self.web_address    = """
-            https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID={}&timeframe=2&StartYear=1840&EndYear=2018&Year={}&Month={}#"""                                                                 
+            https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID={}&timeframe=2&StartYear=1840&EndYear=2018&Year={}&Month={}#"""
         self.end_year       = self.get_data_end_point()
 
     def get_data_end_point(self, page_year = 1840) -> int:
@@ -78,7 +78,8 @@ class ScrapeWeather:
         year = -1
 
         try:
-            year = (str(tree_doc.xpath('//*[@id="climateNav"]/div[3]/section/div[1]/form/fieldset/legend/text()'))
+            year = (str(tree_doc.xpath('//*[@id="climateNav"]/div[3]/section/div[1]/ \
+                                       form/fieldset/legend/text()'))
                                 .split('(')[1].split(')')[0])
 
         except TypeError as e:
@@ -180,7 +181,7 @@ class ScrapeWeather:
                     table_load = tree.xpath(f"{date_path} | {temperature_path}")
 
                     insert_values = self._format_payload_for_insert(
-                        table_load, 
+                        table_load,
                         location_payload,
                         insert_values,
                         4)
@@ -202,7 +203,7 @@ class ScrapeWeather:
             bool: True if the year and month of both datetime objects are equal, False otherwise.
         """
         # Calculate the difference in days
-        delta = self.date_instance - end_date  
+        delta = self.date_instance - end_date
         days = delta.days
 
         try:

@@ -36,7 +36,7 @@ class ProdUtil():
         Return:
         - None
         """
-        #  base field something click -.> object 
+        #  base field something click -.> object
         # Windows event viewer
         log_date = datetime.now().strftime('%Y-%m-%d')
         log_name_path = f'web_scraping_{log_date}.log'
@@ -56,7 +56,8 @@ class ProdUtil():
         logger = logging.getLogger(__name__)
 
         # Log the exception and data_entre
-        logger.error('\nError: %s\nFunction Name: %s\nData Corruption:\n%s\n\n', exception, method_name,data_entre)
+        logger.error('\nError: %s\nFunction Name: %s\nData Corruption:\n%s\n\n', \
+                     exception, method_name,data_entre)
 
     @staticmethod
     def format_date(unformatted_date: str) -> str:
