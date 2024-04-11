@@ -43,8 +43,7 @@ db_operations.py:139:0: C0301: Line too long (107/100) (line-too-long)
 db_operations.py:165:32: C0303: Trailing whitespace (trailing-whitespace)
 db_operations.py:241:0: C0304: Final newline missing (missing-final-newline)
 ************* Module weather_processor
-weather_processor.py:93:0: C0301: Line too long (111/100) (line-too-long)
-weather_processor.py:171:0: C0304: Final newline missing (missing-final-newline)
+weather_processor.py:172:0: C0304: Final newline missing (missing-final-newline)
 weather_processor.py:47:4: C0116: Missing function or method docstring (missing-function-docstring)
 ************* Module scrape_weather
 scrape_weather.py:34:43: C0303: Trailing whitespace (trailing-whitespace)
@@ -254,21 +253,21 @@ dist/weather_processor/_internal/IPython/extensions/tests/test_autoreload.py:24:
 dist/weather_processor/_internal/IPython/extensions/tests/test_autoreload.py:25:0: C0411: standard import "io.StringIO" should be placed before third party import "pytest" (wrong-import-order)
 dist/weather_processor/_internal/IPython/extensions/tests/test_autoreload.py:26:0: C0411: standard import "dataclasses.dataclass" should be placed before third party import "pytest" (wrong-import-order)
 dist/weather_processor/_internal/IPython/extensions/tests/test_autoreload.py:30:0: C0411: standard import "unittest.TestCase" should be placed before third party imports "pytest", "IPython.testing.tools" (wrong-import-order)
-************* Module brain.brain_type
+************* Module dist.weather_processor._internal.astroid.brain.brain_type
 dist/weather_processor/_internal/astroid/brain/brain_type.py:66:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_numpy_core_function_base
+************* Module dist.weather_processor._internal.astroid.brain.brain_numpy_core_function_base
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_function_base.py:18:0: C0301: Line too long (103/100) (line-too-long)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_function_base.py:27:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_numpy_core_numerictypes
+************* Module dist.weather_processor._internal.astroid.brain.brain_numpy_core_numerictypes
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_numerictypes.py:15:5: W0511: TODO: Uniformize the generic API with the ndarray one. (fixme)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_numerictypes.py:14:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_numerictypes.py:261:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_scipy_signal
+************* Module dist.weather_processor._internal.astroid.brain.brain_scipy_signal
 dist/weather_processor/_internal/astroid/brain/brain_scipy_signal.py:11:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_scipy_signal.py:88:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_signal
+************* Module dist.weather_processor._internal.astroid.brain.brain_signal
 dist/weather_processor/_internal/astroid/brain/brain_signal.py:119:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_builtin_inference
+************* Module dist.weather_processor._internal.astroid.brain.brain_builtin_inference
 dist/weather_processor/_internal/astroid/brain/brain_builtin_inference.py:1:0: C0302: Too many lines in module (1111/1000) (too-many-lines)
 dist/weather_processor/_internal/astroid/brain/brain_builtin_inference.py:287:13: W0511: TODO: Does not handle deduplication for sets. (fixme)
 dist/weather_processor/_internal/astroid/brain/brain_builtin_inference.py:176:8: R0916: Too many boolean expressions in if statement (8/5) (too-many-boolean-expressions)
@@ -281,38 +280,38 @@ dist/weather_processor/_internal/astroid/brain/brain_builtin_inference.py:990:0:
 dist/weather_processor/_internal/astroid/brain/brain_builtin_inference.py:1018:0: R0914: Too many local variables (16/15) (too-many-locals)
 dist/weather_processor/_internal/astroid/brain/brain_builtin_inference.py:1019:0: W0613: Unused argument 'kwargs' (unused-argument)
 dist/weather_processor/_internal/astroid/brain/brain_builtin_inference.py:1071:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_ssl
+************* Module dist.weather_processor._internal.astroid.brain.brain_ssl
 dist/weather_processor/_internal/astroid/brain/brain_ssl.py:102:0: C0301: Line too long (102/100) (line-too-long)
 dist/weather_processor/_internal/astroid/brain/brain_ssl.py:49:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_ssl.py:158:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_gi
+************* Module dist.weather_processor._internal.astroid.brain.brain_gi
 dist/weather_processor/_internal/astroid/brain/brain_gi.py:25:0: C0103: Constant name "_identifier_re" doesn't conform to UPPER_CASE naming style (invalid-name)
 dist/weather_processor/_internal/astroid/brain/brain_gi.py:57:0: R0912: Too many branches (27/12) (too-many-branches)
 dist/weather_processor/_internal/astroid/brain/brain_gi.py:57:0: R0915: Too many statements (62/50) (too-many-statements)
 dist/weather_processor/_internal/astroid/brain/brain_gi.py:210:0: R0911: Too many return statements (7/6) (too-many-return-statements)
 dist/weather_processor/_internal/astroid/brain/brain_gi.py:246:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_numpy_core_multiarray
+************* Module dist.weather_processor._internal.astroid.brain.brain_numpy_core_multiarray
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_multiarray.py:62:0: C0301: Line too long (107/100) (line-too-long)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_multiarray.py:64:0: C0301: Line too long (102/100) (line-too-long)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_multiarray.py:21:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_multiarray.py:89:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_pytest
+************* Module dist.weather_processor._internal.astroid.brain.brain_pytest
 dist/weather_processor/_internal/astroid/brain/brain_pytest.py:11:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_pytest.py:82:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_numpy_ndarray
+************* Module dist.weather_processor._internal.astroid.brain.brain_numpy_ndarray
 dist/weather_processor/_internal/astroid/brain/brain_numpy_ndarray.py:16:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_ndarray.py:158:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_crypt
+************* Module dist.weather_processor._internal.astroid.brain.brain_crypt
 dist/weather_processor/_internal/astroid/brain/brain_crypt.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_crypt.py:25:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_collections
+************* Module dist.weather_processor._internal.astroid.brain.brain_collections
 dist/weather_processor/_internal/astroid/brain/brain_collections.py:122:0: C0301: Line too long (107/100) (line-too-long)
 dist/weather_processor/_internal/astroid/brain/brain_collections.py:123:0: C0301: Line too long (106/100) (line-too-long)
 dist/weather_processor/_internal/astroid/brain/brain_collections.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_collections.py:109:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_collections.py:109:39: W0613: Unused argument 'context' (unused-argument)
 dist/weather_processor/_internal/astroid/brain/brain_collections.py:116:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_namedtuple_enum
+************* Module dist.weather_processor._internal.astroid.brain.brain_namedtuple_enum
 dist/weather_processor/_internal/astroid/brain/brain_namedtuple_enum.py:135:9: W0511: XXX this should succeed *unless* __str__/__repr__ is incorrect or throws (fixme)
 dist/weather_processor/_internal/astroid/brain/brain_namedtuple_enum.py:161:5: W0511: XXX add __init__(*attributes) method (fixme)
 dist/weather_processor/_internal/astroid/brain/brain_namedtuple_enum.py:74:0: R0912: Too many branches (13/12) (too-many-branches)
@@ -324,7 +323,7 @@ dist/weather_processor/_internal/astroid/brain/brain_namedtuple_enum.py:388:0: R
 dist/weather_processor/_internal/astroid/brain/brain_namedtuple_enum.py:565:37: W0613: Unused argument 'node' (unused-argument)
 dist/weather_processor/_internal/astroid/brain/brain_namedtuple_enum.py:603:0: R0912: Too many branches (13/12) (too-many-branches)
 dist/weather_processor/_internal/astroid/brain/brain_namedtuple_enum.py:650:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_functools
+************* Module dist.weather_processor._internal.astroid.brain.brain_functools
 dist/weather_processor/_internal/astroid/brain/brain_functools.py:66:5: W0511: TODO: this is not ideal, since the node should be immutable, (fixme)
 dist/weather_processor/_internal/astroid/brain/brain_functools.py:35:4: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_functools.py:39:4: C0116: Missing function or method docstring (missing-function-docstring)
@@ -332,63 +331,63 @@ dist/weather_processor/_internal/astroid/brain/brain_functools.py:47:8: C0115: M
 dist/weather_processor/_internal/astroid/brain/brain_functools.py:60:4: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_functools.py:65:31: W0613: Unused argument 'context' (unused-argument)
 dist/weather_processor/_internal/astroid/brain/brain_functools.py:162:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_regex
+************* Module dist.weather_processor._internal.astroid.brain.brain_regex
 dist/weather_processor/_internal/astroid/brain/brain_regex.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_regex.py:73:42: W0613: Unused argument 'ctx' (unused-argument)
 dist/weather_processor/_internal/astroid/brain/brain_regex.py:92:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_hypothesis
+************* Module dist.weather_processor._internal.astroid.brain.brain_hypothesis
 dist/weather_processor/_internal/astroid/brain/brain_hypothesis.py:50:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_six
+************* Module dist.weather_processor._internal.astroid.brain.brain_six
 dist/weather_processor/_internal/astroid/brain/brain_six.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_six.py:109:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_six.py:187:12: W0212: Access to a protected member _metaclass of a client class (protected-access)
 dist/weather_processor/_internal/astroid/brain/brain_six.py:221:4: W0212: Access to a protected member _metaclass of a client class (protected-access)
 dist/weather_processor/_internal/astroid/brain/brain_six.py:225:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_unittest
+************* Module dist.weather_processor._internal.astroid.brain.brain_unittest
 dist/weather_processor/_internal/astroid/brain/brain_unittest.py:11:0: C0103: Function name "IsolatedAsyncioTestCaseImport" doesn't conform to snake_case naming style (invalid-name)
 dist/weather_processor/_internal/astroid/brain/brain_unittest.py:29:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_numpy_core_umath
+************* Module dist.weather_processor._internal.astroid.brain.brain_numpy_core_umath
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_umath.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_umath.py:152:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_pathlib
+************* Module dist.weather_processor._internal.astroid.brain.brain_pathlib
 dist/weather_processor/_internal/astroid/brain/brain_pathlib.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_pathlib.py:32:23: W0212: Access to a protected member _proxied of a client class (protected-access)
 dist/weather_processor/_internal/astroid/brain/brain_pathlib.py:37:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_pathlib.py:38:37: W0613: Unused argument 'ctx' (unused-argument)
 dist/weather_processor/_internal/astroid/brain/brain_pathlib.py:47:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_datetime
+************* Module dist.weather_processor._internal.astroid.brain.brain_datetime
 dist/weather_processor/_internal/astroid/brain/brain_datetime.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_datetime.py:17:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_numpy_ma
+************* Module dist.weather_processor._internal.astroid.brain.brain_numpy_ma
 dist/weather_processor/_internal/astroid/brain/brain_numpy_ma.py:31:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.helpers
+************* Module dist.weather_processor._internal.astroid.brain.helpers
 dist/weather_processor/_internal/astroid/brain/helpers.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/helpers.py:13:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/helpers.py:28:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/helpers.py:28:0: R0915: Too many statements (53/50) (too-many-statements)
-************* Module brain.brain_numpy_core_fromnumeric
+************* Module dist.weather_processor._internal.astroid.brain.brain_numpy_core_fromnumeric
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_fromnumeric.py:11:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_fromnumeric.py:20:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_hashlib
+************* Module dist.weather_processor._internal.astroid.brain.brain_hashlib
 dist/weather_processor/_internal/astroid/brain/brain_hashlib.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_hashlib.py:96:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_dateutil
+************* Module dist.weather_processor._internal.astroid.brain.brain_dateutil
 dist/weather_processor/_internal/astroid/brain/brain_dateutil.py:14:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_dateutil.py:26:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_re
+************* Module dist.weather_processor._internal.astroid.brain.brain_re
 dist/weather_processor/_internal/astroid/brain/brain_re.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_re.py:74:42: W0613: Unused argument 'ctx' (unused-argument)
 dist/weather_processor/_internal/astroid/brain/brain_re.py:93:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_boto3
+************* Module dist.weather_processor._internal.astroid.brain.brain_boto3
 dist/weather_processor/_internal/astroid/brain/brain_boto3.py:29:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_io
+************* Module dist.weather_processor._internal.astroid.brain.brain_io
 dist/weather_processor/_internal/astroid/brain/brain_io.py:10:0: C0103: Constant name "TextIOWrapper" doesn't conform to UPPER_CASE naming style (invalid-name)
 dist/weather_processor/_internal/astroid/brain/brain_io.py:11:0: C0103: Constant name "FileIO" doesn't conform to UPPER_CASE naming style (invalid-name)
 dist/weather_processor/_internal/astroid/brain/brain_io.py:12:0: C0103: Constant name "BufferedWriter" doesn't conform to UPPER_CASE naming style (invalid-name)
 dist/weather_processor/_internal/astroid/brain/brain_io.py:38:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_numpy_utils
+************* Module dist.weather_processor._internal.astroid.brain.brain_numpy_utils
 dist/weather_processor/_internal/astroid/brain/brain_numpy_utils.py:37:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_typing
+************* Module dist.weather_processor._internal.astroid.brain.brain_typing
 dist/weather_processor/_internal/astroid/brain/brain_typing.py:163:0: C0301: Line too long (109/100) (line-too-long)
 dist/weather_processor/_internal/astroid/brain/brain_typing.py:244:9: W0511: TODO: remove _DeprecatedGenericAlias when Py3.14 min (fixme)
 dist/weather_processor/_internal/astroid/brain/brain_typing.py:113:0: C0116: Missing function or method docstring (missing-function-docstring)
@@ -400,84 +399,84 @@ dist/weather_processor/_internal/astroid/brain/brain_typing.py:215:23: W0613: Un
 dist/weather_processor/_internal/astroid/brain/brain_typing.py:334:4: W0212: Access to a protected member _explicit_inference of a client class (protected-access)
 dist/weather_processor/_internal/astroid/brain/brain_typing.py:399:4: W0212: Access to a protected member _explicit_inference of a client class (protected-access)
 dist/weather_processor/_internal/astroid/brain/brain_typing.py:462:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_numpy_core_einsumfunc
+************* Module dist.weather_processor._internal.astroid.brain.brain_numpy_core_einsumfunc
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_einsumfunc.py:16:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_einsumfunc.py:25:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_http
+************* Module dist.weather_processor._internal.astroid.brain.brain_http
 dist/weather_processor/_internal/astroid/brain/brain_http.py:211:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_curses
+************* Module dist.weather_processor._internal.astroid.brain.brain_curses
 dist/weather_processor/_internal/astroid/brain/brain_curses.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_curses.py:183:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_multiprocessing
+************* Module dist.weather_processor._internal.astroid.brain.brain_multiprocessing
 dist/weather_processor/_internal/astroid/brain/brain_multiprocessing.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_multiprocessing.py:102:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_numpy_core_numeric
+************* Module dist.weather_processor._internal.astroid.brain.brain_numpy_core_numeric
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_numeric.py:27:0: C0301: Line too long (109/100) (line-too-long)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_numeric.py:20:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_core_numeric.py:38:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_subprocess
+************* Module dist.weather_processor._internal.astroid.brain.brain_subprocess
 dist/weather_processor/_internal/astroid/brain/brain_subprocess.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_subprocess.py:105:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_argparse
+************* Module dist.weather_processor._internal.astroid.brain.brain_argparse
 dist/weather_processor/_internal/astroid/brain/brain_argparse.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_argparse.py:13:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_argparse.py:49:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_threading
+************* Module dist.weather_processor._internal.astroid.brain.brain_threading
 dist/weather_processor/_internal/astroid/brain/brain_threading.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_threading.py:31:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_pkg_resources
+************* Module dist.weather_processor._internal.astroid.brain.brain_pkg_resources
 dist/weather_processor/_internal/astroid/brain/brain_pkg_resources.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_pkg_resources.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_pkg_resources.py:70:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_uuid
+************* Module dist.weather_processor._internal.astroid.brain.brain_uuid
 dist/weather_processor/_internal/astroid/brain/brain_uuid.py:16:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_random
+************* Module dist.weather_processor._internal.astroid.brain.brain_random
 dist/weather_processor/_internal/astroid/brain/brain_random.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_random.py:32:19: W0212: Access to a protected member _other_fields of a client class (protected-access)
 dist/weather_processor/_internal/astroid/brain/brain_random.py:33:22: W0212: Access to a protected member _astroid_fields of a client class (protected-access)
 dist/weather_processor/_internal/astroid/brain/brain_random.py:50:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_random.py:100:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_fstrings
+************* Module dist.weather_processor._internal.astroid.brain.brain_fstrings
 dist/weather_processor/_internal/astroid/brain/brain_fstrings.py:67:1: W0511: TODO: this fix tries to *patch* http://bugs.python.org/issue29051 (fixme)
 dist/weather_processor/_internal/astroid/brain/brain_fstrings.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_fstrings.py:20:19: W0212: Access to a protected member _other_fields of a client class (protected-access)
 dist/weather_processor/_internal/astroid/brain/brain_fstrings.py:21:22: W0212: Access to a protected member _astroid_fields of a client class (protected-access)
 dist/weather_processor/_internal/astroid/brain/brain_fstrings.py:71:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_numpy_random_mtrand
+************* Module dist.weather_processor._internal.astroid.brain.brain_numpy_random_mtrand
 dist/weather_processor/_internal/astroid/brain/brain_numpy_random_mtrand.py:12:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_numpy_random_mtrand.py:69:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_attrs
+************* Module dist.weather_processor._internal.astroid.brain.brain_attrs
 dist/weather_processor/_internal/astroid/brain/brain_attrs.py:94:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_qt
+************* Module dist.weather_processor._internal.astroid.brain.brain_qt
 dist/weather_processor/_internal/astroid/brain/brain_qt.py:30:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_qt.py:50:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_qt.py:68:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_qt.py:80:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_sqlalchemy
+************* Module dist.weather_processor._internal.astroid.brain.brain_sqlalchemy
 dist/weather_processor/_internal/astroid/brain/brain_sqlalchemy.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_sqlalchemy.py:39:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_mechanize
+************* Module dist.weather_processor._internal.astroid.brain.brain_mechanize
 dist/weather_processor/_internal/astroid/brain/brain_mechanize.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_mechanize.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_mechanize.py:123:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_nose
+************* Module dist.weather_processor._internal.astroid.brain.brain_nose
 dist/weather_processor/_internal/astroid/brain/brain_nose.py:73:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_dataclasses
+************* Module dist.weather_processor._internal.astroid.brain.brain_dataclasses
 dist/weather_processor/_internal/astroid/brain/brain_dataclasses.py:355:0: W0012: Unknown option value for 'disable-next', expected a valid pylint message and got 'else-if-used' (unknown-option-value)
 dist/weather_processor/_internal/astroid/brain/brain_dataclasses.py:186:13: W0511: # TODO: This should return an Uninferable as this would raise (fixme)
 dist/weather_processor/_internal/astroid/brain/brain_dataclasses.py:182:28: W0212: Access to a protected member _get_arguments_data of a client class (protected-access)
 dist/weather_processor/_internal/astroid/brain/brain_dataclasses.py:241:0: R0912: Too many branches (37/12) (too-many-branches)
 dist/weather_processor/_internal/astroid/brain/brain_dataclasses.py:241:0: R0915: Too many statements (90/50) (too-many-statements)
 dist/weather_processor/_internal/astroid/brain/brain_dataclasses.py:620:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_ctypes
+************* Module dist.weather_processor._internal.astroid.brain.brain_ctypes
 dist/weather_processor/_internal/astroid/brain/brain_ctypes.py:27:0: C0301: Line too long (101/100) (line-too-long)
 dist/weather_processor/_internal/astroid/brain/brain_ctypes.py:82:0: C0116: Missing function or method docstring (missing-function-docstring)
-************* Module brain.brain_responses
+************* Module dist.weather_processor._internal.astroid.brain.brain_responses
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:78:0: C0116: Missing function or method docstring (missing-function-docstring)
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
-==brain.brain_re:[64:93]
-==brain.brain_regex:[63:92]
+==dist.weather_processor._internal.astroid.brain.brain_re:[64:93]
+==dist.weather_processor._internal.astroid.brain.brain_regex:[63:92]
         and isinstance(node.func, nodes.Name)
         and node.func.name == "type"
         and isinstance(node.parent, nodes.Assign)
@@ -508,8 +507,8 @@ def infer_pattern_match(node: nodes.Call, ctx: context.InferenceContext | None =
 
 def register(manager: AstroidManager) -> None: (duplicate-code)
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
-==brain.brain_fstrings:[18:33]
-==brain.brain_random:[30:45]
+==dist.weather_processor._internal.astroid.brain.brain_fstrings:[18:33]
+==dist.weather_processor._internal.astroid.brain.brain_random:[30:45]
     cls = node.__class__
     other_fields = node._other_fields
     _astroid_fields = node._astroid_fields
@@ -526,8 +525,8 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
     new_node = cls(**init_params)
     if hasattr(node, "postinit") and _astroid_fields: (duplicate-code)
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
-==brain.brain_numpy_core_multiarray:[91:100]
-==brain.brain_numpy_core_numeric:[40:49]
+==dist.weather_processor._internal.astroid.brain.brain_numpy_core_multiarray:[91:100]
+==dist.weather_processor._internal.astroid.brain.brain_numpy_core_numeric:[40:49]
     )
 
     for method_name, function_src in METHODS_TO_BE_INFERRED.items():
@@ -538,8 +537,8 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
             functools.partial(attribute_looks_like_numpy_member, method_name),
         ) (duplicate-code)
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
-==brain.brain_builtin_inference:[709:715]
-==brain.brain_typing:[219:225]
+==dist.weather_processor._internal.astroid.brain.brain_builtin_inference:[709:715]
+==dist.weather_processor._internal.astroid.brain.brain_typing:[219:225]
         lineno=node.lineno,
         col_offset=node.col_offset,
         parent=node.parent,
@@ -547,8 +546,8 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
         end_col_offset=node.end_col_offset,
     ) (duplicate-code)
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
-==brain.brain_builtin_inference:[426:432]
-==brain.brain_re:[80:86]
+==dist.weather_processor._internal.astroid.brain.brain_builtin_inference:[426:432]
+==dist.weather_processor._internal.astroid.brain.brain_re:[80:86]
             lineno=node.lineno,
             col_offset=node.col_offset,
             parent=node.parent,
@@ -556,8 +555,8 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
             end_col_offset=node.end_col_offset,
         ) (duplicate-code)
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
-==brain.brain_builtin_inference:[246:252]
-==brain.brain_regex:[79:85]
+==dist.weather_processor._internal.astroid.brain.brain_builtin_inference:[246:252]
+==dist.weather_processor._internal.astroid.brain.brain_regex:[79:85]
             lineno=node.lineno,
             col_offset=node.col_offset,
             parent=node.parent,
@@ -565,8 +564,8 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
             end_col_offset=node.end_col_offset,
         ) (duplicate-code)
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
-==brain.brain_builtin_inference:[177:183]
-==brain.brain_regex:[63:69]
+==dist.weather_processor._internal.astroid.brain.brain_builtin_inference:[177:183]
+==dist.weather_processor._internal.astroid.brain.brain_regex:[63:69]
         and isinstance(node.func, nodes.Name)
         and node.func.name == "type"
         and isinstance(node.parent, nodes.Assign)
