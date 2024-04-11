@@ -7,8 +7,8 @@ Credit:
 Updates:
 """
 import calendar
-from prod_util import ProdUtil
 import matplotlib.pyplot as plt
+from prod_util import ProdUtil
 
 class PlotOperations:
     """
@@ -35,12 +35,14 @@ class PlotOperations:
             # Calculate mean temperatures for each month across all years
             for year_data in self.weather_data:
                 month = int(year_data[0][5:7])  # Extract month from sample date
-                monthly_means[month - 1].append(year_data[5])  # Append mean temperature for the month (if january is 1, subtract 1 and put it on index 0)
+                # Append mean temperature (if january is 1, subtract 1 and put it on index 0)
+                monthly_means[month - 1].append(year_data[5])
 
             # Create a single boxplot for all the months
             plt.figure()
             plt.boxplot(monthly_means)
-            years = [year_data[0][:4] for year_data in self.weather_data]  # Extract years from the weather data
+            # Extract years from the weather data
+            years = [year_data[0][:4] for year_data in self.weather_data]
             plt.title(f'Monthly Temperature Distribution for: {min(years)} to {max(years)}')
             plt.xlabel('Month')
             plt.ylabel('Mean Temperature (°C)')
@@ -66,7 +68,8 @@ class PlotOperations:
         """
         try:
             monthly_weather_data = (
-                [data for data in self.weather_data if str(data[0]).startswith(f"{year}-{month:02}")])
+                [data for data in self.weather_data if \
+                 str(data[0]).startswith(f"{year}-{month:02}")])
 
             # Create a list to store mean temperatures for each day of the selected month
             daily_temperatures = []
@@ -78,7 +81,8 @@ class PlotOperations:
             for day in range(1, num_days_in_month + 1):
                 # Filter the weather data for the current day
                 day_data = (
-                    [data for data in monthly_weather_data if str(data[0]).startswith(f"{year}-{month:02}-{day:02}")])
+                    [data for data in monthly_weather_data if \
+                     str(data[0]).startswith(f"{year}-{month:02}-{day:02}")])
 
                 # If data is available for the current day, calculate the mean temperature
                 if day_data:
@@ -87,7 +91,8 @@ class PlotOperations:
                     # Append the mean temperature to the daily_temperatures list
                     daily_temperatures.append(mean_temp)
                 else:
-                    # If no data is available for the current day, append None to maintain the day-to-day mapping
+                    # If no data is available for the current day,
+                    #   append None to maintain the day-to-day mapping
                     daily_temperatures.append(None)
 
             # Plot the line plot
@@ -96,7 +101,8 @@ class PlotOperations:
             plt.title(f'Mean Daily Temperatures Lineplot - {calendar.month_name[month]} {year}')
             plt.xlabel('Day')
             plt.ylabel('Mean Temperature (°C)')
-            plt.xticks(range(1, num_days_in_month + 1))  # Set x-axis ticks to show the days of the month
+            # Set x-axis ticks to show the days of the month
+            plt.xticks(range(1, num_days_in_month + 1))
             plt.grid(True)
             plt.show()
 
