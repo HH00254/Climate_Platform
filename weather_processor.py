@@ -45,6 +45,9 @@ class WeatherProcessor:
                 print("Invalid choice. Please try again.")
 
     def delete_year(self):
+        """
+        Deletes data from a selected year
+        """
         year = int(input("Enter the year to delete: "))
         self.db_operations.delete_data_for_year(year)
 
@@ -81,9 +84,11 @@ class WeatherProcessor:
         # See if I can chuck the requests down
         # and then check last finish item to then send more threads or STOP!
         try:
+            print("\nStarting Download.\n")
+
             with concurrent.futures.ThreadPoolExecutor() as executor:
                 results_collection = []
-
+                insert_items       = []
                 for current_year in year_range:
                     month = 12
 
@@ -95,6 +100,12 @@ class WeatherProcessor:
 
                 for f in concurrent.futures.as_completed(results_collection):
                     insert_items.append(new_scrape.get_xpath_page_values(f.result()))
+
+            if len(insert_items) > 0:
+                print("\nDownload Completed.\n")
+
+            else:
+                print("\nDownload Incomplete.\n")
 
             self.db_operations.purge_data()
 
@@ -115,7 +126,8 @@ class WeatherProcessor:
         Update weather data using the scrape_weather module.
         """
         try:
-            # self.db_operations.initialize_db()
+            print("\nStarting Download.\n")
+
             latest_date_str =  self.db_operations.get_latest_date()
             latest_date =   datetime.strptime(latest_date_str, '%Y-%m-%d')
 
@@ -125,6 +137,12 @@ class WeatherProcessor:
             insert_items = []
             for month in year_items:
                 insert_items.append(new_scrape.get_xpath_page_values(month))
+
+            if len(insert_items) > 0:
+                print("\nDownload Completed.\n")
+
+            else:
+                print("\nDownload Incomplete.\n")
 
             for year in insert_items:
                 for month in year:
