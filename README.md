@@ -43,8 +43,7 @@ db_operations.py:139:0: C0301: Line too long (107/100) (line-too-long)
 db_operations.py:165:32: C0303: Trailing whitespace (trailing-whitespace)
 db_operations.py:241:0: C0304: Final newline missing (missing-final-newline)
 ************* Module weather_processor
-weather_processor.py:172:0: C0304: Final newline missing (missing-final-newline)
-weather_processor.py:47:4: C0116: Missing function or method docstring (missing-function-docstring)
+weather_processor.py:190:0: C0304: Final newline missing (missing-final-newline)
 ************* Module scrape_weather
 scrape_weather.py:34:43: C0303: Trailing whitespace (trailing-whitespace)
 scrape_weather.py:37:146: C0303: Trailing whitespace (trailing-whitespace)
@@ -557,12 +556,12 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
 ==dist.weather_processor._internal.astroid.brain.brain_builtin_inference:[246:252]
 ==dist.weather_processor._internal.astroid.brain.brain_regex:[79:85]
-            lineno=node.lineno,
-            col_offset=node.col_offset,
-            parent=node.parent,
-            end_lineno=node.end_lineno,
-            end_col_offset=node.end_col_offset,
-        ) (duplicate-code)
+        lineno=node.lineno,
+        col_offset=node.col_offset,
+        parent=node.parent,
+        end_lineno=node.end_lineno,
+        end_col_offset=node.end_col_offset,
+    ) (duplicate-code)
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
 ==dist.weather_processor._internal.astroid.brain.brain_builtin_inference:[177:183]
 ==dist.weather_processor._internal.astroid.brain.brain_regex:[63:69]
@@ -574,5 +573,5 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
         and node.parent.targets[0].name in {"Pattern", "Match"} (duplicate-code)
 
 -----------------------------------
-Your code has been rated at 8.26/10
+Your code has been rated at 8.27/10
 
