@@ -465,7 +465,7 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
 
 
 def infer_pattern_match(node: nodes.Call, ctx: context.InferenceContext | None = None):
-    """Infer re.Pattern and re.Match as classes.
+    """Infer regex.Pattern and regex.Match as classes.
 
     For PY39+ add `__class_getitem__`.
     """
@@ -535,12 +535,12 @@ dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Si
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
 ==dist.weather_processor._internal.astroid.brain.brain_builtin_inference:[246:252]
 ==dist.weather_processor._internal.astroid.brain.brain_regex:[79:85]
-            lineno=node.lineno,
-            col_offset=node.col_offset,
-            parent=node.parent,
-            end_lineno=node.end_lineno,
-            end_col_offset=node.end_col_offset,
-        ) (duplicate-code)
+        lineno=node.lineno,
+        col_offset=node.col_offset,
+        parent=node.parent,
+        end_lineno=node.end_lineno,
+        end_col_offset=node.end_col_offset,
+    ) (duplicate-code)
 dist/weather_processor/_internal/astroid/brain/brain_responses.py:1:0: R0801: Similar lines in 2 files
 ==dist.weather_processor._internal.astroid.brain.brain_builtin_inference:[177:183]
 ==dist.weather_processor._internal.astroid.brain.brain_regex:[63:69]
