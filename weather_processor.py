@@ -68,33 +68,33 @@ class WeatherProcessor:
         """
         Download weather data using the scrape_weather module.
         """
-        selected_time = datetime.now()
-        new_scrape = ScrapeWeather(selected_time)
+        # selected_time = datetime.now()
+        new_scrape = ScrapeWeather()
         insert_items = []
         year_range   = []
 
-        range_leng = selected_time.year - int(new_scrape.end_year)
+        range_leng = new_scrape.date_instance.year - new_scrape.end_year
 
         for subtraction_value in range(range_leng + 1):
-            year_range.append(selected_time.year - subtraction_value)
+            year_range.append(new_scrape.date_instance.year - subtraction_value)
 
         # See if I can chuck the requests down
         # and then check last finish item to then send more threads or STOP!
         try:
             with concurrent.futures.ThreadPoolExecutor() as executor:
-                results = executor.submit(
-                    new_scrape.web_scrape_call, selected_time.year, selected_time.month)
+                results_collection = []
 
-                results_collection = (
-                    [executor.submit(new_scrape.web_scrape_call, current_year, 12)
-                    for current_year in year_range])
+                for current_year in year_range:
+                    month = 12
+
+                    if current_year == new_scrape.date_instance.year:
+                        month = new_scrape.date_instance.month
+
+                    results_collection.append(executor.submit(new_scrape.web_scrape_call, current_year, month))
 
                 for f in concurrent.futures.as_completed(results_collection):
                     insert_items.append(new_scrape.get_xpath_page_values(f.result()))
 
-                insert_items.append(new_scrape.get_xpath_page_values(results.result()))
-
-            self.db_operations.initialize_db()
             self.db_operations.purge_data()
 
             for year in (insert_items):
@@ -114,7 +114,7 @@ class WeatherProcessor:
         Update weather data using the scrape_weather module.
         """
         try:
-            self.db_operations.initialize_db()
+            # self.db_operations.initialize_db()
             latest_date_str =  self.db_operations.get_latest_date()
             latest_date =   datetime.strptime(latest_date_str, '%Y-%m-%d')
 
@@ -125,8 +125,9 @@ class WeatherProcessor:
             for month in year_items:
                 insert_items.append(new_scrape.get_xpath_page_values(month))
 
-            for row in insert_items[0]:
-                self.db_operations.save_data(row)
+            for year in insert_items:
+                for month in year:
+                    self.db_operations.save_data(month)
 
         except IndexError as e:
             ProdUtil.system_log(e, e.args)
