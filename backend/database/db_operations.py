@@ -3,8 +3,8 @@ Description: Database Operations
 Author: Lance Fuentes, Al Hochbaum, Christian Requerme
 """
 
-from models.location import Location
-from models.weather_record import WeatherRecord
+from backend.models.location import Location
+from backend.models.weather_record import WeatherRecord
 
 
 class DBOperations:

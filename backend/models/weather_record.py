@@ -3,7 +3,7 @@ Description: Django Weather Record Model
 Author: Al Hochbaum
 """
 
-from models.location import Location
+from backend.models.location import Location
 
 from django.db import models
 
