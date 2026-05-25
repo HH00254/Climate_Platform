@@ -3,8 +3,6 @@ Description: Django Weather Record Model
 Author: Al Hochbaum
 """
 
-from backend.models.location import Location
-
 from django.db import models
 
 class WeatherRecord(models.Model):
@@ -19,7 +17,7 @@ class WeatherRecord(models.Model):
 
     location = models.ForeignKey(
 
-        Location,
+        "weather.location",
 
         on_delete=models.CASCADE,
 

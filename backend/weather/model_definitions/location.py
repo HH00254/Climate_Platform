@@ -3,11 +3,8 @@ Description: Django Weather Models
 Author: Al Hochbaum
 """
 
-from multiprocessing.managers import BaseManager
-
 from django.db import models
 
-@BaseManager 
 class Location(models.Model):
     """
     Summary:

@@ -7,7 +7,7 @@ import calendar
 
 import matplotlib.pyplot as plt
 
-from backend.utilities.prod_util import ProdUtil
+from backend.weather.utilities.prod_util import ProdUtil
 
 
 class PlotOperations:

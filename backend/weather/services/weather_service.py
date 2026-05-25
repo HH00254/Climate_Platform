@@ -3,15 +3,15 @@ Description: Weather API Service
 Author: Al Hochbaum
 """
 
-from backend.database.db_operations import DBOperations
+from backend.weather.database.db_operations import DBOperations
 
-from backend.services.scrape_weather import ScrapeWeather
+from backend.weather.services.scrape_weather import ScrapeWeather
 
-from backend.services.plot_operations import PlotOperations
+from backend.weather.services.plot_operations import PlotOperations
 
-from backend.models.location import Location
+from backend.weather.model_definitions.location import Location
 
-from backend.models.weather_record import WeatherRecord
+from backend.weather.model_definitions.weather_record import WeatherRecord
 
 class WeatherProcessor:
     """
@@ -127,6 +127,7 @@ class WeatherProcessor:
         """
         Summary:
             - Generates a line plot for daily temperatures in a specific month/year.
+            
           Args:
             - month: Month (1-12)
             - year: Year (e.g., 2020)
