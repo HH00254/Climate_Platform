@@ -3,6 +3,7 @@ Description: Django Weather Record Model
 Author: Al Hochbaum
 """
 
+# pylint: disable=E0401
 from django.db import models
 
 class WeatherRecord(models.Model):

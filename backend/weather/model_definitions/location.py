@@ -2,8 +2,8 @@
 Description: Django Weather Models
 Author: Al Hochbaum
 """
-
-from django.db import models
+# pylint: disable=E0401
+from django.db import models 
 
 class Location(models.Model):
     """
