@@ -61,6 +61,8 @@ Explain possible relationships between:
 - temperature
 - drought
 - water levels
+- forest fires
+- dry seasons
 
 
 User question:
