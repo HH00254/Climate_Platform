@@ -1,7 +1,11 @@
 """
-Author: Al Hochbaum
+Weather application models.
 """
 
-from .location import Location
+from weather.model_definitions.location import (
+    Location
+)
 
-from .weather_record import WeatherRecord
+from weather.model_definitions.weather_record import (
+    WeatherRecord
+)

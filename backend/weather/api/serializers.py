@@ -1,53 +1,73 @@
+"""
+Summary:
+- Serializers for weather application.
+"""
+
 from rest_framework import serializers
 
-from weather.model_definitions.location import Location  # pyright: ignore[reportMissingImports]
+from weather.models import (
+    Location,
+    WeatherRecord
+)
 
-from weather.model_definitions.weather_record import WeatherRecord  # pyright: ignore[reportMissingImports]
 
 class LocationSerializer(serializers.ModelSerializer):
     """
     Summary:
-    - Serializer for Location model.
+    - Serializer for weather stations.
     """
 
     class Meta:
         """
         Summary:
-        - Configuration for Location serializer.
+        - Serializer configuration.
         """
 
         model = Location
 
         fields = [
             "id",
-            "city",
+            "station_id",
+            "station_name",
             "province",
-            "station_id"
+            "latitude",
+            "longitude",
+            "elevation",
+            "climate_identifier",
+            "first_year",
+            "last_year",
         ]
+
 
 class WeatherRecordSerializer(serializers.ModelSerializer):
     """
     Summary:
-    - Serializer for WeatherRecord model.
+    - Serializer for daily weather records.
     """
 
-    location = LocationSerializer(
+    station = serializers.CharField(
+        source="location.station_name",
         read_only=True
     )
+
 
     class Meta:
         """
         Summary:
-        - Configuration for WeatherRecord serializer.
+        - Serializer configuration.
         """
 
         model = WeatherRecord
 
         fields = [
             "id",
-            "sample_date",
             "location",
-            "min_temp",
-            "max_temp",
-            "avg_temp"
+            "station",
+            "recorded_date",
+            "max_temperature",
+            "min_temperature",
+            "mean_temperature",
+            "total_rain",
+            "total_snow",
+            "total_precipitation",
         ]

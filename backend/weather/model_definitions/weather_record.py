@@ -1,24 +1,29 @@
 """
-Description: Django Weather Record Model
-Author: Al Hochbaum
+Description:
+- Weather record model.
 """
 
-# pylint: disable=E0401
+
 from django.db import models
+
+
+from weather.model_definitions.location import (
+    Location
+)
+
+
+
 
 class WeatherRecord(models.Model):
     """
     Summary:
-    - Stores historical weather data.
+    - Daily climate information.
     """
 
-    sample_date = models.DateField(
-        unique=True
-    )
 
     location = models.ForeignKey(
 
-        "weather.location",
+        Location,
 
         on_delete=models.CASCADE,
 
@@ -26,48 +31,169 @@ class WeatherRecord(models.Model):
 
     )
 
-    min_temp = models.FloatField(
+
+    recorded_date = models.DateField()
+
+
+
+    max_temperature = models.DecimalField(
+
+        max_digits=6,
+
+        decimal_places=2,
+
         null=True,
+
         blank=True
+
     )
 
-    max_temp = models.FloatField(
+
+    min_temperature = models.DecimalField(
+
+        max_digits=6,
+
+        decimal_places=2,
+
         null=True,
+
         blank=True
+
     )
 
-    avg_temp = models.FloatField(
+
+    mean_temperature = models.DecimalField(
+
+        max_digits=6,
+
+        decimal_places=2,
+
         null=True,
+
         blank=True
+
     )
+
+
+    total_rain = models.DecimalField(
+
+        max_digits=8,
+
+        decimal_places=2,
+
+        null=True,
+
+        blank=True
+
+    )
+
+
+    total_snow = models.DecimalField(
+
+        max_digits=8,
+
+        decimal_places=2,
+
+        null=True,
+
+        blank=True
+
+    )
+
+
+    total_precipitation = models.DecimalField(
+
+        max_digits=8,
+
+        decimal_places=2,
+
+        null=True,
+
+        blank=True
+
+    )
+
+
+    snow_on_ground = models.DecimalField(
+
+        max_digits=8,
+
+        decimal_places=2,
+
+        null=True,
+
+        blank=True
+
+    )
+
+
+    max_wind_speed = models.DecimalField(
+
+        max_digits=8,
+
+        decimal_places=2,
+
+        null=True,
+
+        blank=True
+
+    )
+
+
+    created_at = models.DateTimeField(
+
+        auto_now_add=True
+
+    )
+
+
+    updated_at = models.DateTimeField(
+
+        auto_now=True
+
+    )
+
+
 
     class Meta:
-        """
-        Summary:
-        - Django model configuration.
-        """
 
         ordering = [
-            "sample_date"
+
+            "-recorded_date"
+
         ]
 
-        verbose_name = (
-            "Weather Record"
-        )
 
-        verbose_name_plural = (
-            "Weather Records"
-        )
+        constraints = [
+
+            models.UniqueConstraint(
+
+                fields=[
+
+                    "location",
+
+                    "recorded_date"
+
+                ],
+
+                name="unique_station_daily_record"
+
+            )
+
+        ]
+
+
 
     def __str__(self):
-        """
-        Summary:
-        - String representation
-          of weather record.
-        """
 
         return (
-            f"{self.sample_date} | "
-            f"{self.location} | "
-            f"AVG: {self.avg_temp}°C"
+
+            f"{self.location.station_name} | "
+
+            f"{self.recorded_date} | "
+
+            f"{self.mean_temperature}°C | "
+
+            f"{self.total_precipitation} mm"
+
         )

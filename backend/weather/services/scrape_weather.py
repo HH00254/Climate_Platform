@@ -1,232 +1,504 @@
 """
-Description: Weather Scraper
-Author: Lance Fuentes, Al Hochbaum, Christian Requerme
+Description:
+- Imports Environment Canada daily weather data.
 """
 
-from datetime import datetime
 
-import requests
 import csv
+import requests
 
-from io import StringIO
+
+from datetime import (
+    datetime
+)
+
+
+from weather.models import (
+    WeatherRecord
+)
+
+
 
 
 class ScrapeWeather:
     """
     Summary:
-    - Downloads and parses weather
-      data from Environment Canada.
+    - Downloads and stores Environment Canada weather data.
     """
 
-    def __init__(self):
 
-        self.station_id = 27174
 
-    def web_scrape_call(
+    def __init__(
+            self,
+            station_id):
+
+
+        self.station_id = station_id
+
+
+        self.base_url = (
+
+            "https://climate.weather.gc.ca/"
+            "climate_data/bulk_data_e.html"
+
+        )
+
+
+
+
+    def build_url(
             self,
             year,
             month):
 
-        try:
 
-            url = (
+        return (
 
-                "https://climate.weather.gc.ca/"
-                "climate_data/bulk_data_e.html?"
+            f"{self.base_url}"
+            f"?format=csv"
+            f"&stationID={self.station_id}"
+            f"&Year={year}"
+            f"&Month={month}"
+            f"&Day=14"
+            f"&timeframe=2"
 
-                "format=csv"
+        )
 
-                f"&stationID={self.station_id}"
 
-                f"&Year={year}"
 
-                f"&Month={month}"
 
-                "&Day=1"
+    def download_year(
+            self,
+            location,
+            year):
 
-                "&timeframe=2"
 
-                "&submit=Download+Data"
+        for month in range(
+                1,
+                13):
+
+
+            existing_records = (
+
+                WeatherRecord.objects.filter(
+
+                    location=location,
+
+                    recorded_date__year=year,
+
+                    recorded_date__month=month,
+
+                    total_precipitation__isnull=False
+
+                )
+                .count()
 
             )
+
+
+
+            if existing_records >= 28:
+
+
+                print(
+                    f"{year}-{month}: skipped"
+                )
+
+
+                continue
+
+
+
+
 
             print(
-                f"\nREQUEST URL:\n{url}\n"
+                f"Downloading {year}-{month}"
             )
+
+
 
             response = requests.get(
-                url
-            )
 
-            if response.status_code != 200:
-
-                raise Exception(
-                    "FAILED TO DOWNLOAD CSV"
-                )
-
-            csv_reader = csv.reader(
-
-                StringIO(
-                    response.text
-                )
-
-            )
-
-            rows = list(csv_reader)
-
-            header_index = None
-
-            for i, row in enumerate(rows):
-
-                if "Date/Time" in row:
-
-                    header_index = i
-
-                    break
-
-            if header_index is None:
-
-                return None
-
-            headers = rows[header_index]
-
-            date_index = headers.index(
-                "Date/Time"
-            )
-
-            max_index = headers.index(
-                "Max Temp (°C)"
-            )
-
-            min_index = headers.index(
-                "Min Temp (°C)"
-            )
-
-            mean_index = headers.index(
-                "Mean Temp (°C)"
-            )
-
-            parsed_rows = []
-
-            for row in rows[header_index + 1:]:
-
-                try:
-
-                    if len(row) <= mean_index:
-
-                        continue
-
-                    sample_date = row[
-                        date_index
-                    ].strip()
-
-                    max_temp = row[
-                        max_index
-                    ].strip()
-
-                    min_temp = row[
-                        min_index
-                    ].strip()
-
-                    mean_temp = row[
-                        mean_index
-                    ].strip()
-
-                    if (
-
-                        not sample_date
-                        or
-                        not max_temp
-                        or
-                        not min_temp
-                        or
-                        not mean_temp
-
-                    ):
-
-                        continue
-
-                    parsed_rows.append({
-
-                        "sample_date": sample_date,
-
-                        "max_temp": float(max_temp),
-
-                        "min_temp": float(min_temp),
-
-                        "avg_temp": float(mean_temp)
-
-                    })
-
-                except Exception as e:
-
-                    print(
-                        f"\nROW PARSE ERROR: "
-                        f"{e}\n"
-                    )
-
-            return parsed_rows
-
-        except Exception as e:
-
-            print(
-                f"\nSCRAPER ERROR: "
-                f"{e}\n"
-            )
-
-            return []
-
-    def download_all_weather_data(self):
-        """
-        Summary:
-        - Iterates through years and months,
-          downloading and parsing weather data
-          until 5 consecutive years have no data.
-          Return: List[Dict[str, Union[str, float]]]
-        """
-        all_weather_rows = []
-
-        current_year = datetime.now().year
-
-        no_data_counter = 0
-
-        for year in range(
-                current_year,
-                1800,
-                -1):
-
-            print(
-                f"\nPROCESSING YEAR: "
-                f"{year}\n"
-            )
-
-            year_had_data = False
-
-            for month in range(1, 13):
-
-                parsed_rows = self.web_scrape_call(
+                self.build_url(
                     year,
                     month
                 )
 
-                if parsed_rows:
+            )
 
-                    year_had_data = True
 
-                    all_weather_rows.extend(
-                        parsed_rows
+            response.raise_for_status()
+
+
+
+
+            rows = list(
+
+                csv.reader(
+
+                    response.text.splitlines()
+
+                )
+
+            )
+
+
+
+            if not rows:
+
+
+                continue
+
+
+
+
+
+
+            headers = None
+
+
+
+            for row in rows:
+
+
+                for column in row:
+
+
+                    if (
+
+                        "Date/Time"
+
+                        in
+
+                        column
+
+                    ):
+
+
+                        headers = row
+
+
+                        break
+
+
+
+                if headers:
+
+
+                    break
+
+
+
+
+
+
+            if not headers:
+
+
+                print(
+                    f"{year}-{month}: no weather data"
+                )
+
+
+                continue
+
+
+
+
+
+
+            start_index = (
+
+                rows.index(
+                    headers
+                )
+
+                +
+
+                1
+
+            )
+
+
+
+
+
+
+
+            def get_index(
+                    search):
+
+
+                for index, header in enumerate(
+                        headers):
+
+
+                    if (
+
+                        search.lower()
+
+                        in
+
+                        header.lower()
+
+                    ):
+
+
+                        return index
+
+
+
+                return None
+
+
+
+
+
+
+
+            columns = {
+
+
+                "date":
+                    get_index(
+                        "Date/Time"
+                    ),
+
+
+                "max_temp":
+                    get_index(
+                        "Max Temp"
+                    ),
+
+
+                "min_temp":
+                    get_index(
+                        "Min Temp"
+                    ),
+
+
+                "mean_temp":
+                    get_index(
+                        "Mean Temp"
+                    ),
+
+
+                "rain":
+                    get_index(
+                        "Total Rain"
+                    ),
+
+
+                "snow":
+                    get_index(
+                        "Total Snow"
+                    ),
+
+
+                "precipitation":
+                    get_index(
+                        "Total Precip"
+                    ),
+
+
+                "snow_ground":
+                    get_index(
+                        "Snow on Grnd"
+                    ),
+
+
+                "wind":
+                    get_index(
+                        "Spd of Max Gust"
+                    ),
+
+            }
+
+
+
+
+
+
+
+
+            def get_value(
+                    row,
+                    field):
+
+
+                index = columns.get(
+                    field
+                )
+
+
+                if index is None:
+
+
+                    return None
+
+
+
+
+                try:
+
+
+                    value = (
+
+                        row[index]
+                        .strip()
+
                     )
 
-            if not year_had_data:
 
-                no_data_counter += 1
+                    if value == "":
 
-            else:
 
-                no_data_counter = 0
+                        return None
 
-            if no_data_counter >= 5:
 
-                break
 
-        return all_weather_rows
+
+                    return float(
+                        value
+                    )
+
+
+
+                except Exception:
+
+
+                    return None
+
+
+
+
+
+
+
+
+            for row in rows[
+                start_index:
+            ]:
+
+
+
+                if not row:
+
+
+                    continue
+
+
+
+
+
+                try:
+
+
+                    recorded_date = (
+
+                        datetime.strptime(
+
+                            row[
+                                columns[
+                                    "date"
+                                ]
+                            ],
+
+                            "%Y-%m-%d"
+
+                        )
+                        .date()
+
+                    )
+
+
+
+                except Exception:
+
+
+                    continue
+
+
+
+
+
+
+
+
+                WeatherRecord.objects.update_or_create(
+
+
+                    location=location,
+
+
+                    recorded_date=recorded_date,
+
+
+                    defaults={
+
+
+                        "max_temperature":
+                            get_value(
+                                row,
+                                "max_temp"
+                            ),
+
+
+
+                        "min_temperature":
+                            get_value(
+                                row,
+                                "min_temp"
+                            ),
+
+
+
+                        "mean_temperature":
+                            get_value(
+                                row,
+                                "mean_temp"
+                            ),
+
+
+
+                        "total_rain":
+                            get_value(
+                                row,
+                                "rain"
+                            ),
+
+
+
+                        "total_snow":
+                            get_value(
+                                row,
+                                "snow"
+                            ),
+
+
+
+                        "total_precipitation":
+                            get_value(
+                                row,
+                                "precipitation"
+                            ),
+
+
+
+                        "snow_on_ground":
+                            get_value(
+                                row,
+                                "snow_ground"
+                            ),
+
+
+
+                        "max_wind_speed":
+                            get_value(
+                                row,
+                                "wind"
+                            ),
+
+                    }
+
+                )

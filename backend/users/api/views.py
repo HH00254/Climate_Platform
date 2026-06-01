@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
+from django.http import HttpResponse
 
 from users.api.serializers import (
     UserSerializer,
@@ -10,6 +11,8 @@ from users.api.serializers import (
     UserLoginSerializer
 )
 
+def home(request):
+    return HttpResponse("Climate PLatform API Running.")
 
 class UserRegistrationView(APIView):
     """
